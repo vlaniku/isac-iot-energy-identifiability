@@ -61,6 +61,11 @@ CODE = [
     'fetch_uo_archive.py', 'make_figures.py', 'build_release.py',
 ]
 RESULTS_GLOB = re.compile(r'\.json$')
+# Internal working files that happen to live in results/. The references
+# local_papers.json produced are in the bibliography; the file itself is an
+# inventory of a private collection and carries the absolute path it was read
+# from, so it is not shipped.
+RESULTS_EXCLUDE = {'local_papers.json'}
 FIGURES_GLOB = re.compile(r'^fig\d+.*\.(pdf|png)$')
 
 # ------------------------------------------------------------- leak scan ----
@@ -70,6 +75,11 @@ LEAKS = [
     (re.compile(r'(?i)\bpassword\s*[=:]'), 'password assignment'),
     (re.compile(r'(?i)\bapp[_-]?key\s*[=:]\s*["\'0-9a-f]{8,}'), 'LoRaWAN AppKey'),
     (re.compile(r'(?i)\bsecret\s*[=:]'), 'secret assignment'),
+    # A local filesystem path is not a credential, so the original scan let it
+    # through. It still reveals a user account and a directory layout, and it is
+    # of no use to a reader.
+    (re.compile(r'[A-Za-z]:\\{1,2}Users\\{1,2}'), 'absolute Windows path'),
+    (re.compile(r'/home/[a-z0-9_.-]+/'), 'absolute POSIX home path'),
 ]
 NOTE = [
     (re.compile(r'fcd6bd[0-9a-f]{10}'), 'device EUI (also shown in Fig. 1 of the paper)'),
@@ -87,10 +97,13 @@ def scan(path):
 
 
 def main():
-    if os.path.exists(DEST):
-        shutil.rmtree(DEST)
+    # Clear only the content directories. DEST is a git working tree, and
+    # rmtree'ing it would take .git with it.
     for sub in ('code', 'results', 'figures'):
-        os.makedirs(os.path.join(DEST, sub), exist_ok=True)
+        d = os.path.join(DEST, sub)
+        if os.path.exists(d):
+            shutil.rmtree(d)
+        os.makedirs(d, exist_ok=True)
 
     picked, hard_hits, soft_hits = [], [], []
 
@@ -110,7 +123,7 @@ def main():
 
     rdir = os.path.join(ROOT, 'results')
     for f in sorted(os.listdir(rdir)):
-        if not RESULTS_GLOB.search(f):
+        if not RESULTS_GLOB.search(f) or f in RESULTS_EXCLUDE:
             continue
         src = os.path.join(rdir, f)
         if os.path.getsize(src) > 12_000_000:
