@@ -1,0 +1,97 @@
+{
+  "horizon_days": 1825,
+  "step_min": 60.0,
+  "nominal_s_min": 197.5,
+  "results": {
+    "radar_0.5mJ": {
+      "myopic": {
+        "survived_days": 1789.0,
+        "survived_frac": 0.9802739726027397,
+        "coverage": 0.9997270561710991,
+        "mean_latency_min": 2.5,
+        "energy_used_frac": 0.9997701665019472
+      },
+      "fixed_ration": {
+        "survived_days": 1798.875,
+        "survived_frac": 0.9856849315068492,
+        "coverage": 0.9995634742485747,
+        "mean_latency_min": 360.0,
+        "energy_used_frac": 0.9997737951340973
+      },
+      "adr_only": {
+        "survived_days": 1798.625,
+        "survived_frac": 0.9855479452054794,
+        "coverage": 0.9996121273363181,
+        "mean_latency_min": 98.75,
+        "energy_used_frac": 0.9997368969625645
+      },
+      "budget_aware": {
+        "survived_days": 1793.125,
+        "survived_frac": 0.9825342465753425,
+        "coverage": 0.9993761686239593,
+        "mean_latency_min": 239.24752079004,
+        "energy_used_frac": 0.9997550386743309
+      }
+    },
+    "radar_2.0mJ": {
+      "myopic": {
+        "survived_days": 1759.875,
+        "survived_frac": 0.9643150684931507,
+        "coverage": 0.9997138144263031,
+        "mean_latency_min": 2.5,
+        "energy_used_frac": 0.9997938810747018
+      },
+      "fixed_ration": {
+        "survived_days": 1798.625,
+        "survived_frac": 0.9855479452054794,
+        "coverage": 0.9996121273363181,
+        "mean_latency_min": 360.0,
+        "energy_used_frac": 0.9997505605287054
+      },
+      "adr_only": {
+        "survived_days": 1798.0,
+        "survived_frac": 0.9852054794520548,
+        "coverage": 0.999602448985935,
+        "mean_latency_min": 98.75,
+        "energy_used_frac": 0.9998110505077378
+      },
+      "budget_aware": {
+        "survived_days": 1782.375,
+        "survived_frac": 0.9766438356164384,
+        "coverage": 0.9997212582935759,
+        "mean_latency_min": 239.89594958667263,
+        "energy_used_frac": 0.9997440278903258
+      }
+    },
+    "radar_10.0mJ": {
+      "myopic": {
+        "survived_days": 1619.0,
+        "survived_frac": 0.8871232876712328,
+        "coverage": 0.9993021097255925,
+        "mean_latency_min": 2.5,
+        "energy_used_frac": 0.99972433680053
+      },
+      "fixed_ration": {
+        "survived_days": 1797.625,
+        "survived_frac": 0.9850000000000001,
+        "coverage": 0.9994834643139725,
+        "mean_latency_min": 360.0,
+        "energy_used_frac": 0.9998112337701776
+      },
+      "adr_only": {
+        "survived_days": 1793.875,
+        "survived_frac": 0.9829452054794521,
+        "coverage": 0.9995995604690984,
+        "mean_latency_min": 98.75,
+        "energy_used_frac": 0.9997605015506453
+      },
+      "budget_aware": {
+        "survived_days": 1728.875,
+        "survived_frac": 0.9473287671232877,
+        "coverage": 0.9994461435188255,
+        "mean_latency_min": 242.0640115156798,
+        "energy_used_frac": 0.9997814909240434
+      }
+    }
+  }
+}

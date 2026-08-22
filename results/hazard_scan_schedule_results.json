@@ -1,0 +1,56 @@
+{
+  "by_state": {
+    "FREE": {
+      "n_fit": 122,
+      "n_test": 82,
+      "hazard_ratio": 31.213114754098363,
+      "saving_in_sample": 0.03590821274767397,
+      "saving_held_out": 0.04608723445146112
+    },
+    "OCCUPIED": {
+      "n_fit": 131,
+      "n_test": 88,
+      "hazard_ratio": 7.32824427480916,
+      "saving_in_sample": 0.05599152913053984,
+      "saving_held_out": 0.05602836995292837
+    }
+  },
+  "per_device": [
+    {
+      "dev": "02",
+      "state": "FREE",
+      "n": 42,
+      "saving": 0.14470517057226073
+    },
+    {
+      "dev": "02",
+      "state": "OCCUPIED",
+      "n": 44,
+      "saving": 0.056392530119234285
+    },
+    {
+      "dev": "03",
+      "state": "FREE",
+      "n": 57,
+      "saving": 0.16318061639300319
+    },
+    {
+      "dev": "03",
+      "state": "OCCUPIED",
+      "n": 64,
+      "saving": 0.06345978488845627
+    },
+    {
+      "dev": "04",
+      "state": "FREE",
+      "n": 66,
+      "saving": 0.05423765017707316
+    },
+    {
+      "dev": "04",
+      "state": "OCCUPIED",
+      "n": 70,
+      "saving": 0.06797309290932119
+    }
+  ]
+}

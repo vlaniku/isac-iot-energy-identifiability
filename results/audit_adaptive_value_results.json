@@ -1,0 +1,88 @@
+{
+  "synthetic": {
+    "clairvoyant_gain_pct": 17.67522848106745,
+    "true_lambda_gain_pct": 4.542368881498393,
+    "trailing28_gain_pct": 3.6929438551152716,
+    "n_seeds": 8,
+    "periods": 1825,
+    "resolution": "daily"
+  },
+  "real": {
+    "all uplinks": {
+      "FIEK_UP_PARKING_SENZOR_01": {
+        "test_hours": 798,
+        "test_events": 12,
+        "mean_per_hour": 0.015037593984962405,
+        "clairvoyant_gain_pct": 92.34022556390977,
+        "profile_oos_gain_pct": 34.65791449508282,
+        "trailing_gain_pct": -34.15620439129749
+      },
+      "FIEK_UP_PARKING_SENZOR_02": {
+        "test_hours": 459,
+        "test_events": 20,
+        "mean_per_hour": 0.04357298474945534,
+        "clairvoyant_gain_pct": 90.27777777777779,
+        "profile_oos_gain_pct": 10.41644246115574,
+        "trailing_gain_pct": -30.19088719857099
+      },
+      "FIEK_UP_PARKING_SENZOR_03": {
+        "test_hours": 772,
+        "test_events": 23,
+        "mean_per_hour": 0.029792746113989636,
+        "clairvoyant_gain_pct": 91.44268134715026,
+        "profile_oos_gain_pct": -9.443924965431517,
+        "trailing_gain_pct": -34.780369043922036
+      },
+      "FIEK_UP_PARKING_SENZOR_04": {
+        "test_hours": 595,
+        "test_events": 46,
+        "mean_per_hour": 0.0773109243697479,
+        "clairvoyant_gain_pct": 88.39285714285714,
+        "profile_oos_gain_pct": 20.37227743748066,
+        "trailing_gain_pct": -10.122236807549267
+      },
+      "FIEK_UP_PARKING_SENZOR_05": {
+        "test_hours": 600,
+        "test_events": 27,
+        "mean_per_hour": 0.045,
+        "clairvoyant_gain_pct": 89.6875,
+        "profile_oos_gain_pct": 10.0152936406532,
+        "trailing_gain_pct": -15.14679413634581
+      }
+    },
+    "status changes only": {
+      "FIEK_UP_PARKING_SENZOR_02": {
+        "test_hours": 451,
+        "test_events": 14,
+        "mean_per_hour": 0.031042128603104215,
+        "clairvoyant_gain_pct": 91.25554323725056,
+        "profile_oos_gain_pct": 31.661450691160585,
+        "trailing_gain_pct": -35.50361946183494
+      },
+      "FIEK_UP_PARKING_SENZOR_03": {
+        "test_hours": 769,
+        "test_events": 17,
+        "mean_per_hour": 0.022106631989596878,
+        "clairvoyant_gain_pct": 92.04323797139142,
+        "profile_oos_gain_pct": -17.727831572032994,
+        "trailing_gain_pct": -37.83935578271817
+      },
+      "FIEK_UP_PARKING_SENZOR_04": {
+        "test_hours": 594,
+        "test_events": 36,
+        "mean_per_hour": 0.06060606060606061,
+        "clairvoyant_gain_pct": 89.64646464646464,
+        "profile_oos_gain_pct": 16.918810519078754,
+        "trailing_gain_pct": -9.570354161331407
+      },
+      "FIEK_UP_PARKING_SENZOR_05": {
+        "test_hours": 598,
+        "test_events": 13,
+        "mean_per_hour": 0.021739130434782608,
+        "clairvoyant_gain_pct": 91.71195652173914,
+        "profile_oos_gain_pct": -67.5690894647867,
+        "trailing_gain_pct": -14.189658692060458
+      }
+    }
+  }
+}

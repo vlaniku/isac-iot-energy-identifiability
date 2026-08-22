@@ -1,0 +1,39 @@
+{
+  "ye_tvt_active_ris": {
+    "P_total_mW": 10.0,
+    "P_ST_mW": 0.1,
+    "RIS_static_mW": 0.064,
+    "static_total_mW": 0.164,
+    "f": 0.9836,
+    "sleep_term": false,
+    "battery_model": false,
+    "source": "arXiv 2311.16433v2, IEEE TVT, simulation section, extracted 20 Aug 2026"
+  },
+  "placement": [
+    {
+      "system": "Ye et al. TVT, active RIS ISAC",
+      "f": 0.9836,
+      "basis": "extracted from the paper's own simulation table"
+    },
+    {
+      "system": "Bai / Lightweight FNN, IEEE Access 2026",
+      "f": 0.97,
+      "basis": "P_cir 5 mW of 200 mW, ms frames, no sleep"
+    },
+    {
+      "system": "TGCN submission as written",
+      "f": 1.0,
+      "basis": "0.083 J per 1 s epoch, no sleep term"
+    },
+    {
+      "system": "TPS110EU, link-budget comm share",
+      "f": 0.0042,
+      "basis": "measured rate + SF mix, midpoint of 0.24-0.60%"
+    },
+    {
+      "system": "TPS110EU, field event-proportional",
+      "f": 0.173,
+      "basis": "n=5 resolution limit"
+    }
+  ]
+}

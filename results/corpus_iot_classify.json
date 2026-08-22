@@ -1,0 +1,321 @@
+{
+  "P01": {
+    "title": "Optical Integrated Sensing and Communication With Light-Emitting Diode",
+    "venue": "IEEE Internet of Things Journal",
+    "n_hits": 8,
+    "n_nonbiblio": 8,
+    "hits": [
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "ut loss of generality, we design the μ camera coordinate systems such that they share the same orientation. in other words, the 3-d coordinate of the target device in the mth camera coordinate system pc,m = (xc,m, yc,m, zc,m) satisﬁes xc,m = xc,1 + ϱx,m, yc,m = yc,1 + ϱy,m, zc,m = zc,1 (13) where ϱx,m and ϱy,m are constants since the relative positions among cameras are ﬁxed. the above transformatio",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "es xc,m = xc,1 + ϱx,m, yc,m = yc,1 + ϱy,m, zc,m = zc,1 (13) where ϱx,m and ϱy,m are constants since the relative positions among cameras are ﬁxed. the above transformations facilitate us to represent pc,m ∀m using pc,1. for the target device, the coordinates pc,m (under the camera coordinate system of the mth o-ap) and pd (under the real-world coordinate system) can be transformed to each other via ",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": " + ϱx,m, yc,m = yc,1 + ϱy,m, zc,m = zc,1 (13) where ϱx,m and ϱy,m are constants since the relative positions among cameras are ﬁxed. the above transformations facilitate us to represent pc,m ∀m using pc,1. for the target device, the coordinates pc,m (under the camera coordinate system of the mth o-ap) and pd (under the real-world coordinate system) can be transformed to each other via [38] [ pc,m 1 ",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": " where ϱx,m and ϱy,m are constants since the relative positions among cameras are ﬁxed. the above transformations facilitate us to represent pc,m ∀m using pc,1. for the target device, the coordinates pc,m (under the camera coordinate system of the mth o-ap) and pd (under the real-world coordinate system) can be transformed to each other via [38] [ pc,m 1 ] = [ qm tm 01 ][ pd 1 ] (14) where {qm : m =",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "sing pc,1. for the target device, the coordinates pc,m (under the camera coordinate system of the mth o-ap) and pd (under the real-world coordinate system) can be transformed to each other via [38] [ pc,m 1 ] = [ qm tm 01 ][ pd 1 ] (14) where {qm : m = 1, 2,...,μ } are 3 × 3 rotation matrices, {tm : m = 1, 2,...,μ } are 3 × 1 positional vectors, and {qm} and {tm} denote the exterior orientation para",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "plane coordinate system. we denote by pm = (xm, ym) the coordinate of the target device on the 2-d plane coordinate systems. according to the pinhole imaging principle, pm can be obtained from either pc,m or pd. their relationships can be written as zc,m [ pm 1 ] = ⎡ ⎣ fx,m 00 0 fy,m 0 00 1 ⎤ ⎦pc,m ≜kmpc,m (15) where fx,m and fy,m are interior parameters (focal lengths) of the pinhole camera and km ",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "2-d plane coordinate systems. according to the pinhole imaging principle, pm can be obtained from either pc,m or pd. their relationships can be written as zc,m [ pm 1 ] = ⎡ ⎣ fx,m 00 0 fy,m 0 00 1 ⎤ ⎦pc,m ≜kmpc,m (15) where fx,m and fy,m are interior parameters (focal lengths) of the pinhole camera and km denotes the interior orientation parameters (iops). in particular, we assume the iops of the ca",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "ty for additional light sources and circumvents reliance on ambient light, streamlining the system for enhanced efﬁciency. from (13), (15), and (16),w eh a v e z c,1 [ˆpm 1 ] = kpc,m + [ em 1 ] = k ( pc,1 + vm ) + [ em 1 ] (18) where m = 1, 2,...,μ . after some manipulations, (18) can be reorganized into a more compact form as ⎡ ⎢⎢⎢ ⎢ ⎢ ⎢⎣ 0 0 ··· −f xϱx,m −fyϱy,m ··· ⎤ ⎥⎥⎥ ⎥ ⎥ ⎥⎦ = ⎡ ⎢⎢⎢ ⎢ ⎢ ⎢⎣ f x",
+        "bibliographic": false
+      }
+    ]
+  },
+  "P02": {
+    "title": "Digital Twin and Integrated Sensing and Communication Applications in Internet of Things: Enabling Communication Technologies, Taxonomy, Implications, and Open Issues",
+    "venue": "Applied Sciences",
+    "n_hits": 0,
+    "n_nonbiblio": 0,
+    "hits": []
+  },
+  "P03": {
+    "title": "Energy-Efficiency Maximization for Integrated Sensing and Communication in IoT C-RAN",
+    "venue": "IEEE Internet of Things Journal",
+    "n_hits": 19,
+    "n_nonbiblio": 18,
+    "hits": [
+      {
+        "term": "circuit\\s+power",
+        "context": "communication (isac), internet of things (iot), multistatic sensing. nomenclature n set of user equipment devices (ues). k set of remote radio units (rrus). pmax n maximum transmit power of ues. pcir circuit power consumption of ues. psens sensing power consumption of rrus. [ ˆxn, ˆyn] coordinates of the nth ue. [ ˜xk, ˜yk] coordinates of the kth rru. [x, y] coordinates of the single target. ˆrn distance betwe",
+        "bibliographic": false
+      },
+      {
+        "term": "circuit\\s+power",
+        "context": "e sensing subsystem, even when nonorthogonal ul transmissions are employed. c. problem formulation the total power consumed by the nth ue is expressed as [50] pcon,ue n = pcir + pn, where pcir is the circuit power con- sumption at each ue for ampliﬁcation and cooling purposes. and the power consumed by the kth rru is expressed as [30] pcon,rru k = τkpsens, where psens is the power dedicated to sensing at each ",
+        "bibliographic": false
+      },
+      {
+        "term": "circuit\\s+power",
+        "context": "to all rrus. the nodes and edges are characterized by the following features. 1) ue nodes vu: we denote the features of ue node vu n as un. this node includes the maximum power threshold pmax n , the circuit power consumption pcir, the localiza- tion accuracy threshold κ, and the corresponding 2-d coordinate ( ˆxn, ˆyn). 2) rru nodesvr: we denote the feature of vr k as rk. the features of rru node include the ",
+        "bibliographic": false
+      },
+      {
+        "term": "circuit\\s+power",
+        "context": "reasing after each iteration of algorithm 5. note that the denominator of the objective function does not vanish even when the transmit powers of all ues are close to zero due to the existence of the circuit power and rru consumed power. moreover, all variables of the problem in (11) are limited by constraints, and thus, the ee value is bounded. therefore, the convergence of algorithm 5 is guaranteed. thus, th",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?cir",
+        "context": " and communication (isac), internet of things (iot), multistatic sensing. nomenclature n set of user equipment devices (ues). k set of remote radio units (rrus). pmax n maximum transmit power of ues. pcir circuit power consumption of ues. psens sensing power consumption of rrus. [ ˆxn, ˆyn] coordinates of the nth ue. [ ˜xk, ˜yk] coordinates of the kth rru. [x, y] coordinates of the single target. ˆrn ",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?cir",
+        "context": "tive design constraint for the sensing subsystem, even when nonorthogonal ul transmissions are employed. c. problem formulation the total power consumed by the nth ue is expressed as [50] pcon,ue n = pcir + pn, where pcir is the circuit power con- sumption at each ue for ampliﬁcation and cooling purposes. and the power consumed by the kth rru is expressed as [30] pcon,rru k = τkpsens, where psens is t",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?cir",
+        "context": "raint for the sensing subsystem, even when nonorthogonal ul transmissions are employed. c. problem formulation the total power consumed by the nth ue is expressed as [50] pcon,ue n = pcir + pn, where pcir is the circuit power con- sumption at each ue for ampliﬁcation and cooling purposes. and the power consumed by the kth rru is expressed as [30] pcon,rru k = τkpsens, where psens is the power dedicate",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?cir",
+        "context": "here psens is the power dedicated to sensing at each rru. we, then,s compute the total power consumption of all ues and rrus as ptot = pcon,ue + pcon,rru = x n∈n pcon,ue n + x k∈k pcon,rru k = x n∈n (pcir + pn) + x k∈k τkpsens. (9) the ee of the entire network is deﬁned as η (ψ, τ, p) = rtot ptot (10) where ψ = [µ1,..., µn]. in this work, the objective is to max- imize the above ee over all devices, w",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?cir",
+        "context": "+γn(p) log2 (γn (p)). (24) we deﬁne α(p) ={αn(p)}∈ rn and β(p) ={βn(p)}∈ rn. the transformation of the ee after applying the log transformation is given by ˜η(p) = ˜η (p, α (p), β (p)) = ˜rn(p)p n∈n (pcir + pn) + pcon,rru. (25) then, the problem in (20) is approximated as follows: maxp ˜η(p) (26a) s.t. 0≤ pn≤ pmax n ∀n∈n (12b). (26b) to solve this problem, we propose an iterative algorithm for approxi",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?cir",
+        "context": "at this algorithm p(0) log = p(t−1). at the ith iteration of the procedure, we solve the following problem: max p(i) log x n∈n b \u0010 αn \u0010 p(i−1) log \u0011 log \u0010 γn \u0010 p(i) log \u0011\u0011 +βn \u0010 p(i−1) log \u0011\u0011 p n∈n \u0010 pcir + p(i) log,n \u0011 + pcon,rru s.t. 0≤ p(i) log,n≤ pmax n ∀n∈n b−κap(i) log⪯ 0 (27) where p(i−1)∗ log is the power allocation vector obtained from the (i− 1)th iteration. the logarithmic approximation met",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?cir",
+        "context": "n = p(i−1)∗ log . at the rth iteration, we solve the following problem: maxpdin x n∈n ˜rn (pdin)− ˜η(r−1)∗ din x n∈n pcon din,n s.t. 0≤ pdin,n≤ pmax n ∀n∈n b−κapdin⪯ 0 (28) where pcon din,n = pdin,n +pcir,∀n∈n . following the dinkelbach procedure, we deﬁne ˜η(r−1)∗ din = ˜η(p(r−1)∗ din ) as in (25), and get p(r)∗ din as the solution at the rth iteration is p(r)∗ din. according to [52], the dinkelbach ",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?cir",
+        "context": "pdin,n as presented in (29), shown at the bottom of next page. here, we verify the convexity of the problem in (29). it is observed that the second term in the objective function, ˜η(r−1)∗ din p n∈n (pcir + exp( ¯pdin,n)), is always convex. the ﬁrst term in the objective function is rewritten as follows. first, log 2(|µnt gn|2 exp( ¯pdin,n)) is an a ﬃne function. meanwhile, log 2 \u0000p n′∈n\\{n}|µt n gn′|",
+        "bibliographic": false
+      }
+    ]
+  },
+  "P04": {
+    "title": "6G Internet-of-Things assisted smart homes and buildings: Enabling technologies, opportunities and challenges",
+    "venue": "Internet of Things",
+    "n_hits": 0,
+    "n_nonbiblio": 0,
+    "hits": []
+  },
+  "P06": {
+    "title": "Joint User Pairing and CRB Optimization for NOMA-aided Integrated Sensing and Communication",
+    "venue": "",
+    "n_hits": 0,
+    "n_nonbiblio": 0,
+    "hits": []
+  },
+  "P07": {
+    "title": "Toward Secure and Energy-Efficient ISAC in Low-Altitude IoT: A Game-Theoretic DRL Framework With Adaptive Sensing",
+    "venue": "IEEE Internet of Things Journal",
+    "n_hits": 0,
+    "n_nonbiblio": 0,
+    "hits": []
+  },
+  "P09": {
+    "title": "IMSBA: A Novel Integrated Sensing and Communication Beam Allocation Based on Multi-Agent Reinforcement Learning for mmWave Internet of Vehicles",
+    "venue": "Applied Sciences",
+    "n_hits": 0,
+    "n_nonbiblio": 0,
+    "hits": []
+  },
+  "P10": {
+    "title": "IoT-Enhanced Multi-Base Station Networks for Real-Time UAV Surveillance and Tracking",
+    "venue": "Drones",
+    "n_hits": 0,
+    "n_nonbiblio": 0,
+    "hits": []
+  },
+  "P12": {
+    "title": "Energy-Efficient MIMO Integrated Sensing and Communications With On–Off Nontransmission Power",
+    "venue": "IEEE Internet of Things Journal",
+    "n_hits": 25,
+    "n_nonbiblio": 22,
+    "hits": [
+      {
+        "term": "static\\s+power",
+        "context": " facilitating the energy-efﬁcient mimo isac design. the power consumption at the transceiver is gen- erally divided into three parts, namely, the transmission power, on–off nontransmission power, and static power, respectively. 1) transmission power: the transmission power generally comes from the power ampliﬁers (pas) for signal radiation. let 0 <η< 1 denote the drain efﬁciency of the pa. recall that tr(q) d",
+        "bibliographic": false
+      },
+      {
+        "term": "static\\s+power",
+        "context": "n be turned off for saving power. 1 let pc denote a constant power consumed during the “on” status. we have the on–off nontransmission power as pnon-trans = { pc, if tr(q) > 0 0, if tr(q) = 0. (9) 3) static power: the static power pstatic is a constant term that is consumed by, e.g., cooling systems and electricity supply at the iot transceiver. 1in practice, the iot transceiver can deactivate the rf chains a",
+        "bibliographic": false
+      },
+      {
+        "term": "static\\s+power",
+        "context": "r saving power. 1 let pc denote a constant power consumed during the “on” status. we have the on–off nontransmission power as pnon-trans = { pc, if tr(q) > 0 0, if tr(q) = 0. (9) 3) static power: the static power pstatic is a constant term that is consumed by, e.g., cooling systems and electricity supply at the iot transceiver. 1in practice, the iot transceiver can deactivate the rf chains and baseband proces",
+        "bibliographic": false
+      },
+      {
+        "term": "constant\\s+power",
+        "context": "nts need to be activated for consuming the nontransmission power; while if the transceiver is switched off with tr (q) = 0, then these components can be turned off for saving power. 1 let pc denote a constant power consumed during the “on” status. we have the on–off nontransmission power as pnon-trans = { pc, if tr(q) > 0 0, if tr(q) = 0. (9) 3) static power: the static power pstatic is a constant term that is ",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "hese components need to be activated for consuming the nontransmission power; while if the transceiver is switched off with tr (q) = 0, then these components can be turned off for saving power. 1 let pc denote a constant power consumed during the “on” status. we have the on–off nontransmission power as pnon-trans = { pc, if tr(q) > 0 0, if tr(q) = 0. (9) 3) static power: the static power pstatic is ",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "with tr (q) = 0, then these components can be turned off for saving power. 1 let pc denote a constant power consumed during the “on” status. we have the on–off nontransmission power as pnon-trans = { pc, if tr(q) > 0 0, if tr(q) = 0. (9) 3) static power: the static power pstatic is a constant term that is consumed by, e.g., cooling systems and electricity supply at the iot transceiver. 1in practice,",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "ications 12181 by combining the above three parts and considering the “on” duration τ, the total energy consumption by the transceiver over the whole isac block is given by ptotal(q,τ ) = ( tr(q) η + pc ) τ + pstatictmax. (10) c. problem formulation our objective is to minimize the total energy consumption ptotal(q,τ) at the transceiver in (10) while ensuring the minimum rate requirement r for commu",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "on” transmission duration τ for active transmission. as a result, the rate-and-crb- constrained energy minimization problem for mimo isac is mathematically formulated as (p1) :m i n q⪰0,τ ( tr(q) η + pc ) τ (11a) s.t. σ 2 s ns bτ tr ( q−1 ) ≤ /gamma1 (11b) τ tmax log2det ( inc + 1 σ 2c hcqhch ) ≥ r (11c) tmin ≤ τ ≤ tmax. (11d) notice that in problem (p1), we remove the constant static energy consump",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "ations-dominated case first, we consider the communications-dominated case, in which the crb constraint in (11b) can be skipped. in this case, problem (p1) is reduced as (p2) :m i n q⪰0,τ ( tr(q) η + pc ) τ (12a) s.t. τ tmax log2det ( inc + 1 σ 2c hcqhch ) ≥ r (11d). (12b) notice that at the optimality of problem (p2), the rate con- straint (12b) must be met with equality, i.e., we have τ = rtmax/lo",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "e met with equality, i.e., we have τ = rtmax/log2det(inc + (1/σ 2 c )hcqhch). by substituting this, problem (p2) is equivalent to (p2.1) :m a x q⪰0 log2det ( inc + 1 σ 2c hcqhch ) rtmax ( 1 η tr(q) + pc ) (13a) s.t. r ≤ log2det ( inc + hcqhch σ 2c ) ≤ rtmax tmin (13b) which corresponds to a rate-constrained bits-per-joule energy efﬁciency maximization problem that has been investigated in [18]. to s",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "trained bits-per- joule energy efﬁciency maximization and the rate-constrained transmit power minimization problems, respectively (p2.2) :m a x q⪰0 log2det ( inc + 1 σ 2c hcqhch ) rtmax ( 1 η tr(q) + pc ) . (14) (p2.3) :m i n q⪰0 tr(q) η + pc (15a) s.t. log 2det ( inc + hcqhch σ 2c ) ≥ ¯r (15b) where ¯r corresponds to the minimum rate constraint that is a parameter in problem (p2.3). let qee-com den",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": " maximization and the rate-constrained transmit power minimization problems, respectively (p2.2) :m a x q⪰0 log2det ( inc + 1 σ 2c hcqhch ) rtmax ( 1 η tr(q) + pc ) . (14) (p2.3) :m i n q⪰0 tr(q) η + pc (15a) s.t. log 2det ( inc + hcqhch σ 2c ) ≥ ¯r (15b) where ¯r corresponds to the minimum rate constraint that is a parameter in problem (p2.3). let qee-com denote the optimal solution to problem (p2.",
+        "bibliographic": false
+      }
+    ]
+  },
+  "P13": {
+    "title": "Generalized High-Precision and Wide-Angle DOA Estimation Method Based on Space-Time-Coding Digital Metasurfaces",
+    "venue": "IEEE Internet of Things Journal",
+    "n_hits": 0,
+    "n_nonbiblio": 0,
+    "hits": []
+  },
+  "P14": {
+    "title": "Phase-Based Distance Estimation Integrated With IEEE 802.15.4 TSCH Communication",
+    "venue": "IEEE Internet of Things Journal",
+    "n_hits": 0,
+    "n_nonbiblio": 0,
+    "hits": []
+  },
+  "P15": {
+    "title": "Adaptive Hybrid Energy Harvesting with Integrated Sensing and Communication for Consumer IoT Networks",
+    "venue": "IEEE Transactions on Consumer Electronics",
+    "n_hits": 5,
+    "n_nonbiblio": 4,
+    "hits": [
+      {
+        "term": "duty[- ]cycle",
+        "context": "outing. 16 imitation learning-based energy management energy-harvesting iot devices achieves near-optimal energy allocation by adapting to dynamic energy availability. 17 ml prediction-based adaptive duty cycle mac (padc-mac) solar energy harvesting wsns dynamically adjusts duty cycle using predicted energy; improves packet delivery, throughput, and energy efficiency. 18 hybrid ml + rl power allocation in d",
+        "bibliographic": false
+      },
+      {
+        "term": "duty[- ]cycle",
+        "context": " devices achieves near-optimal energy allocation by adapting to dynamic energy availability. 17 ml prediction-based adaptive duty cycle mac (padc-mac) solar energy harvesting wsns dynamically adjusts duty cycle using predicted energy; improves packet delivery, throughput, and energy efficiency. 18 hybrid ml + rl power allocation in distributed antenna systems (das) enhances system capacity and energy effici",
+        "bibliographic": false
+      },
+      {
+        "term": "duty[- ]cycle",
+        "context": "], which adopted a nonlinear autoregressive neural network (nar) for forecasting future energy availability in solar power wireless sensor networks. using these forecasts, the pada-mac can adjust the duty cycle of nodes adaptively, which enhances energy utilization and network performance. the simulation results include 96 hours of testing with realistic solar data, showing significant improvements in throu",
+        "bibliographic": false
+      },
+      {
+        "term": "duty[- ]cycle",
+        "context": "ly, the control overhead consists of a single control packet of 24 bytes transmitted once per slot of duration 100 ms over a 250 kbps link, resulting in a mac occupancy below 1% even under worst-case duty-cycle assumptions. table v: simulation parameters parameter value/ range number of nodes (n) 50 - 200 simulation time horizon (t)10 5 slots area size500×500m 2 harvesting efficienciesη s = 0.25, ηt = 0.12,",
+        "bibliographic": false
+      }
+    ]
+  },
+  "P16": {
+    "title": "Energy Minimization Oriented Resource Allocation for Integrated Sensing and Communication in Marine IoT Networks",
+    "venue": "arXiv (Cornell University)",
+    "n_hits": 3,
+    "n_nonbiblio": 3,
+    "hits": [
+      {
+        "term": "hardware\\s+power",
+        "context": " both the duration in phase -i t1 and the duration in phase-ii t2 cannot exceed a speciﬁed upper-bound. constraints (31e) and (31f) cap the total tran s- mission power radiated by the ua v within its hardware power limit pua v,max. constraint (31g) provides an upper bound for usv’s transmit power. constraint (31h) implies that the ua v’s processing-rate cannot exceed its computing capacit y f ua v,max. iv. a lg",
+        "bibliographic": false
+      },
+      {
+        "term": "duty[- ]cycle",
+        "context": "ignal fro m all usvs, the sensing estimation rate q of the ua v for sensing the target in this phase can be expressed as q = δ 2τ log(1 + 2τb ua vuh ass0(as)h u uh λu ) (13) in which δ stands for the duty cycle, while τ refers to single pulse time length. the vector u denotes the ua v’s sensing receive beamforming. in eq. (13), λ denotes the total interference of the ua v for sensing the target in this phas",
+        "bibliographic": false
+      },
+      {
+        "term": "duty[- ]cycle",
+        "context": "s linking the ua v and sbs, as rayleigh fading channels with standard path loss attenuation, and we conﬁgure core system parameters as bua v=bbs = 10 mhz for communication bandwidth, δ = 0.01 for the duty cycle factor,τ = 2 × 10−6 s for pulse time length, cua v= 1 × 103 cycles/bit for the ua v’s per-bit cpu computation overhead, ωua v = 1 × 10−28 for the ua v gpu power efﬁciency coefﬁcient, σ2 bs = σ2 0 as ",
+        "bibliographic": false
+      }
+    ]
+  },
+  "P22": {
+    "title": "Maximize Sensing Energy Efficiency of RIS-Assisted ISCPT Systems With Imperfect Channels and Charging",
+    "venue": "IEEE Communications Letters",
+    "n_hits": 4,
+    "n_nonbiblio": 4,
+    "hits": [
+      {
+        "term": "circuit\\s+power",
+        "context": "w,e see = log \u0010 det \u0010 pwwh ph σ2 r + in \u0011\u0011 1 η∥w∥2 f + pc (9a) s.t. pr{rk≥ rk}≥ 1− ρk, ∀k∈k , (9b) peh≥ preq, (9c) mi≥ mimin, (9d) ∥w∥2 f≤ pmax, (9e) |em|2 = 1, 1≤ m≤ m, (9f) where pc is the combined circuit power consumption of the bs and the ris, and η ∈ (0, 1] is the amplifier efficiency. constraint (9b) represents the outag*e probability, rk denotes the required rate for user k, ρk ∈ [0, 1] represents the ",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": " the ris-assisted isac system with imperfect channel model and practical charging model which are overlooked in existing works is modeled as max w,e see = log \u0010 det \u0010 pwwh ph σ2 r + in \u0011\u0011 1 η∥w∥2 f + pc (9a) s.t. pr{rk≥ rk}≥ 1− ρk, ∀k∈k , (9b) peh≥ preq, (9c) mi≥ mimin, (9d) ∥w∥2 f≤ pmax, (9e) |em|2 = 1, 1≤ m≤ m, (9f) where pc is the combined circuit power consumption of the bs and the ris, and η ∈ ",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": " is modeled as max w,e see = log \u0010 det \u0010 pwwh ph σ2 r + in \u0011\u0011 1 η∥w∥2 f + pc (9a) s.t. pr{rk≥ rk}≥ 1− ρk, ∀k∈k , (9b) peh≥ preq, (9c) mi≥ mimin, (9d) ∥w∥2 f≤ pmax, (9e) |em|2 = 1, 1≤ m≤ m, (9f) where pc is the combined circuit power consumption of the bs and the ris, and η ∈ (0, 1] is the amplifier efficiency. constraint (9b) represents the outag*e probability, rk denotes the required rate for user ",
+        "bibliographic": false
+      },
+      {
+        "term": "\\bp_?\\{?c\\}?\\b",
+        "context": "or the fractional objective in (9a), we apply the dinkelbach transformation. given a parameter µ, (9a) is converted into the following subtractive form log \u0012 det \u0012 pwwhph σ2r + in \u0013 \u0013 −µ \u0012 1 η∥w∥2 f +pc \u0013 . (15) b. beamforming design to address the nonconvex and coupled problem, the ao framework is used and the problem is decomposed into two subproblems. firstly, by fixing e, wk is optimized. let γk",
+        "bibliographic": false
+      }
+    ]
+  }
+}

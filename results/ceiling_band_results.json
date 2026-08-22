@@ -1,0 +1,410 @@
+{
+  "spread": 0.333,
+  "cadence_s": 35.0,
+  "f_event_all_uplinks": 0.173,
+  "f_event_status_only": 0.107,
+  "firm_comm_ceiling_pct": 5.7608999999999995,
+  "model_event_current_uA": 0.10104936921810699,
+  "band_all_pct": [
+    0.20343143617968915,
+    32.483495107364405
+  ],
+  "band_fits_5y_pct": [
+    0.20343143617968915,
+    32.483495107364405
+  ],
+  "cells": {
+    "1uA_0.05mJ": {
+      "i_sleep_uA": 1.0,
+      "i_sched_uA": 0.3968253968253968,
+      "i_total_uA": 1.4978747660435037,
+      "f_total": 0.332387444751869,
+      "ceiling_pct": 11.068501910237238,
+      "fits_5y_rating": true
+    },
+    "1uA_0.10mJ": {
+      "i_sleep_uA": 1.0,
+      "i_sched_uA": 0.7936507936507936,
+      "i_total_uA": 1.8947001628689004,
+      "f_total": 0.4722120050457859,
+      "ceiling_pct": 15.724659768024672,
+      "fits_5y_rating": true
+    },
+    "1uA_0.20mJ": {
+      "i_sleep_uA": 1.0,
+      "i_sched_uA": 1.5873015873015872,
+      "i_total_uA": 2.688350956519694,
+      "f_total": 0.6280247571192908,
+      "ceiling_pct": 20.913224412072385,
+      "fits_5y_rating": true
+    },
+    "1uA_0.50mJ": {
+      "i_sleep_uA": 1.0,
+      "i_sched_uA": 3.968253968253968,
+      "i_total_uA": 5.069303337472076,
+      "f_total": 0.8027342351742807,
+      "ceiling_pct": 26.73105003130355,
+      "fits_5y_rating": true
+    },
+    "1uA_1.00mJ": {
+      "i_sleep_uA": 1.0,
+      "i_sched_uA": 7.936507936507936,
+      "i_total_uA": 9.037557305726043,
+      "f_total": 0.8893506324583506,
+      "ceiling_pct": 29.615376060863074,
+      "fits_5y_rating": true
+    },
+    "1uA_2.00mJ": {
+      "i_sleep_uA": 1.0,
+      "i_sched_uA": 15.873015873015872,
+      "i_total_uA": 16.97406524223398,
+      "f_total": 0.9410865938283391,
+      "ceiling_pct": 31.338183574483697,
+      "fits_5y_rating": true
+    },
+    "1uA_5.00mJ": {
+      "i_sleep_uA": 1.0,
+      "i_sched_uA": 39.682539682539684,
+      "i_total_uA": 40.783589051757794,
+      "f_total": 0.9754803335544865,
+      "ceiling_pct": 32.483495107364405,
+      "fits_5y_rating": true
+    },
+    "2uA_0.05mJ": {
+      "i_sleep_uA": 2.0,
+      "i_sched_uA": 0.3968253968253968,
+      "i_total_uA": 2.4978747660435037,
+      "f_total": 0.19931934651476144,
+      "ceiling_pct": 6.637334238941556,
+      "fits_5y_rating": true
+    },
+    "2uA_0.10mJ": {
+      "i_sleep_uA": 2.0,
+      "i_sched_uA": 0.7936507936507936,
+      "i_total_uA": 2.8947001628689004,
+      "f_total": 0.30908215446472176,
+      "ceiling_pct": 10.292435743675236,
+      "fits_5y_rating": true
+    },
+    "2uA_0.20mJ": {
+      "i_sleep_uA": 2.0,
+      "i_sched_uA": 1.5873015873015872,
+      "i_total_uA": 3.688350956519694,
+      "f_total": 0.4577522520017488,
+      "ceiling_pct": 15.243149991658235,
+      "fits_5y_rating": true
+    },
+    "2uA_0.50mJ": {
+      "i_sleep_uA": 2.0,
+      "i_sched_uA": 3.968253968253968,
+      "i_total_uA": 6.069303337472076,
+      "f_total": 0.6704728881069536,
+      "ceiling_pct": 22.326747173961557,
+      "fits_5y_rating": true
+    },
+    "2uA_1.00mJ": {
+      "i_sleep_uA": 2.0,
+      "i_sched_uA": 7.936507936507936,
+      "i_total_uA": 10.037557305726043,
+      "f_total": 0.8007483355677505,
+      "ceiling_pct": 26.664919574406092,
+      "fits_5y_rating": true
+    },
+    "2uA_2.00mJ": {
+      "i_sleep_uA": 2.0,
+      "i_sched_uA": 15.873015873015872,
+      "i_total_uA": 17.97406524223398,
+      "f_total": 0.8887285667963102,
+      "ceiling_pct": 29.59466127431713,
+      "fits_5y_rating": true
+    },
+    "2uA_5.00mJ": {
+      "i_sleep_uA": 2.0,
+      "i_sched_uA": 39.682539682539684,
+      "i_total_uA": 41.783589051757794,
+      "f_total": 0.9521343176737983,
+      "ceiling_pct": 31.706072778537486,
+      "fits_5y_rating": true
+    },
+    "5uA_0.05mJ": {
+      "i_sleep_uA": 5.0,
+      "i_sched_uA": 0.3968253968253968,
+      "i_total_uA": 5.497874766043505,
+      "f_total": 0.09055767678058531,
+      "ceiling_pct": 3.015570636793491,
+      "fits_5y_rating": true
+    },
+    "5uA_0.10mJ": {
+      "i_sleep_uA": 5.0,
+      "i_sched_uA": 0.7936507936507936,
+      "i_total_uA": 5.894700162868901,
+      "f_total": 0.1517804363493626,
+      "ceiling_pct": 5.054288530433775,
+      "fits_5y_rating": true
+    },
+    "5uA_0.20mJ": {
+      "i_sleep_uA": 5.0,
+      "i_sched_uA": 1.5873015873015872,
+      "i_total_uA": 6.688350956519694,
+      "f_total": 0.25243157356656315,
+      "ceiling_pct": 8.405971399766553,
+      "fits_5y_rating": true
+    },
+    "5uA_0.50mJ": {
+      "i_sleep_uA": 5.0,
+      "i_sched_uA": 3.968253968253968,
+      "i_total_uA": 9.069303337472075,
+      "f_total": 0.44868973790508687,
+      "ceiling_pct": 14.941368272239394,
+      "fits_5y_rating": true
+    },
+    "5uA_1.00mJ": {
+      "i_sleep_uA": 5.0,
+      "i_sched_uA": 7.936507936507936,
+      "i_total_uA": 13.037557305726043,
+      "f_total": 0.6164925773477505,
+      "ceiling_pct": 20.529202825680095,
+      "fits_5y_rating": true
+    },
+    "5uA_2.00mJ": {
+      "i_sleep_uA": 5.0,
+      "i_sched_uA": 15.873015873015872,
+      "i_total_uA": 20.97406524223398,
+      "f_total": 0.7616103534410745,
+      "ceiling_pct": 25.36162476958778,
+      "fits_5y_rating": true
+    },
+    "5uA_5.00mJ": {
+      "i_sleep_uA": 5.0,
+      "i_sched_uA": 39.682539682539684,
+      "i_total_uA": 44.783589051757794,
+      "f_total": 0.8883519587002876,
+      "ceiling_pct": 29.582120224719578,
+      "fits_5y_rating": true
+    },
+    "10uA_0.05mJ": {
+      "i_sleep_uA": 10.0,
+      "i_sched_uA": 0.3968253968253968,
+      "i_total_uA": 10.497874766043504,
+      "f_total": 0.04742624361017649,
+      "ceiling_pct": 1.5792939122188772,
+      "fits_5y_rating": true
+    },
+    "10uA_0.10mJ": {
+      "i_sleep_uA": 10.0,
+      "i_sched_uA": 0.7936507936507936,
+      "i_total_uA": 10.8947001628689,
+      "f_total": 0.08212251365284928,
+      "ceiling_pct": 2.734679704639881,
+      "fits_5y_rating": true
+    },
+    "10uA_0.20mJ": {
+      "i_sleep_uA": 10.0,
+      "i_sched_uA": 1.5873015873015872,
+      "i_total_uA": 11.688350956519693,
+      "f_total": 0.1444473187706553,
+      "ceiling_pct": 4.810095715062822,
+      "fits_5y_rating": true
+    },
+    "10uA_0.50mJ": {
+      "i_sleep_uA": 10.0,
+      "i_sched_uA": 3.968253968253968,
+      "i_total_uA": 14.069303337472075,
+      "f_total": 0.289232753027218,
+      "ceiling_pct": 9.631450675806361,
+      "fits_5y_rating": true
+    },
+    "10uA_1.00mJ": {
+      "i_sleep_uA": 10.0,
+      "i_sched_uA": 7.936507936507936,
+      "i_total_uA": 18.037557305726043,
+      "f_total": 0.44560120694250055,
+      "ceiling_pct": 14.838520191185268,
+      "fits_5y_rating": true
+    },
+    "10uA_2.00mJ": {
+      "i_sleep_uA": 10.0,
+      "i_sched_uA": 15.873015873015872,
+      "i_total_uA": 25.97406524223398,
+      "f_total": 0.6150005820521331,
+      "ceiling_pct": 20.479519382336036,
+      "fits_5y_rating": true
+    },
+    "10uA_5.00mJ": {
+      "i_sleep_uA": 10.0,
+      "i_sched_uA": 39.682539682539684,
+      "i_total_uA": 49.783589051757794,
+      "f_total": 0.7991305932241357,
+      "ceiling_pct": 26.611048754363722,
+      "fits_5y_rating": true
+    },
+    "20uA_0.05mJ": {
+      "i_sleep_uA": 20.0,
+      "i_sched_uA": 0.3968253968253968,
+      "i_total_uA": 20.497874766043502,
+      "f_total": 0.02428909200227315,
+      "ceiling_pct": 0.8088267636756958,
+      "fits_5y_rating": true
+    },
+    "20uA_0.10mJ": {
+      "i_sleep_uA": 20.0,
+      "i_sched_uA": 0.7936507936507936,
+      "i_total_uA": 20.8947001628689,
+      "f_total": 0.042819478427301626,
+      "ceiling_pct": 1.4258886316291444,
+      "fits_5y_rating": true
+    },
+    "20uA_0.20mJ": {
+      "i_sleep_uA": 20.0,
+      "i_sched_uA": 1.5873015873015872,
+      "i_total_uA": 21.688350956519695,
+      "f_total": 0.07784598100171199,
+      "ceiling_pct": 2.5922711673570094,
+      "fits_5y_rating": true
+    },
+    "20uA_0.50mJ": {
+      "i_sleep_uA": 20.0,
+      "i_sched_uA": 3.968253968253968,
+      "i_total_uA": 24.069303337472075,
+      "f_total": 0.16906610384259926,
+      "ceiling_pct": 5.629901257958556,
+      "fits_5y_rating": true
+    },
+    "20uA_1.00mJ": {
+      "i_sleep_uA": 20.0,
+      "i_sched_uA": 7.936507936507936,
+      "i_total_uA": 28.037557305726043,
+      "f_total": 0.2866710968463915,
+      "ceiling_pct": 9.546147524984839,
+      "fits_5y_rating": true
+    },
+    "20uA_2.00mJ": {
+      "i_sleep_uA": 20.0,
+      "i_sched_uA": 15.873015873015872,
+      "i_total_uA": 35.97406524223398,
+      "f_total": 0.44404392816523375,
+      "ceiling_pct": 14.786662807902285,
+      "fits_5y_rating": true
+    },
+    "20uA_5.00mJ": {
+      "i_sleep_uA": 20.0,
+      "i_sched_uA": 39.682539682539684,
+      "i_total_uA": 59.783589051757794,
+      "f_total": 0.6654600314697575,
+      "ceiling_pct": 22.159819047942925,
+      "fits_5y_rating": true
+    },
+    "40uA_0.05mJ": {
+      "i_sleep_uA": 40.0,
+      "i_sched_uA": 0.3968253968253968,
+      "i_total_uA": 40.49787476604351,
+      "f_total": 0.012293849218501702,
+      "ceiling_pct": 0.4093851789761067,
+      "fits_5y_rating": true
+    },
+    "40uA_0.10mJ": {
+      "i_sleep_uA": 40.0,
+      "i_sched_uA": 0.7936507936507936,
+      "i_total_uA": 40.8947001628689,
+      "f_total": 0.021878144583665642,
+      "ceiling_pct": 0.7285422146360659,
+      "fits_5y_rating": true
+    },
+    "40uA_0.20mJ": {
+      "i_sleep_uA": 40.0,
+      "i_sched_uA": 1.5873015873015872,
+      "i_total_uA": 41.6883509565197,
+      "f_total": 0.040499346167005214,
+      "ceiling_pct": 1.3486282273612737,
+      "fits_5y_rating": true
+    },
+    "40uA_0.50mJ": {
+      "i_sleep_uA": 40.0,
+      "i_sched_uA": 3.968253968253968,
+      "i_total_uA": 44.06930333747208,
+      "f_total": 0.09233872626282139,
+      "ceiling_pct": 3.0748795845519523,
+      "fits_5y_rating": true
+    },
+    "40uA_1.00mJ": {
+      "i_sleep_uA": 40.0,
+      "i_sched_uA": 7.936507936507936,
+      "i_total_uA": 48.03755730572605,
+      "f_total": 0.16731819344128,
+      "ceiling_pct": 5.571695841594624,
+      "fits_5y_rating": true
+    },
+    "40uA_2.00mJ": {
+      "i_sleep_uA": 40.0,
+      "i_sched_uA": 15.873015873015872,
+      "i_total_uA": 55.97406524223398,
+      "f_total": 0.2853833319610508,
+      "ceiling_pct": 9.503264954302994,
+      "fits_5y_rating": true
+    },
+    "40uA_5.00mJ": {
+      "i_sleep_uA": 40.0,
+      "i_sched_uA": 39.682539682539684,
+      "i_total_uA": 79.78358905175779,
+      "f_total": 0.49864376276616357,
+      "ceiling_pct": 16.604837300113246,
+      "fits_5y_rating": true
+    },
+    "81uA_0.05mJ": {
+      "i_sleep_uA": 81.0,
+      "i_sched_uA": 0.3968253968253968,
+      "i_total_uA": 81.4978747660435,
+      "f_total": 0.006109052137528203,
+      "ceiling_pct": 0.20343143617968915,
+      "fits_5y_rating": true
+    },
+    "81uA_0.10mJ": {
+      "i_sleep_uA": 81.0,
+      "i_sched_uA": 0.7936507936507936,
+      "i_total_uA": 81.8947001628689,
+      "f_total": 0.010925006881880717,
+      "ceiling_pct": 0.36380272916662787,
+      "fits_5y_rating": true
+    },
+    "81uA_0.20mJ": {
+      "i_sleep_uA": 81.0,
+      "i_sched_uA": 1.5873015873015872,
+      "i_total_uA": 82.68835095651968,
+      "f_total": 0.02041824437165866,
+      "ceiling_pct": 0.6799275375762335,
+      "fits_5y_rating": true
+    },
+    "81uA_0.50mJ": {
+      "i_sleep_uA": 81.0,
+      "i_sched_uA": 3.968253968253968,
+      "i_total_uA": 85.06930333747206,
+      "f_total": 0.0478351553124756,
+      "ceiling_pct": 1.5929106719054376,
+      "fits_5y_rating": true
+    },
+    "81uA_1.00mJ": {
+      "i_sleep_uA": 81.0,
+      "i_sched_uA": 7.936507936507936,
+      "i_total_uA": 89.03755730572604,
+      "f_total": 0.09027153876344207,
+      "ceiling_pct": 3.0060422408226213,
+      "fits_5y_rating": true
+    },
+    "81uA_2.00mJ": {
+      "i_sleep_uA": 81.0,
+      "i_sched_uA": 15.873015873015872,
+      "i_total_uA": 96.97406524223398,
+      "f_total": 0.16472512730421227,
+      "ceiling_pct": 5.485346739230269,
+      "fits_5y_rating": true
+    },
+    "81uA_5.00mJ": {
+      "i_sleep_uA": 81.0,
+      "i_sched_uA": 39.682539682539684,
+      "i_total_uA": 120.78358905175779,
+      "f_total": 0.3293790933361805,
+      "ceiling_pct": 10.968323808094812,
+      "fits_5y_rating": true
+    }
+  }
+}

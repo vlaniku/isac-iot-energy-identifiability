@@ -1,0 +1,29 @@
+{
+  "denominator": 360,
+  "transmit_terms": {
+    "\"transmit power\"": 49,
+    "\"power allocation\"": 46,
+    "\"beamforming\"": 154,
+    "\"power control\"": 14,
+    "\"transmit beamforming\"": 22,
+    "\"waveform design\"": 14,
+    "\"power splitting\"": 3
+  },
+  "standing_terms": {
+    "\"sleep\"": 1,
+    "\"idle\"": 0,
+    "\"quiescent\"": 0,
+    "\"duty cycle\"": 0,
+    "\"static power\"": 0,
+    "\"circuit power\"": 5,
+    "\"standby\"": 0,
+    "\"sleep mode\"": 0,
+    "\"low-power mode\"": 0,
+    "\"battery lifetime\"": 0,
+    "\"battery life\"": 0
+  },
+  "any_transmit": 214,
+  "any_standing": 6,
+  "source": "OpenAlex title_and_abstract.search, 2018-, run 20 Aug 2026",
+  "caveat": "title+abstract salience, not full-text presence"
+}

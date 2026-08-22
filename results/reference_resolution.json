@@ -1,0 +1,1359 @@
+{
+  "_method": {
+    "source": "OpenAlex /works?search=<title>",
+    "run_date": "2026-08-20",
+    "note": "Bibliographic verification only. That a paper says what we claim it says is recorded in LITERATURE_CHECK.md from full-text reads, not here. The TGCN references.bib is deliberately NOT reused; see module docstring."
+  },
+  "entries": {
+    "sorensen2022": {
+      "query": "Modeling and Experimental Validation for Battery Lifetime Estimation in NB-IoT and LTE-M",
+      "purpose": "the one bench-validated LPWAN lifetime model; 3GPP reference traffic profile",
+      "expected_venue_fragment": "Internet of Things",
+      "best": {
+        "title": "Modeling and Experimental Validation for Battery Lifetime Estimation in NB-IoT and LTE-M",
+        "authors": [
+          "André Sørensen",
+          "Hua Wang",
+          "Maxime Jérôme Remy",
+          "Nicolaj Kjettrup",
+          "René Sørensen",
+          "Jimmy Jessen Nielsen",
+          "Petar Popovski",
+          "Germán Corrales Madueño"
+        ],
+        "n_authors": 8,
+        "year": 2022,
+        "venue": "IEEE Internet of Things Journal",
+        "volume": "9",
+        "issue": "12",
+        "first_page": "9804",
+        "last_page": "9819",
+        "doi": "https://doi.org/10.1109/jiot.2022.3152173",
+        "type": "article",
+        "cited_by": 40
+      },
+      "alternates": [
+        {
+          "title": "Analytical Modeling and Experimental Validation of NB-IoT Device Energy Consumption",
+          "authors": [
+            "Pilar Andrés-Maldonado",
+            "Mads Lauridsen",
+            "Pablo Ameigeiras",
+            "Juan M. López-Soler"
+          ],
+          "n_authors": 4,
+          "year": 2019,
+          "venue": "IEEE Internet of Things Journal",
+          "volume": "6",
+          "issue": "3",
+          "first_page": "5691",
+          "last_page": "5701",
+          "doi": "https://doi.org/10.1109/jiot.2019.2904802",
+          "type": "article",
+          "cited_by": 70
+        },
+        {
+          "title": "IoT Connectivity Technologies and Applications: A Survey",
+          "authors": [
+            "Jie Ding",
+            "Hossein Mashad Nemati",
+            "Chathurika Ranaweera",
+            "Jinho Choi"
+          ],
+          "n_authors": 4,
+          "year": 2020,
+          "venue": "IEEE Access",
+          "volume": "8",
+          "issue": null,
+          "first_page": "67646",
+          "last_page": "67673",
+          "doi": "https://doi.org/10.1109/access.2020.2985932",
+          "type": "article",
+          "cited_by": 385
+        },
+        {
+          "title": "The Art of Designing Remote IoT Devices—Technologies and Strategies for a Long Battery Life",
+          "authors": [
+            "Gilles Callebaut",
+            "Guus Leenders",
+            "Jarne Van Mulders",
+            "Geoffrey Ottoy",
+            "Lieven De Strycker",
+            "Liesbet Van der Perre"
+          ],
+          "n_authors": 6,
+          "year": 2021,
+          "venue": "Sensors",
+          "volume": "21",
+          "issue": "3",
+          "first_page": "913",
+          "last_page": "913",
+          "doi": "https://doi.org/10.3390/s21030913",
+          "type": "article",
+          "cited_by": 140
+        }
+      ],
+      "venue_matches_expectation": true
+    },
+    "szafranski2024": {
+      "query": "Predictability of LoRaWAN Link Quality based on Weather Data: Insights from a Long-Term Study",
+      "purpose": "the cross-sectional prediction class; independent SF/ADR confound",
+      "expected_venue_fragment": "WoWMoM",
+      "best": {
+        "title": "Predictability of LoRaWAN Link Quality based on Weather Data: Insights from a Long-Term Study",
+        "authors": [
+          "Daniel Szafranski"
+        ],
+        "n_authors": 1,
+        "year": 2024,
+        "venue": null,
+        "volume": null,
+        "issue": null,
+        "first_page": "249",
+        "last_page": "258",
+        "doi": "https://doi.org/10.1109/wowmom60985.2024.00048",
+        "type": "conference-paper",
+        "cited_by": 4
+      },
+      "alternates": [
+        {
+          "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
+          "authors": [
+            "Adil Rasheed",
+            "Omer San",
+            "Trond Kvamsdal"
+          ],
+          "n_authors": 3,
+          "year": 2020,
+          "venue": "IEEE Access",
+          "volume": "8",
+          "issue": null,
+          "first_page": "21980",
+          "last_page": "22012",
+          "doi": "https://doi.org/10.1109/access.2020.2970143",
+          "type": "article",
+          "cited_by": 1808
+        },
+        {
+          "title": "Internet-of-Things (IoT)-Based Smart Agriculture: Toward Making the Fields Talk",
+          "authors": [
+            "Muhammad Ayaz",
+            "Mohammad Ammad-Uddin",
+            "Zubair Sharif",
+            "Ali Mansour",
+            "El‐Hadi M. Aggoune"
+          ],
+          "n_authors": 5,
+          "year": 2019,
+          "venue": "IEEE Access",
+          "volume": "7",
+          "issue": null,
+          "first_page": "129551",
+          "last_page": "129583",
+          "doi": "https://doi.org/10.1109/access.2019.2932609",
+          "type": "article",
+          "cited_by": 1274
+        },
+        {
+          "title": "A Survey on the Role of IoT in Agriculture for the Implementation of Smart Farming",
+          "authors": [
+            "Muhammad Shoaib Farooq",
+            "Shamyla Riaz",
+            "Adnan Abid",
+            "Kamran Abid",
+            "Muhammad Azhar Naeem"
+          ],
+          "n_authors": 5,
+          "year": 2019,
+          "venue": "IEEE Access",
+          "volume": "7",
+          "issue": null,
+          "first_page": "156237",
+          "last_page": "156271",
+          "doi": "https://doi.org/10.1109/access.2019.2949703",
+          "type": "article",
+          "cited_by": 879
+        }
+      ],
+      "venue_matches_expectation": false
+    },
+    "guerra2024": {
+      "query": "Forecasting LoRaWAN RSSI using weather parameters: A comparative study of ARIMA, artificial intelligence and hybrid approaches",
+      "purpose": "the partial exception: AR terms, but on hourly averages",
+      "expected_venue_fragment": "Computer Networks",
+      "best": {
+        "title": "Forecasting LoRaWAN RSSI using weather parameters: A comparative study of ARIMA, artificial intelligence and hybrid approaches",
+        "authors": [
+          "Renata Rojas Guerra",
+          "Anna Vizziello",
+          "Pietro Savazzi",
+          "Emanuele Goldoni",
+          "Paolo Gamba"
+        ],
+        "n_authors": 5,
+        "year": 2024,
+        "venue": "Computer Networks",
+        "volume": "243",
+        "issue": null,
+        "first_page": "110258",
+        "last_page": "110258",
+        "doi": "https://doi.org/10.1016/j.comnet.2024.110258",
+        "type": "article",
+        "cited_by": 32
+      },
+      "alternates": [
+        {
+          "title": "Recent Developments in AI and ML for IoT: A Systematic Literature Review on LoRaWAN Energy Efficiency and Performance Optimization",
+          "authors": [
+            "Maram Abdullah Alkhayyal",
+            "Almetwally M. Mostafa"
+          ],
+          "n_authors": 2,
+          "year": 2024,
+          "venue": "Sensors",
+          "volume": "24",
+          "issue": "14",
+          "first_page": "4482",
+          "last_page": "4482",
+          "doi": "https://doi.org/10.3390/s24144482",
+          "type": "review",
+          "cited_by": 36
+        },
+        {
+          "title": "Performance Analysis of LoRaWAN Communication Utilizing the RFM96 Module",
+          "authors": [
+            "Muhammad Yassir",
+            "Harry Soepandi",
+            "Ajib Hanani",
+            "Johan Ericka Wahyu Prakasa",
+            "Ganis Chandra Puspitadewi",
+            "Sastya Hendri Wibowo",
+            "Puput Dani Prasetyo Adi",
+            "Akio Kitagawa"
+          ],
+          "n_authors": 8,
+          "year": 2024,
+          "venue": "ILKOM Jurnal Ilmiah",
+          "volume": "16",
+          "issue": "3",
+          "first_page": "255",
+          "last_page": "270",
+          "doi": "https://doi.org/10.33096/ilkom.v16i3.2326.255-270",
+          "type": "article",
+          "cited_by": 2
+        },
+        {
+          "title": "Enhancing LoRaWAN Sensor Networks: A Deep Learning Approach for Performance Optimizing and Energy Efficiency",
+          "authors": [
+            "Maram Abdullah Alkhayyal",
+            "Almetwally M. Mostafa"
+          ],
+          "n_authors": 2,
+          "year": 2025,
+          "venue": "Computers, materials & continua/Computers, materials & continua (Print)",
+          "volume": "83",
+          "issue": "1",
+          "first_page": "1079",
+          "last_page": "1100",
+          "doi": "https://doi.org/10.32604/cmc.2025.061836",
+          "type": "article",
+          "cited_by": 2
+        }
+      ],
+      "venue_matches_expectation": true
+    },
+    "comnet2022": {
+      "query": "Correlation between weather and signal strength in LoRaWAN networks: An extensive dataset",
+      "purpose": "anchors the cross-sectional class",
+      "expected_venue_fragment": "Computer Networks",
+      "best": {
+        "title": "Correlation between weather and signal strength in LoRaWAN networks: An extensive dataset",
+        "authors": [
+          "Emanuele Goldoni",
+          "Pietro Savazzi",
+          "Lorenzo Favalli",
+          "Anna Vizziello"
+        ],
+        "n_authors": 4,
+        "year": 2021,
+        "venue": "Computer Networks",
+        "volume": "202",
+        "issue": null,
+        "first_page": "108627",
+        "last_page": "108627",
+        "doi": "https://doi.org/10.1016/j.comnet.2021.108627",
+        "type": "article",
+        "cited_by": 35
+      },
+      "alternates": [
+        {
+          "title": "City Scale Particulate Matter Monitoring Using LoRaWAN Based Air Quality IoT Devices",
+          "authors": [
+            "Steven J. Johnston",
+            "Philip J. Basford",
+            "Florentin M. J. Bulot",
+            "Mihaela Apetroaie-Cristea",
+            "Natasha H. C. Easton",
+            "Charlie Davenport",
+            "Gavin L. Foster",
+            "Matthew Loxham",
+            "Andrew Morris",
+            "Simón Cox"
+          ],
+          "n_authors": 10,
+          "year": 2019,
+          "venue": "Sensors",
+          "volume": "19",
+          "issue": "1",
+          "first_page": "209",
+          "last_page": "209",
+          "doi": "https://doi.org/10.3390/s19010209",
+          "type": "article",
+          "cited_by": 137
+        },
+        {
+          "title": "LoRaWAN Meets ML: A Survey on Enhancing Performance with Machine Learning",
+          "authors": [
+            "Arshad Farhad",
+            "Jae-Young Pyun"
+          ],
+          "n_authors": 2,
+          "year": 2023,
+          "venue": "Sensors",
+          "volume": "23",
+          "issue": "15",
+          "first_page": "6851",
+          "last_page": "6851",
+          "doi": "https://doi.org/10.3390/s23156851",
+          "type": "article",
+          "cited_by": 50
+        },
+        {
+          "title": "Internet of Things and Wireless Sensor Networks for Smart Agriculture Applications: A Survey",
+          "authors": [
+            "Md. Najmul Mowla",
+            "Neazmul Mowla",
+            "A. F. M. Shahen Shah",
+            "Khaled M. Rabie",
+            "Thokozani Shongwe"
+          ],
+          "n_authors": 5,
+          "year": 2023,
+          "venue": "IEEE Access",
+          "volume": "11",
+          "issue": null,
+          "first_page": "145813",
+          "last_page": "145852",
+          "doi": "https://doi.org/10.1109/access.2023.3346299",
+          "type": "article",
+          "cited_by": 276
+        }
+      ],
+      "venue_matches_expectation": true
+    },
+    "trassl2022": {
+      "query": "On the Outage Probability of Channel Prediction Enabled Max-Min Radio Resource Allocation",
+      "purpose": "nearest prior art to the energy identity; bounds outage, not energy",
+      "expected_venue_fragment": "WCNC",
+      "best": {
+        "title": "On the Outage Probability of Channel Prediction Enabled Max-Min Radio Resource Allocation",
+        "authors": [
+          "Andreas Trasl",
+          "Philipp Schulz",
+          "Lucas Scheuvens",
+          "Nick Schwarzenberg",
+          "Gerhard Fettweis"
+        ],
+        "n_authors": 5,
+        "year": 2022,
+        "venue": "2022 IEEE Wireless Communications and Networking Conference (WCNC)",
+        "volume": null,
+        "issue": null,
+        "first_page": "638",
+        "last_page": "643",
+        "doi": "https://doi.org/10.1109/wcnc51071.2022.9771598",
+        "type": "conference-paper",
+        "cited_by": 7
+      },
+      "alternates": [
+        {
+          "title": "Millimeter Wave Channel Modeling and Cellular Capacity Evaluation",
+          "authors": [
+            "Mustafa Riza Akdeniz",
+            "Yuanpeng Liu",
+            "Mathew K. Samimi",
+            "Shu Sun",
+            "Sundeep Rangan",
+            "Theodore S. Rappaport",
+            "Elza Erkip"
+          ],
+          "n_authors": 7,
+          "year": 2014,
+          "venue": "IEEE Journal on Selected Areas in Communications",
+          "volume": "32",
+          "issue": "6",
+          "first_page": "1164",
+          "last_page": "1179",
+          "doi": "https://doi.org/10.1109/jsac.2014.2328154",
+          "type": "article",
+          "cited_by": 2613
+        },
+        {
+          "title": "A Survey on Resource Allocation for 5G Heterogeneous Networks: Current Research, Future Trends, and Challenges",
+          "authors": [
+            "Yongjun Xu",
+            "Guan Gui",
+            "Haris Gacanin",
+            "Fumiyuki Adachi"
+          ],
+          "n_authors": 4,
+          "year": 2021,
+          "venue": "IEEE Communications Surveys & Tutorials",
+          "volume": "23",
+          "issue": "2",
+          "first_page": "668",
+          "last_page": "695",
+          "doi": "https://doi.org/10.1109/comst.2021.3059896",
+          "type": "article",
+          "cited_by": 628
+        },
+        {
+          "title": "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+          "authors": [
+            "Fan Liu",
+            "Yuanhao Cui",
+            "Christos Masouros",
+            "Jie Xu",
+            "Tony Xiao Han",
+            "Yonina C. Eldar",
+            "Stefano Buzzi"
+          ],
+          "n_authors": 7,
+          "year": 2022,
+          "venue": "IEEE Journal on Selected Areas in Communications",
+          "volume": "40",
+          "issue": "6",
+          "first_page": "1728",
+          "last_page": "1767",
+          "doi": "https://doi.org/10.1109/jsac.2022.3156632",
+          "type": "article",
+          "cited_by": 3512
+        }
+      ],
+      "venue_matches_expectation": true
+    },
+    "ramli2021": {
+      "query": "A Study on the Impact of Nodes Density on the Energy Consumption of LoRa",
+      "purpose": "adjacent experimental study; bench, density not lifetime",
+      "expected_venue_fragment": "iJIM",
+      "best": {
+        "title": "A Study on the Impact of Nodes Density on the Energy Consumption of LoRa",
+        "authors": [
+          "Aizat Faiz Ramli",
+          "Muhammad Ikram Bin Shabry",
+          "M. Abu",
+          "Hafiz Basarudin"
+        ],
+        "n_authors": 4,
+        "year": 2021,
+        "venue": "International Journal of Interactive Mobile Technologies (iJIM)",
+        "volume": "15",
+        "issue": "14",
+        "first_page": "157",
+        "last_page": "157",
+        "doi": "https://doi.org/10.3991/ijim.v15i14.19825",
+        "type": "article",
+        "cited_by": 8
+      },
+      "alternates": [
+        {
+          "title": "Known and Unknown Facts of LoRa",
+          "authors": [
+            "Jansen Christian Liando",
+            "Amalinda Gamage",
+            "Agustinus W. Tengourtius",
+            "Mo Li"
+          ],
+          "n_authors": 4,
+          "year": 2019,
+          "venue": "ACM Transactions on Sensor Networks",
+          "volume": "15",
+          "issue": "2",
+          "first_page": "1",
+          "last_page": "35",
+          "doi": "https://doi.org/10.1145/3293534",
+          "type": "article",
+          "cited_by": 366
+        },
+        {
+          "title": "Performance Evaluation of LoRa Considering Scenario Conditions",
+          "authors": [
+            "Ramón Sanchez‐Iborra",
+            "Jesús Sánchez-Gómez",
+            "Juan Ballesta-Viñas",
+            "Maria‐Dolores Cano",
+            "Antonio Skármeta"
+          ],
+          "n_authors": 5,
+          "year": 2018,
+          "venue": "Sensors",
+          "volume": "18",
+          "issue": "3",
+          "first_page": "772",
+          "last_page": "772",
+          "doi": "https://doi.org/10.3390/s18030772",
+          "type": "article",
+          "cited_by": 305
+        },
+        {
+          "title": "An Experimental Evaluation of the Reliability of LoRa Long-Range Low-Power Wireless Communication",
+          "authors": [
+            "Marco Cattani",
+            "Carlo Alberto Boano",
+            "Kay Römer"
+          ],
+          "n_authors": 3,
+          "year": 2017,
+          "venue": "Journal of Sensor and Actuator Networks",
+          "volume": "6",
+          "issue": "2",
+          "first_page": "7",
+          "last_page": "7",
+          "doi": "https://doi.org/10.3390/jsan6020007",
+          "type": "article",
+          "cited_by": 244
+        }
+      ],
+      "venue_matches_expectation": true
+    },
+    "ye_ris": {
+      "query": "Energy Efficiency Optimization in Active Reconfigurable Intelligent Surface-Aided Integrated Sensing and Communication Systems",
+      "purpose": "f = 0.984, no sleep term anywhere",
+      "expected_venue_fragment": "Vehicular Technology",
+      "best": {
+        "title": "Energy Efficiency Optimization in Active Reconfigurable Intelligent Surface-Aided Integrated Sensing and Communication Systems",
+        "authors": [
+          "Junjie Ye",
+          "Mohamed Rihan",
+          "Peichang Zhang",
+          "Lei Huang",
+          "Stefano Buzzi",
+          "Zhen Chen"
+        ],
+        "n_authors": 6,
+        "year": 2024,
+        "venue": "IEEE Transactions on Vehicular Technology",
+        "volume": "74",
+        "issue": "1",
+        "first_page": "1180",
+        "last_page": "1195",
+        "doi": "https://doi.org/10.1109/tvt.2024.3465897",
+        "type": "article",
+        "cited_by": 32
+      },
+      "alternates": [
+        {
+          "title": "Wireless Communications Through Reconfigurable Intelligent Surfaces",
+          "authors": [
+            "Ertuğrul Başar",
+            "Marco Di Renzo",
+            "Julien de Rosny",
+            "Mérouane Debbah",
+            "Mohamed‐Slim Alouini",
+            "Rui Zhang"
+          ],
+          "n_authors": 6,
+          "year": 2019,
+          "venue": "IEEE Access",
+          "volume": "7",
+          "issue": null,
+          "first_page": "116753",
+          "last_page": "116773",
+          "doi": "https://doi.org/10.1109/access.2019.2935192",
+          "type": "article",
+          "cited_by": 3459
+        },
+        {
+          "title": "Intelligent Reflecting Surface-Aided Wireless Communications: A Tutorial",
+          "authors": [
+            "Qingqing Wu",
+            "Shuowen Zhang",
+            "Beixiong Zheng",
+            "Changsheng You",
+            "Rui Zhang"
+          ],
+          "n_authors": 5,
+          "year": 2021,
+          "venue": "IEEE Transactions on Communications",
+          "volume": "69",
+          "issue": "5",
+          "first_page": "3313",
+          "last_page": "3351",
+          "doi": "https://doi.org/10.1109/tcomm.2021.3051897",
+          "type": "article",
+          "cited_by": 3005
+        },
+        {
+          "title": "Smart Radio Environments Empowered by Reconfigurable Intelligent Surfaces: How it Works, State of Research, and Road Ahead",
+          "authors": [
+            "Marco Di Renzo",
+            "Alessio Zappone",
+            "Mérouane Debbah",
+            "Mohamed‐Slim Alouini",
+            "Chau Yuen",
+            "Julien de Rosny",
+            "Sergei Tretyakov"
+          ],
+          "n_authors": 7,
+          "year": 2020,
+          "venue": "Aaltodoc (Aalto University)",
+          "volume": null,
+          "issue": null,
+          "first_page": null,
+          "last_page": null,
+          "doi": "https://doi.org/10.1109/jsac.2020.3007211",
+          "type": "article",
+          "cited_by": 3317
+        }
+      ],
+      "venue_matches_expectation": true
+    },
+    "bai2026": {
+      "query": "Lightweight AI-Driven Adaptive Resource Allocation for Energy-Efficient ISAC in 6G-IoT Networks",
+      "purpose": "f = 0.97; SNR not SINR; nearest competing work",
+      "expected_venue_fragment": "Access",
+      "best": {
+        "title": "On the Road to 6G: Visions, Requirements, Key Technologies, and Testbeds",
+        "authors": [
+          "Cheng‐Xiang Wang",
+          "Xiaohu You",
+          "Xiqi Gao",
+          "Xiuming Zhu",
+          "Zixin Li",
+          "Chuan Zhang",
+          "Haiming Wang",
+          "Yongming Huang",
+          "Yunfei Chen",
+          "Harald Haas",
+          "John Thompson",
+          "Erik G. Larsson",
+          "Marco Di Renzo",
+          "Wen Tong",
+          "Peiying Zhu",
+          "Xuemin Shen",
+          "H. Vincent Poor",
+          "Lajos Hanzo"
+        ],
+        "n_authors": 18,
+        "year": 2023,
+        "venue": "IEEE Communications Surveys & Tutorials",
+        "volume": "25",
+        "issue": "2",
+        "first_page": "905",
+        "last_page": "974",
+        "doi": "https://doi.org/10.1109/comst.2023.3249835",
+        "type": "article",
+        "cited_by": 2193
+      },
+      "alternates": [
+        {
+          "title": "Overview of AI and communication for 6G network: fundamentals, challenges, and future research opportunities",
+          "authors": [
+            "Qimei Cui",
+            "Xiaohu You",
+            "Wei Ni",
+            "Guoshun Nan",
+            "Xuefei Zhang",
+            "Jianhua Zhang",
+            "Xinchen Lyu",
+            "Ming Ai",
+            "Xiaofeng Tao",
+            "Zhiyong Feng",
+            "Ping Zhang",
+            "Qingqing Wu",
+            "Meixia Tao",
+            "Yong‐Ming Huang",
+            "Chongwen Huang",
+            "Guangyi Liu",
+            "Chenghui Peng",
+            "Zhiwen Pan",
+            "Tao Sun",
+            "Dusit Niyato",
+            "Tao Chen",
+            "Muhammad Khurram Khan",
+            "Abbas Jamalipour",
+            "Mohsen Guizani",
+            "Chau Yuen"
+          ],
+          "n_authors": 25,
+          "year": 2025,
+          "venue": "Science China Information Sciences",
+          "volume": "68",
+          "issue": "7",
+          "first_page": null,
+          "last_page": null,
+          "doi": "https://doi.org/10.1007/s11432-024-4337-1",
+          "type": "article",
+          "cited_by": 177
+        },
+        {
+          "title": "A Survey of Beam Management for mmWave and THz Communications Towards 6G",
+          "authors": [
+            "Qing Xue",
+            "Chengwang Ji",
+            "Shaodan Ma",
+            "Jiajia Guo",
+            "Yongjun Xu",
+            "Qianbin Chen",
+            "Wei Zhang"
+          ],
+          "n_authors": 7,
+          "year": 2024,
+          "venue": "IEEE Communications Surveys & Tutorials",
+          "volume": "26",
+          "issue": "3",
+          "first_page": "1520",
+          "last_page": "1559",
+          "doi": "https://doi.org/10.1109/comst.2024.3361991",
+          "type": "article",
+          "cited_by": 251
+        },
+        {
+          "title": "At the Dawn of Generative AI Era: A Tutorial-cum-Survey on New Frontiers in 6G Wireless Intelligence",
+          "authors": [
+            "Abdulkadir Çelik",
+            "Ahmed M. Eltawil"
+          ],
+          "n_authors": 2,
+          "year": 2024,
+          "venue": "IEEE Open Journal of the Communications Society",
+          "volume": "5",
+          "issue": null,
+          "first_page": "2433",
+          "last_page": "2489",
+          "doi": "https://doi.org/10.1109/ojcoms.2024.3362271",
+          "type": "article",
+          "cited_by": 116
+        }
+      ],
+      "venue_matches_expectation": false
+    },
+    "kadriu2026": {
+      "query": "Enhancing Security in IoT LoRaWAN Smart Parking Systems through Anomaly Detection",
+      "purpose": "prior work on the same array; silence is detectable but not attributable",
+      "expected_venue_fragment": "Internet of Things",
+      "best": {
+        "title": "A Survey on IoT Security: Application Areas, Security Threats, and Solution Architectures",
+        "authors": [
+          "Vikas Hassija",
+          "Vinay Chamola",
+          "Vikas Saxena",
+          "Divyansh Jain",
+          "Pranav Goyal",
+          "Biplab Sikdar"
+        ],
+        "n_authors": 6,
+        "year": 2019,
+        "venue": "IEEE Access",
+        "volume": "7",
+        "issue": null,
+        "first_page": "82721",
+        "last_page": "82743",
+        "doi": "https://doi.org/10.1109/access.2019.2924045",
+        "type": "article",
+        "cited_by": 1391
+      },
+      "alternates": [
+        {
+          "title": "A Survey on LoRaWAN Architecture, Protocol and Technologies",
+          "authors": [
+            "Mehmet Ali Ertürk",
+            "Muhammed Ali Aydın",
+            "muhammet talha buyukakkaslar",
+            "Hayrettin Evirgen"
+          ],
+          "n_authors": 4,
+          "year": 2019,
+          "venue": "Future Internet",
+          "volume": "11",
+          "issue": "10",
+          "first_page": "216",
+          "last_page": "216",
+          "doi": "https://doi.org/10.3390/fi11100216",
+          "type": "article",
+          "cited_by": 228
+        },
+        {
+          "title": "A Survey on 5G Networks for the Internet of Things: Communication Technologies and Challenges",
+          "authors": [
+            "Godfrey A. Akpakwu",
+            "Bruno Silva",
+            "Gerhard P. Hancke",
+            "Adnan M. Abu‐Mahfouz"
+          ],
+          "n_authors": 4,
+          "year": 2017,
+          "venue": "IEEE Access",
+          "volume": "6",
+          "issue": null,
+          "first_page": "3619",
+          "last_page": "3647",
+          "doi": "https://doi.org/10.1109/access.2017.2779844",
+          "type": "article",
+          "cited_by": 1293
+        },
+        {
+          "title": "An Empirical Study on System Level Aspects of Internet of Things (IoT)",
+          "authors": [
+            "S. Narayana Swamy",
+            "Kota Solomon Raju"
+          ],
+          "n_authors": 2,
+          "year": 2020,
+          "venue": "IEEE Access",
+          "volume": "8",
+          "issue": null,
+          "first_page": "188082",
+          "last_page": "188134",
+          "doi": "https://doi.org/10.1109/access.2020.3029847",
+          "type": "article",
+          "cited_by": 262
+        }
+      ],
+      "venue_matches_expectation": false
+    },
+    "wildlife2026": {
+      "query": "Combined Radar and Magnetometer Sensor Network with LoRa-Mediated Awareness for Wildlife-Vehicle Collision Prevention",
+      "purpose": "nearest hardware match; evaluated by Monte Carlo, not deployed",
+      "expected_venue_fragment": "arXiv",
+      "best": {
+        "title": "Combined Radar and Magnetometer Sensor Network with LoRa-Mediated Awareness for Wildlife-Vehicle Collision Prevention: A Monte Carlo Analysis",
+        "authors": [
+          "Sergii Makovetskyi",
+          "Lars Thomsen"
+        ],
+        "n_authors": 2,
+        "year": 2026,
+        "venue": "arXiv (Cornell University)",
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null,
+        "doi": null,
+        "type": "preprint",
+        "cited_by": 0
+      },
+      "alternates": [
+        {
+          "title": "Combined Radar and Magnetometer Sensor Network with LoRa-Mediated Awareness for Wildlife-Vehicle Collision Prevention: A Monte Carlo Analysis",
+          "authors": [
+            "Sergii Makovetskyi",
+            "Lars Thomsen"
+          ],
+          "n_authors": 2,
+          "year": 2026,
+          "venue": "Preprints.org",
+          "volume": null,
+          "issue": null,
+          "first_page": null,
+          "last_page": null,
+          "doi": "https://doi.org/10.20944/preprints202605.1568.v1",
+          "type": "preprint",
+          "cited_by": 0
+        },
+        {
+          "title": "Combined Radar and Magnetometer Sensor Network with LoRa-Mediated Awareness for Wildlife-Vehicle Collision Prevention: A Monte Carlo Analysis",
+          "authors": [
+            "Sergii Makovetskyi",
+            "Lars Thomsen"
+          ],
+          "n_authors": 2,
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "volume": null,
+          "issue": null,
+          "first_page": null,
+          "last_page": null,
+          "doi": "https://doi.org/10.48550/arxiv.2605.23117",
+          "type": "preprint",
+          "cited_by": 0
+        },
+        {
+          "title": "Wildlife–Vehicle Collision Monte Carlo Simulator",
+          "authors": [
+            "Lars Thomsen",
+            "Sergii Makovetskyi"
+          ],
+          "n_authors": 2,
+          "year": 2026,
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "volume": null,
+          "issue": null,
+          "first_page": null,
+          "last_page": null,
+          "doi": "https://doi.org/10.5281/zenodo.20313719",
+          "type": "software",
+          "cited_by": 0
+        }
+      ],
+      "venue_matches_expectation": true
+    },
+    "aarif2025": {
+      "query": "Machine learning models for LoRaWAN link quality prediction",
+      "purpose": "R2 = 0.99 cross-sectional prediction",
+      "expected_venue_fragment": "Annals of Telecommunications",
+      "best": {
+        "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
+        "authors": [
+          "Adil Rasheed",
+          "Omer San",
+          "Trond Kvamsdal"
+        ],
+        "n_authors": 3,
+        "year": 2020,
+        "venue": "IEEE Access",
+        "volume": "8",
+        "issue": null,
+        "first_page": "21980",
+        "last_page": "22012",
+        "doi": "https://doi.org/10.1109/access.2020.2970143",
+        "type": "article",
+        "cited_by": 1808
+      },
+      "alternates": [
+        {
+          "title": "Intelligent Resource Allocation in LoRaWAN Using Machine Learning Techniques",
+          "authors": [
+            "Syed Usama Minhaj",
+            "Aamir Mahmood",
+            "Sarder Fakhrul Abedin",
+            "Syed Ali Hassan",
+            "Muhammad Talha Bhatti",
+            "Syed Haider Ali",
+            "Mikael Gidlund"
+          ],
+          "n_authors": 7,
+          "year": 2023,
+          "venue": "IEEE Access",
+          "volume": "11",
+          "issue": null,
+          "first_page": "10092",
+          "last_page": "10106",
+          "doi": "https://doi.org/10.1109/access.2023.3240308",
+          "type": "article",
+          "cited_by": 76
+        },
+        {
+          "title": "LoRaFarM: A LoRaWAN-Based Smart Farming Modular IoT Architecture",
+          "authors": [
+            "Gaia Codeluppi",
+            "Antonio Cilfone",
+            "Luca Davoli",
+            "Gianluigi Ferrari"
+          ],
+          "n_authors": 4,
+          "year": 2020,
+          "venue": "Sensors",
+          "volume": "20",
+          "issue": "7",
+          "first_page": "2028",
+          "last_page": "2028",
+          "doi": "https://doi.org/10.3390/s20072028",
+          "type": "article",
+          "cited_by": 197
+        },
+        {
+          "title": "LoRaWAN Meets ML: A Survey on Enhancing Performance with Machine Learning",
+          "authors": [
+            "Arshad Farhad",
+            "Jae-Young Pyun"
+          ],
+          "n_authors": 2,
+          "year": 2023,
+          "venue": "Sensors",
+          "volume": "23",
+          "issue": "15",
+          "first_page": "6851",
+          "last_page": "6851",
+          "doi": "https://doi.org/10.3390/s23156851",
+          "type": "article",
+          "cited_by": 50
+        }
+      ],
+      "venue_matches_expectation": false
+    },
+    "novak2025": {
+      "query": "Real-World Deployment Data LoRaWAN sensors battery life",
+      "purpose": "the calibration-practice exhibit: assumed values, 10.95 years unvalidated",
+      "expected_venue_fragment": "Agris",
+      "best": {
+        "title": "A Survey of LoRaWAN for IoT: From Technology to Application",
+        "authors": [
+          "Jetmir Haxhibeqiri",
+          "Eli De Poorter",
+          "Ingrid Moerman",
+          "Jeroen Hoebeke"
+        ],
+        "n_authors": 4,
+        "year": 2018,
+        "venue": "Sensors",
+        "volume": "18",
+        "issue": "11",
+        "first_page": "3995",
+        "last_page": "3995",
+        "doi": "https://doi.org/10.3390/s18113995",
+        "type": "article",
+        "cited_by": 627
+      },
+      "alternates": [
+        {
+          "title": "Slotted ALOHA on LoRaWAN-Design, Analysis, and Deployment",
+          "authors": [
+            "Tommaso Polonelli",
+            "Davide Brunelli",
+            "Achille Marzocchi",
+            "Luca Benini"
+          ],
+          "n_authors": 4,
+          "year": 2019,
+          "venue": "Sensors",
+          "volume": "19",
+          "issue": "4",
+          "first_page": "838",
+          "last_page": "838",
+          "doi": "https://doi.org/10.3390/s19040838",
+          "type": "article",
+          "cited_by": 185
+        },
+        {
+          "title": "A Survey on LoRaWAN Architecture, Protocol and Technologies",
+          "authors": [
+            "Mehmet Ali Ertürk",
+            "Muhammed Ali Aydın",
+            "muhammet talha buyukakkaslar",
+            "Hayrettin Evirgen"
+          ],
+          "n_authors": 4,
+          "year": 2019,
+          "venue": "Future Internet",
+          "volume": "11",
+          "issue": "10",
+          "first_page": "216",
+          "last_page": "216",
+          "doi": "https://doi.org/10.3390/fi11100216",
+          "type": "article",
+          "cited_by": 228
+        },
+        {
+          "title": "Predictive Battery Life Modeling for LoRaWAN Sensors Using Real-World Deployment Data",
+          "authors": [
+            "Vojtěch Novák",
+            "Pavel Ambruz",
+            "Eva Kánská",
+            "Michal Stočes",
+            "Jiří Vaněk",
+            "Jan Veselý",
+            "Karel Sylvar"
+          ],
+          "n_authors": 7,
+          "year": 2025,
+          "venue": "Agris on-line Papers in Economics and Informatics",
+          "volume": "17",
+          "issue": "3",
+          "first_page": "53",
+          "last_page": "62",
+          "doi": "https://doi.org/10.7160/aol.2025.170305",
+          "type": "article",
+          "cited_by": 2
+        }
+      ],
+      "venue_matches_expectation": false
+    },
+    "rahman2023": {
+      "query": "occupancy parking sensor LoRa RSSI attenuation vehicle",
+      "purpose": "occupancy-driven link attenuation, measured on a cleaner design",
+      "expected_venue_fragment": "",
+      "best": {
+        "title": "Sensing Occupancy through Software: Smart Parking Proof of Concept",
+        "authors": [
+          "Lea Dujić Rodić",
+          "Toni Perković",
+          "Tomislav Županović",
+          "Petar Šolić"
+        ],
+        "n_authors": 4,
+        "year": 2020,
+        "venue": "Electronics",
+        "volume": "9",
+        "issue": "12",
+        "first_page": "2207",
+        "last_page": "2207",
+        "doi": "https://doi.org/10.3390/electronics9122207",
+        "type": "article",
+        "cited_by": 12
+      },
+      "alternates": [
+        {
+          "title": "Assessing LoRaWAN radio propagation for smart parking service: An experimental study",
+          "authors": [
+            "Juan Ramón Santana",
+            "Pablo Sotres",
+            "J. Pérez",
+            "Luı́s Sánchez",
+            "Jorge Lanza",
+            "Luı́s Muñoz"
+          ],
+          "n_authors": 6,
+          "year": 2023,
+          "venue": "Computer Networks",
+          "volume": "235",
+          "issue": null,
+          "first_page": "109962",
+          "last_page": "109962",
+          "doi": "https://doi.org/10.1016/j.comnet.2023.109962",
+          "type": "article",
+          "cited_by": 14
+        },
+        {
+          "title": "Building Decentralized Fog Computing-Based Smart Parking Systems: From Deterministic Propagation Modeling to Practical Deployment",
+          "authors": [
+            "Mikel Celaya-Echarri",
+            "Iván Froiz-Míguez",
+            "Leyre Azpilicueta",
+            "Paula Fraga‐Lamas",
+            "Peio López-Iturri",
+            "Francisco Falcone",
+            "Tiago M. Fernández‐Caramés"
+          ],
+          "n_authors": 7,
+          "year": 2020,
+          "venue": "IEEE Access",
+          "volume": "8",
+          "issue": null,
+          "first_page": "117666",
+          "last_page": "117688",
+          "doi": "https://doi.org/10.1109/access.2020.3004745",
+          "type": "article",
+          "cited_by": 28
+        },
+        {
+          "title": "RSSI Fingerprint-Based Indoor Localization Solutions Using Machine Learning Algorithms: A Comprehensive Review",
+          "authors": [
+            "Батырбек Жоламанов",
+            "Ahmet Saymbetov",
+            "Madiyar Nurgaliyev",
+            "Askhat Bolatbek",
+            "Gulbakhar Dosymbetova",
+            "Nurzhigit Kuttybay",
+            "Sayat Orynbassar",
+            "Ainur Kapparova",
+            "Nursultan Koshkarbay",
+            "Ömer Faruk Beyca"
+          ],
+          "n_authors": 10,
+          "year": 2025,
+          "venue": "Smart Cities",
+          "volume": "8",
+          "issue": "5",
+          "first_page": "153",
+          "last_page": "153",
+          "doi": "https://doi.org/10.3390/smartcities8050153",
+          "type": "article",
+          "cited_by": 17
+        }
+      ],
+      "venue_matches_expectation": true
+    },
+    "dou2024": {
+      "query": "Sensing-Efficient Transmit Beamforming for ISAC with MIMO Radar and MU-MIMO Communication",
+      "purpose": "canonical ISAC allocation with interference inside the variables",
+      "expected_venue_fragment": "Wireless Communications",
+      "best": {
+        "title": "Sensing-Efficient Transmit Beamforming for ISAC with MIMO Radar and MU-MIMO Communication",
+        "authors": [
+          "Huimin Liu",
+          "Yong Li",
+          "Wei Cheng",
+          "Limeng Dong",
+          "Beiming Yan"
+        ],
+        "n_authors": 5,
+        "year": 2024,
+        "venue": "Remote Sensing",
+        "volume": "16",
+        "issue": "16",
+        "first_page": "3028",
+        "last_page": "3028",
+        "doi": "https://doi.org/10.3390/rs16163028",
+        "type": "article",
+        "cited_by": 13
+      },
+      "alternates": [
+        {
+          "title": "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+          "authors": [
+            "Fan Liu",
+            "Yuanhao Cui",
+            "Christos Masouros",
+            "Jie Xu",
+            "Tony Xiao Han",
+            "Yonina C. Eldar",
+            "Stefano Buzzi"
+          ],
+          "n_authors": 7,
+          "year": 2022,
+          "venue": "IEEE Journal on Selected Areas in Communications",
+          "volume": "40",
+          "issue": "6",
+          "first_page": "1728",
+          "last_page": "1767",
+          "doi": "https://doi.org/10.1109/jsac.2022.3156632",
+          "type": "article",
+          "cited_by": 3512
+        },
+        {
+          "title": "A Survey on Fundamental Limits of Integrated Sensing and Communication",
+          "authors": [
+            "An Liu",
+            "Zhe Huang",
+            "Min Li",
+            "Yubo Wan",
+            "Wenrui Li",
+            "Tony Xiao Han",
+            "Chenchen Liu",
+            "Rui Du",
+            "Danny Kai Pin Tan",
+            "Jianmin Lu",
+            "Yuan Shen",
+            "Fabiola Colone",
+            "Kevin Chetty"
+          ],
+          "n_authors": 13,
+          "year": 2022,
+          "venue": "IEEE Communications Surveys & Tutorials",
+          "volume": "24",
+          "issue": "2",
+          "first_page": "994",
+          "last_page": "1034",
+          "doi": "https://doi.org/10.1109/comst.2022.3149272",
+          "type": "article",
+          "cited_by": 1072
+        },
+        {
+          "title": "Integrated Sensing and Communication Signals Toward 5G-A and 6G: A Survey",
+          "authors": [
+            "Zhiqing Wei",
+            "Hanyang Qu",
+            "Yuan Wang",
+            "Xin Yuan",
+            "Huici Wu",
+            "Ying Du",
+            "Kaifeng Han",
+            "Ning Zhang",
+            "Zhiyong Feng"
+          ],
+          "n_authors": 9,
+          "year": 2023,
+          "venue": "IEEE Internet of Things Journal",
+          "volume": "10",
+          "issue": "13",
+          "first_page": "11068",
+          "last_page": "11092",
+          "doi": "https://doi.org/10.1109/jiot.2023.3235618",
+          "type": "article",
+          "cited_by": 622
+        }
+      ],
+      "venue_matches_expectation": false
+    },
+    "openalex": {
+      "query": "OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts",
+      "purpose": "the index the corpus measurement runs on",
+      "expected_venue_fragment": "arXiv",
+      "best": {
+        "title": "OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts",
+        "authors": [
+          "Jason R Priem",
+          "Heather Piwowar",
+          "Richard A. Orr"
+        ],
+        "n_authors": 3,
+        "year": 2022,
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null,
+        "doi": "https://doi.org/10.5281/zenodo.6936227",
+        "type": "conference-paper",
+        "cited_by": 5
+      },
+      "alternates": [
+        {
+          "title": "OpenAlex Snapshot",
+          "authors": [
+            "Jason R Priem",
+            "Heather Piwowar",
+            "Barrett, Justin",
+            "Kyle Demes",
+            "McCafferty, Nolan",
+            "Meyer, Casey",
+            "Richard Orr",
+            "Portenoy, Jason"
+          ],
+          "n_authors": 8,
+          "year": 2022,
+          "venue": "arXiv (Cornell University)",
+          "volume": null,
+          "issue": null,
+          "first_page": null,
+          "last_page": null,
+          "doi": "https://doi.org/10.48550/arxiv.2205.01833",
+          "type": "preprint",
+          "cited_by": 292
+        },
+        {
+          "title": "Reference coverage analysis of OpenAlex compared to Web of Science and Scopus",
+          "authors": [
+            "Jack H. Culbert",
+            "Anne Hobert",
+            "Najko Jahn",
+            "Nick Haupka",
+            "Marion Schmidt",
+            "Paul Donner",
+            "Philipp Mayr"
+          ],
+          "n_authors": 7,
+          "year": 2025,
+          "venue": "Scientometrics",
+          "volume": "130",
+          "issue": "4",
+          "first_page": "2475",
+          "last_page": "2492",
+          "doi": "https://doi.org/10.1007/s11192-025-05293-3",
+          "type": "article",
+          "cited_by": 117
+        },
+        {
+          "title": "Geographical and disciplinary coverage of open access journals: OpenAlex, Scopus, and WoS",
+          "authors": [
+            "Abdelghani Maddi",
+            "Marion Maisonobe",
+            "Chérifa Boukacem‐Zeghmouri"
+          ],
+          "n_authors": 3,
+          "year": 2025,
+          "venue": "PLoS ONE",
+          "volume": "20",
+          "issue": "4",
+          "first_page": "e0320347",
+          "last_page": "e0320347",
+          "doi": "https://doi.org/10.1371/journal.pone.0320347",
+          "type": "article",
+          "cited_by": 47
+        }
+      ],
+      "venue_matches_expectation": false
+    }
+  }
+}

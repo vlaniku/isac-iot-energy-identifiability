@@ -1,0 +1,758 @@
+{
+  "_method": {
+    "source": "OpenAlex REST API (api.openalex.org/works)",
+    "field": "title_and_abstract.search",
+    "date_filter": "from_publication_date >= 2018-01-01",
+    "run_date": "2026-08-20",
+    "note": "Scopus unavailable (institutional licence). OpenAlex indexes the IEEE, Springer, Elsevier and ACM corpora. Strings are recorded verbatim so the search can be re-run on Scopus unchanged.",
+    "screening": "title and abstract only; full text required before citation"
+  },
+  "queries": {
+    "RQ1_a": {
+      "string": "(\"LoRaWAN\" OR \"LoRa\" OR \"LPWAN\") AND (\"RSSI\" OR \"link quality\") AND (\"autocorrelation\" OR \"temporal correlation\")",
+      "hits": 1,
+      "retrieved": 1,
+      "results": [
+        {
+          "title": "LSTM-based deep reinforcement learning for ISI mitigation in maritime LoRaWAN",
+          "year": 2026,
+          "doi": "https://doi.org/10.1016/j.phycom.2026.103063",
+          "venue": "Physical Communication",
+          "cited_by": 1,
+          "abstract": "For reliable, long-range, low-power Maritime Internet of Things (MIoT) communication (e.g., vessel tracking, ocean monitoring, and offshore automation), LoRaWAN offers attractive coverage and energy efficiency. However, sea-surface reflections, wave motion, and platform mobility create time-varying multipath with large delay spread, which induces inter-symbol interference (ISI) and degrades packet delivery ratio (PDR) and energy performance. This paper proposes a Long Short-Term Memory (LSTM)-assisted Deep Reinforcement Learning (DRL) framework LSTM–DDPG Adaptive Modulation and Coding (LD-AMC) that proactively mitigates ISI by predicting short-term channel evolution and adapting the LoRaWAN physical-layer parameters. An LSTM predictor learns temporal correlations in observed link metrics (RSSI, SNR, PER, and RMS delay spread) and provides one-step-ahead forecasts, which are appended to t"
+        }
+      ]
+    },
+    "RQ1_b": {
+      "string": "(\"LoRaWAN\" OR \"LPWAN\") AND (\"channel prediction\" OR \"link prediction\") AND (\"time series\" OR \"temporal\")",
+      "hits": 0,
+      "retrieved": 0,
+      "results": []
+    },
+    "RQ1_c": {
+      "string": "(\"LoRa\" OR \"LPWAN\") AND \"coherence time\"",
+      "hits": 2,
+      "retrieved": 2,
+      "results": [
+        {
+          "title": "TyrLoc",
+          "year": 2021,
+          "doi": "https://doi.org/10.1145/3458864.3467677",
+          "venue": null,
+          "cited_by": 17,
+          "abstract": "This work presents the design and implementation of TyrLoc, an accurate multi-technology switching MIMO localization system that can be deployed on low-cost SDRs. TyrLoc only uses a single RF Chain to switch on each antenna in an antenna array within the coherence time asynchronously, thus mimicking a MIMO platform to pinpoint the positions of WIFI, Bluetooth Low Energy (BLE) and LoRa devices. TyrLoc makes three key technical contributions. First, TyrLoc modifies the firmware of inexpensive PlutoSDR that controls the antenna switching pattern and tags the signal associated with each antenna. Second, it develops a two-stage fine-grained carrier frequency offset (CFO) calibration algorithm that harnesses the agile antenna switching pattern and is 10× more accurate than the baseline method. Third, TyrLoc employs an interpolated transform approach to facilitate angle-of-arrival (AoA) estimat"
+        },
+        {
+          "title": "Empirical Characterization and Modeling of the Propagation Channel Inside the VIRC",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/access.2024.3364697",
+          "venue": "IEEE Access",
+          "cited_by": 2,
+          "abstract": "Over-the-air (OTA) testing and electromagnetic compatibility (EMC) measurements are widely performed in classical reverberation chambers. A less-known reverberation chamber, yet a considerably efficient environment for generating multipath conditions, is the vibrating intrinsic reverberation chamber (VIRC). This article thoroughly investigates the radio propagation channel inside the VIRC. The specific channels studied are narrowband single-input single-output (SISO) systems operating in the frequency range from 670-2740 MHz. A relevant application is OTA testing wireless baseband algorithms or modems for wireless sensor networks, specifically low-power wide-area networks such as Narrowband-IoT (NB-IoT), Long Range (LoRa) and Ultra-Narrowband (UNB). The focus is on the first- and second-order temporal and spectral channel characteristics: coherence time, Doppler spectrum, Doppler spread,"
+        }
+      ]
+    },
+    "RQ1_d": {
+      "string": "(\"LoRaWAN\" OR \"LPWAN\") AND \"RSSI\" AND (\"forecast\" OR \"predictability\")",
+      "hits": 12,
+      "retrieved": 12,
+      "results": [
+        {
+          "title": "Forecasting LoRaWAN RSSI using weather parameters: A comparative study of ARIMA, artificial intelligence and hybrid approaches",
+          "year": 2024,
+          "doi": "https://doi.org/10.1016/j.comnet.2024.110258",
+          "venue": "Computer Networks",
+          "cited_by": 32,
+          "abstract": "LoRaWAN technology’s reliability is challenged by weather parameters, which can influence the communication channel design, especially when dealing with outdoor devices. We propose to analyze this effect by evaluating the relationship between the received signal strength indicator (RSSI) and different weather parameters, as well as its temporal changes. A rigorous statistical analysis of the RSSI sequences is conducted to assess if they could be represented by a specific statistical model. For this purpose, several models are investigated. The Artificial Intelligence (AI) algorithms cover machine learning (ML) and deep learning methods are appealing when dealing with time series forecasting. Nevertheless, the classical autoregressive integrated moving average (ARIMA) model can be an attractive alternative due to its simplicity. Therefore, this work proposes a comparative study of ARIMA, "
+        },
+        {
+          "title": "Correlation between weather and signal strength in LoRaWAN networks: An extensive dataset",
+          "year": 2021,
+          "doi": "https://doi.org/10.1016/j.comnet.2021.108627",
+          "venue": "Computer Networks",
+          "cited_by": 35,
+          "abstract": ""
+        },
+        {
+          "title": "Moving Cell Array Prediction for LORAWAN-Handover Based On Received Signal Strength Indicator (RSSI) Algorithm",
+          "year": 2019,
+          "doi": "https://doi.org/10.1088/1757-899x/705/1/012015",
+          "venue": "IOP Conference Series Materials Science and Engineering",
+          "cited_by": 5,
+          "abstract": "Abstract This paper discusses the prediction of movement from the vehicles with Long Range Wide Area Network (LoRaWAN) handover communication, based on Received Signal Strength Indicator (RSSI) algorithm. The experiment consists of observation on three different environment area which is rural, sub-urban and urban at road in Kedah and Perlis state in Malaysia. This three-environment area measured based on the past studies. Handover session with a moving vehicle, predicted the movement based on direction of Global Positioning System (GPS) latitude and longitude. The communication session transferring from previous cell area network that pass by the vehicle to a new targeting cell area network with the base station connection. From this experiment and study, it is shown that the predictable or movement from one cell to another cell based on RSSI algorithm with base station connectivity can"
+        },
+        {
+          "title": "Predictability of LoRaWAN Link Quality based on Weather Data: Insights from a Long-Term Study",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/wowmom60985.2024.00048",
+          "venue": null,
+          "cited_by": 4,
+          "abstract": "WSNs are often deployed outdoors and thus exposed to a variety of different weather conditions. Due to the properties of radio waves, their propagation can be negatively impacted by the prevailing weather conditions. The sender and receiver hardware, including the antennas, can also be affected, potentially leading to variations in signal quality and link degradation. In order to assess the impact of individual weather components on the quality of WSN links, we analyze a large scale LoRaWAN deployment consisting of multiple nodes and gateways over a period of several months. The WSN is used for environmental monitoring, which means that the weather data is directly measured by the nodes and available in a high spatial and temporal resolution. Our results indicate significant dependencies between different weather components like precipitation, temperature, humidity but also time of day a"
+        },
+        {
+          "title": "Enhancing LoRaWAN RSSI Prediction Accuracy with Weather-Aware Machine Learning Models",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/andescon61840.2024.10755912",
+          "venue": null,
+          "cited_by": 1,
+          "abstract": "This investigation compares the prediction accuracy of three baseline machine learning (ML) models and our proposed model combining Random Forest and Multi-Layer Perceptron (RF-MLP) to predict received signal strength indicator (RSSI) in a LoRaWAN network, with and without using climate data. The ML models are Random Forest (RF), Multi-Layer Perceptron (MLP), and Long Short-Term Memory (LSTM). All models were tested in a maize crop setting, using weather variables such as humidity, temperature, solar radiation, and the terminal nodes' geographical coordinates and height as input features. The result shows that MLP performs better than RF and LSTM when predicting the RSSI values of a newly inserted node in the network. On the other hand, the RF model performed the best when forecasting future RSSI values of a single node. The proposed RF-MLP achieved the best performance overall. Also, ML"
+        },
+        {
+          "title": "Assessing the Capability of Random Forest to Estimate Received Power in LoRaWAN for Agricultural Settings Using Climate Data",
+          "year": 2023,
+          "doi": "https://doi.org/10.1109/itnac59571.2023.10368497",
+          "venue": null,
+          "cited_by": 3,
+          "abstract": "Low power wide area networks (LPWANs) such as LoRaWAN, enable long range wireless communication for internet of things (IoT) devices implemented in different settings, including agricultural crop fields. However, estimating the Received Signal Strength Indicator (RSSI) values for these devices remains a challenge, due to the multipath effect, weather conditions, and the dynamic environment that surrounds these networks. This research evaluates the capability of a low-cost system that uses a Random Forest Regression (RF) model and climate data to estimate RSSI values in a LoRa WAN network deployed in a maize crop field. The RF model uses eleven days of available data from twenty-nine nodes placed at different locations and heights in a maize crop field. In addition, the weather variables used as inputs to the model include temperature, humidity, and solar radiation. The model proved its e"
+        },
+        {
+          "title": "LSTM-based deep reinforcement learning for ISI mitigation in maritime LoRaWAN",
+          "year": 2026,
+          "doi": "https://doi.org/10.1016/j.phycom.2026.103063",
+          "venue": "Physical Communication",
+          "cited_by": 1,
+          "abstract": "For reliable, long-range, low-power Maritime Internet of Things (MIoT) communication (e.g., vessel tracking, ocean monitoring, and offshore automation), LoRaWAN offers attractive coverage and energy efficiency. However, sea-surface reflections, wave motion, and platform mobility create time-varying multipath with large delay spread, which induces inter-symbol interference (ISI) and degrades packet delivery ratio (PDR) and energy performance. This paper proposes a Long Short-Term Memory (LSTM)-assisted Deep Reinforcement Learning (DRL) framework LSTM–DDPG Adaptive Modulation and Coding (LD-AMC) that proactively mitigates ISI by predicting short-term channel evolution and adapting the LoRaWAN physical-layer parameters. An LSTM predictor learns temporal correlations in observed link metrics (RSSI, SNR, PER, and RMS delay spread) and provides one-step-ahead forecasts, which are appended to t"
+        },
+        {
+          "title": "Design and performance evaluation of a UAV-relayed LoRaWAN network for microclimate monitoring of standing live trees in forests",
+          "year": 2025,
+          "doi": "https://doi.org/10.1016/j.agrformet.2025.110968",
+          "venue": "Agricultural and Forest Meteorology",
+          "cited_by": 1,
+          "abstract": ""
+        },
+        {
+          "title": "Correlation Analysis of LoRa RSSI and Climate Variables for Short-Term Forecasting Models",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/urucon63440.2024.10850099",
+          "venue": null,
+          "cited_by": 0,
+          "abstract": "This study investigates the correlation between LoRaWAN RSSI (Received Signal Strength Indicator) and various climate variables by utilizing Pearson correlation, PCA (Principal Component Analysis), and XGBoost feature importance. The dataset, collected from four LoRaWAN devices and a gateway in Medellín, Colombia, encompasses diverse climate conditions over several measurements. Our analysis reveals significant positive correlations between temperature and RSSI for certain devices, while relative humidity and barometric pressure exhibit varied correlations across different nodes. The PCA visually confirms these relationships, illustrating positive correlations within the same quadrant and negative correlations in opposite quadrants. XGBoost feature importance highlights PM2.5 concentration as a crucial predictor for RSSI in one device, aligning with our correlation findings. These findin"
+        },
+        {
+          "title": "LoRaWAN-Based Artificial Intelligence Analytics for Forecasting Cyclone-Induced Floods on Urban Roads",
+          "year": 2026,
+          "doi": "https://doi.org/10.47392/irjaem.2026.0204",
+          "venue": "International Research Journal on Advanced Engineering and Management (IRJAEM)",
+          "cited_by": 0,
+          "abstract": "On urban roads, frequently severe floods were caused by monsoon or tropical cyclones, and oceans or several lakes and rivers overflowed. These cyclone-induced floods had massive loss and damage to road infrastructure, vehicles, and human life. In addition, many homes and businesses were destroyed, transportation disruption, power outages, and the spread of waterborne diseases such as dengue and malaria. This research proposes LoRaWAN-based artificial intelligence (AI) analytics for forecasting cyclone-induced floods to address the abovementioned destructions. The LoRaWAN network uses sensor devices in flood-prone areas to extract hydrological and weather conditions. The proposed analytics compares the sensor-measured data with past pre, during, and post-flood conditions and forecasts for future flood disasters. NVIDIA Jetson platform is used for performing image analytics and other facto"
+        },
+        {
+          "title": "A Reproducible Digital-Twin Assessment of Replay, Narrowband Jamming, and Metadata Exposure in Simulated Maritime LoRaWAN Traffic",
+          "year": 2026,
+          "doi": "https://doi.org/10.71448/bcds2671-3",
+          "venue": "Bulletin of Computer and Data Sciences",
+          "cited_by": 0,
+          "abstract": "Low-Power Wide Area Networks (LPWANs), and LoRaWAN in particular, are increasingly used in maritime telemetry because they combine long-range communication, low-power operation, and low deployment cost. These same advantages, however, also create a security environment in which protocol misuse, targeted radio interference, and traffic predictability may generate substantial operational risk even when payload encryption remains intact. This paper presents a reproducible simulation study of three security-relevant threat surfaces in maritime LoRaWAN settings: replay attacks, deterministic narrowband jamming, and metadata-based re-identification exposure. The work adopts a digital-twin methodology in which a maritime-like LoRaWAN baseline is synthesized under EU863–870 MHz settings, temporally shaped to resemble port-oriented operational cycles, and then transformed through controlled attac"
+        },
+        {
+          "title": "ENERGY EFFICIENT ALGORITHM FOR TRANSMISSION PARAMETER SELECTION IN LORA WIRELESS NETWORKS",
+          "year": 2025,
+          "doi": "https://doi.org/10.51885/1561-4212_2025_3_157",
+          "venue": "Bulletin of D Serikbayev EKTU",
+          "cited_by": 0,
+          "abstract": "Wireless communication technologies play a key role in providing efficient and reliable Internet of Things (IoT) networks. Among them, Long Range (LoRa) technology and the LoRaWAN protocol are widely known for their ability to provide long-range communications with low power consumption and cost-effectiveness. One of the main challenging issues in deploying autonomous wireless networks is the ongoing need to optimize transmission parameters to minimize node energy consumption (EC) and maximize packet delivery ratio (PDR). This study introduces a novel transmission parameter selection algorithm such as Spreading Factor (SF) and Transmission Power (TP), leveraging machine learning (ML) methods such as XGBoost, GRU, and RBFN. The algorithm predicts the distance to a node based on the received RSSI, and subsequently forecasts EC and PDR, substantially enhancing network performance. The propo"
+        }
+      ]
+    },
+    "RQ2_a": {
+      "string": "\"resource allocation\" AND (\"predictability\" OR \"channel prediction\") AND (\"upper bound\" OR \"fundamental limit\")",
+      "hits": 4,
+      "retrieved": 4,
+      "results": [
+        {
+          "title": "On the Outage Probability of Channel Prediction Enabled Max-Min Radio Resource Allocation",
+          "year": 2022,
+          "doi": "https://doi.org/10.1109/wcnc51071.2022.9771598",
+          "venue": "2022 IEEE Wireless Communications and Networking Conference (WCNC)",
+          "cited_by": 7,
+          "abstract": "To realize the next generation of ultra-reliable low-latency communications (URLLC) with less radio resource consumption, methods relying solely on the addition of redundancy do not suffice. An alternative is to monitor the wireless channel and prevent outages due to small scale fading by allocating users to suitable radio resources based on the channel gain. To overcome monitoring delays, predicted channel information is utilized. In this paper we are analyzing the outage probability of a max-min radio resource allocation (RRA) approach when Gaussian errors are present in the channel state information (CSI). As a communications channel, a Rayleigh fast fading channel is assumed. The outage probability is lower and upper bounded to get analytical performance approximations. Furthermore, the performance is also empirically evaluated by means of extensive Monte-Carlo simulations. The analy"
+        },
+        {
+          "title": "Optimal Proactive Resource Allocation at the Extreme Edge",
+          "year": 2022,
+          "doi": "https://doi.org/10.1109/icc45855.2022.9838897",
+          "venue": null,
+          "cited_by": 16,
+          "abstract": "Edge Computing (EC) has emerged as a key enabling paradigm for latency-critical and/or data-intensive applications. Recently, recycling abundant yet underutilized computational resources of the Extreme Edge Devices (EEDs), such as smartphones, laptops, connected vehicles, etc, has been explored. This is since EEDs can bring the computation service much closer to the edge, which can drastically reduce the delay. However, resource allocation in such environments typically follows a reactive approach, which can lead to increased delay and wasted resources. In this paper, we introduce the Optimal Proactive Resource Allocation (OPRA) benchmark to quantify the potential gains of proactive resource allocation in EC environments. OPRA exploits the predictability of request patterns to proactively perform resource allocation and create compute clusters that take future task and resource dynamics "
+        },
+        {
+          "title": "Integrated Sensing, Navigation, and Communication for Secure UAV Networks With a Mobile Eavesdropper",
+          "year": 2023,
+          "doi": "https://doi.org/10.1109/twc.2023.3337148",
+          "venue": "IEEE Transactions on Wireless Communications",
+          "cited_by": 49,
+          "abstract": "This paper proposes an integrated sensing, navigation, and communication (ISNC) framework for safeguarding unmanned aerial vehicle (UAV)-enabled wireless networks against a mobile eavesdropping UAV (E-UAV). To cope with the mobility of the E-UAV, the proposed framework advocates the dual use of artificial noise transmitted by the information UAV (I-UAV) for simultaneous jamming and sensing to facilitate navigation and secure communication. In particular, the I-UAV communicates with legitimate downlink ground users, while avoiding potential information leakage by emitting jamming signals, and estimates the state of the E-UAV with an extended Kalman filter based on the backscattered jamming signals. Exploiting the estimated state of the E-UAV in the previous time slot, the I-UAV determines its flight planning strategy, predicts the wiretap channel, and designs its communication resource al"
+        },
+        {
+          "title": "[V] Estimation of an Upper Limit on the Maximum Effect That Can Be Detected in Randomized Trials of Cancer Therapeutics",
+          "year": 2025,
+          "doi": "https://doi.org/10.48448/3nsm-n391",
+          "venue": "Underline Science Inc.",
+          "cited_by": 0,
+          "abstract": "Benjamin Djulbegovic,<sup>1</sup> Iztok Hozo,<sup>2</sup> Renata Iskander,<sup>5</sup> Austin J. Parish,<sup>3,4</sup> Jonathan Kimmelman,<sup>5</sup> John P. A. Ioannidis<sup>4</sup> <h4>Objective</h4> Randomized clinical trials (RCTs) are commonly considered important for detecting small treatment benefits. However, previous studies have shown they are equally likely to detect large (“dramatic”) treatment effects.<sup>1-3</sup> Forecasting the likelihood of future large treatment effects is critical for informing policies on resource allocation in conducting human RCTs, including cancer trials. <h4>Design </h4> We conducted a systematic review to inform generalized Pareto distribution (GPD) under extreme value theory to predict future maximum treatment effects based on data from the past 65 years. We included consecutive cancer RCTs (“cohorts”) identified by funders or trial registries"
+        }
+      ]
+    },
+    "RQ2_b": {
+      "string": "(\"adaptive\" AND \"allocation\") AND \"value of information\" AND wireless",
+      "hits": 1,
+      "retrieved": 1,
+      "results": [
+        {
+          "title": "VoI-Aware Energy-Efficient Uplink Transmission in Multi-Loop Wireless Control Systems",
+          "year": 2026,
+          "doi": "https://doi.org/10.1109/tvt.2026.3653489",
+          "venue": "IEEE Transactions on Vehicular Technology",
+          "cited_by": 1,
+          "abstract": "This paper proposes a value of information (VoI)-aware energy-efficient uplink transmission scheme to ensure efficient resource allocation and reliable transmission in a multi-loop wireless control system (WCS). In particular, by assuming that the controller is equipped with multiple antennas to manage multiple loops simultaneously, we first formulate an optimization problem that aims to minimize weighted sum of time-average energy consumption and VoI, subject to the constraints of control stability, reliable transmission, and total transmit power budget. Given the long-term nature of the problem, a drift-plus-penalty minimization framework is adopted to transform it into a single-slot optimization problem. Next, a profit-oriented sensor scheduling policy is developed with full consideration of channel conditions, along with a proposed loop-adaptive beamforming scheme to ensure reliable "
+        }
+      ]
+    },
+    "RQ3_a": {
+      "string": "\"static allocation\" AND \"adaptive allocation\" AND (energy OR \"energy efficiency\")",
+      "hits": 4,
+      "retrieved": 4,
+      "results": [
+        {
+          "title": "Improving energy distribution in collective self-consumption via XGBoost-based allocation coefficients prediction",
+          "year": 2026,
+          "doi": "https://doi.org/10.1016/j.apenergy.2026.127469",
+          "venue": "Applied Energy",
+          "cited_by": 5,
+          "abstract": "Energy communities operate under collective self-consumption schemes, where locally generated renewable energy is shared among participating members. In practice, this sharing is commonly governed by static allocation coefficients fixed in advance, which do not capture the time-varying and heterogeneous demand of participants. This mismatch can reduce community self-consumption, increase surplus injections, and raise reliance on the grid. This paper proposes a data-driven framework to dynamically compute allocation coefficients based on predicted individual demand and demonstrates its application in a municipal energy community in Catalonia, Spain. The approach uses an extreme gradient boosting model to forecast hourly consumption profiles and then derive adaptive allocation coefficients that better align shared photovoltaic generation with expected demand. The proposed strategy is evalu"
+        },
+        {
+          "title": "Analysis of Virtual Machine Allocation Strategies and Development of a Novel Policy",
+          "year": 2025,
+          "doi": "https://doi.org/10.35629/3795-11050114",
+          "venue": "Journal of Software Engineering and Simulation",
+          "cited_by": 0,
+          "abstract": "The swift advancement of cloud computing and virtualization technologies has reshaped the IT infrastructure domain, rendering virtual machine (VM) allocation a pivotal factor in achieving both optimal performance and cost-effectiveness. This paper presents an in-depth examination of current VM allocation methodologies, classifying them into three primary categories: static allocation, dynamic allocation, and heuristic- based approaches. We investigate the foundational principles of each strategy, analyzing their operational frameworks, benefits, and drawbacks across varying workload scenarios. Static allocation, although simple, frequently results in re- source under utilization due to its lack of adaptability to changing demands. In contrast, dynamic allocation techniques, which mod- ify resources based on real-time consumption, provide greater flexibility but introduce challenges relat"
+        },
+        {
+          "title": "Analysis of Virtual Machine Allocation Strategies and Development of a Novel Policy",
+          "year": 2025,
+          "doi": "https://doi.org/10.35629/3795-11062336",
+          "venue": "Journal of Software Engineering and Simulation",
+          "cited_by": 0,
+          "abstract": "The swift advancement of cloud computing and virtualization technologies has reshaped the IT infrastructure domain, rendering virtual machine (VM) allocation a pivotal fac- tor in achieving both optimal performance and cost-effectiveness. This paper presents an in-depth examination of current VM allocation methodologies, classifying them into three primary categories: static allocation, dynamic allocation, and heuristic- based approaches. We investigate the foundational principles of each strategy, analyzing their operational frameworks, benefits, and drawbacks across varying workload scenarios. Static allocation, although simple, frequently results in re- source under utilization due to its lack of adaptability to changing demands. In contrast, dynamic allocation techniques, which mod- ify resources based on real-time consumption, provide greater flexibility but introduce challenges rel"
+        },
+        {
+          "title": null,
+          "year": 2025,
+          "doi": "https://doi.org/10.35629/3795-1105",
+          "venue": "Journal of Software Engineering and Simulation",
+          "cited_by": 0,
+          "abstract": "The swift advancement of cloud computing and virtualization technologies has reshaped the IT infrastructure domain, rendering virtual machine (VM) allocation a pivotal factor in achieving both optimal performance and cost-effectiveness.This paper presents an in-depth examination of current VM allocation methodologies, classifying them into three primary categories: static allocation, dynamic allocation, and heuristic-based approaches.We investigate the foundational principles of each strategy, analyzing their operational frameworks, benefits, and drawbacks across varying workload scenarios.Static allocation, although simple, frequently results in re-source under utilization due to its lack of adaptability to changing demands.In contrast, dynamic allocation techniques, which mod-ify resources based on real-time consumption, provide greater flexibility but introduce challenges related to o"
+        }
+      ]
+    },
+    "RQ3_b": {
+      "string": "(\"when\" AND \"adaptation\") AND (\"regime\" OR \"condition\") AND \"resource allocation\" AND wireless",
+      "hits": 1,
+      "retrieved": 1,
+      "results": [
+        {
+          "title": "On the Throughput of Wireless Communication With Combined CSI and H-ARQ Feedback",
+          "year": 2021,
+          "doi": "https://doi.org/10.1109/ojcoms.2021.3061275",
+          "venue": "IEEE Open Journal of the Communications Society",
+          "cited_by": 1,
+          "abstract": "In this paper, we characterize the combined channel state information (CSI) and re-transmission feedback on wireless communication. Feedback, often assumed free, has traditionally been used to either learn the channel state, or to request the re-transmission of a failed reception. We propose here a generalized framework for feedback that captures the channel time-variation. We consider two-way communication model where all the resources needed for training, feedback (CSI and automatic repeat request), and data. In order to maximize the throughput and optimize resource allocations, we provide the expressions of outage probabilities for different rate/power adaptation and re-transmission protocols. The simulation results show that, besides signal-to-noise ratio (SNR) and Doppler, the optimal pilot overhead depends on whether we are using rate/power adaptation and the number of re-transmiss"
+        }
+      ]
+    },
+    "RQ4_a": {
+      "string": "(\"LPWAN\" OR \"LoRaWAN\") AND \"energy model\" AND (\"validation\" OR \"validated\" OR \"measurement\")",
+      "hits": 2,
+      "retrieved": 2,
+      "results": [
+        {
+          "title": "Comparison of the energy consumed by an IoT device using 802.11ah and LoRa/LoRaWAN technologies",
+          "year": 2026,
+          "doi": "https://doi.org/10.1016/j.iot.2026.101953",
+          "venue": "Internet of Things",
+          "cited_by": 0,
+          "abstract": ""
+        },
+        {
+          "title": "Adaptive IoT nodes sampling for efficient irrigation monitoring using reinforcement learning",
+          "year": 2026,
+          "doi": "https://doi.org/10.1016/j.inpa.2026.07.009",
+          "venue": "Information Processing in Agriculture",
+          "cited_by": 0,
+          "abstract": "Battery-powered IoT sensor networks enable precision agriculture through continuous environmental monitoring, yet energy constraints frequently cause operational failures in remote deployments where solar irradiance proves seasonally inadequate. Conventional fixed-interval sampling consumes excessive energy by measuring environmental variables uniformly regardless of their temporal dynamics, while existing adaptive approaches employ reactive strategies that adjust rates based on historical volatility without anticipating critical agricultural events. This study evaluates three adaptive sampling algorithms, rule-based UDASA and two reinforcement learning methods (DQN, Q-Learning), on 4825 real-world measurements collected over 52 days from Mediterranean olive cultivation, comparing their performance across energy efficiency, reconstruction accuracy, and Critical Capture Rate (CCR). All th"
+        }
+      ]
+    },
+    "RQ4_b": {
+      "string": "(\"LoRaWAN\" OR \"LPWAN\") AND \"battery\" AND (\"deployment\" OR \"field\") AND (\"lifetime\" OR \"depletion\")",
+      "hits": 75,
+      "retrieved": 25,
+      "results": [
+        {
+          "title": "A comparative study of LPWAN technologies for large-scale IoT deployment",
+          "year": 2018,
+          "doi": "https://doi.org/10.1016/j.icte.2017.12.005",
+          "venue": "ICT Express",
+          "cited_by": 1510,
+          "abstract": "By 2020, more than 50 billion devices will be connected through radio communications. In conjunction with the rapid growth of the Internet of Things (IoT) market, low power wide area networks (LPWAN) have become a popular low-rate long-range radio communication technology. Sigfox, LoRa, and NB-IoT are the three leading LPWAN technologies that compete for large-scale IoT deployment. This paper provides a comprehensive and comparative study of these technologies, which serve as efficient solutions to connect smart, autonomous, and heterogeneous devices. We show that Sigfox and LoRa are advantageous in terms of battery lifetime, capacity, and cost. Meanwhile, NB-IoT offers benefits in terms of latency and quality of service. In addition, we analyze the IoT success factors of these LPWAN technologies, and we consider application scenarios and explain which technology is the best fit for each"
+        },
+        {
+          "title": "Overview of Cellular LPWAN Technologies for IoT Deployment: Sigfox, LoRaWAN, and NB-IoT",
+          "year": 2018,
+          "doi": "https://doi.org/10.1109/percomw.2018.8480255",
+          "venue": null,
+          "cited_by": 347,
+          "abstract": "LPWAN are actually the most popular low cost, long battery lifetime, and long range communication technology for IoT applications. This paper presents a comprehensive and comparative study on three actually leading LPWAN technologies called Sigfox, LoRaWAN, and NB-IoT. We show that Sigfox and LoRaWAN excel on network capacity, devices lifetime, and cost. Whereas, NB-IoT excels on quality of service and latency. In addition, we consider application scenarios and explain which technology fits best to guide future researchers and industrials."
+        },
+        {
+          "title": "A Survey on Adaptive Data Rate Optimization in LoRaWAN: Recent Solutions and Major Challenges",
+          "year": 2020,
+          "doi": "https://doi.org/10.3390/s20185044",
+          "venue": "Sensors",
+          "cited_by": 209,
+          "abstract": "Long-Range Wide Area Network (LoRaWAN) is a fast-growing communication system for Low Power Wide Area Networks (LPWAN) in the Internet of Things (IoTs) deployments. LoRaWAN is built to optimize LPWANs for battery lifetime, capacity, range, and cost. LoRaWAN employs an Adaptive Data Rate (ADR) scheme that dynamically optimizes data rate, airtime, and energy consumption. The major challenge in LoRaWAN is that the LoRa specification does not state how the network server must command end nodes pertaining rate adaptation. As a result, numerous ADR schemes have been proposed to cater for the many applications of IoT technology, the quality of service requirements, different metrics, and radio frequency (RF) conditions. This offers a challenge for the reliability and suitability of these schemes. This paper presents a comprehensive review of the research on ADR algorithms for LoRaWAN technology"
+        },
+        {
+          "title": "Benchmarking RSS-based localization algorithms with LoRaWAN",
+          "year": 2020,
+          "doi": "https://doi.org/10.1016/j.iot.2020.100235",
+          "venue": "Internet of Things",
+          "cited_by": 51,
+          "abstract": ""
+        },
+        {
+          "title": "Efficient graph-based gateway placement for large-scale LoRaWAN deployments",
+          "year": 2023,
+          "doi": "https://doi.org/10.1016/j.comcom.2023.03.015",
+          "venue": "Computer Communications",
+          "cited_by": 24,
+          "abstract": ""
+        },
+        {
+          "title": "Modeling and Experimental Validation for Battery Lifetime Estimation in NB-IoT and LTE-M",
+          "year": 2022,
+          "doi": "https://doi.org/10.1109/jiot.2022.3152173",
+          "venue": "IEEE Internet of Things Journal",
+          "cited_by": 40,
+          "abstract": "Internet of Things (IoT) is one of the main features in 5G. Low-power wide-area networking (LPWAN) has attracted enormous research interests to enable large-scale deployment of IoT, with the design objectives of low cost, wide coverage area, as well as low-power consumption. In particular, a long battery lifetime is essential since many of the IoT devices will be deployed in hard-to-access locations. Prediction of the battery lifetime depends on the accurate modeling of energy consumption. This article presents a comprehensive power consumption model for battery lifetime estimation, which is based on user equipment (UE) states and procedures, for two cellular IoT technologies: 1) Narrowband IoT (NB-IoT) and 2) long-term evolution for machines (LTE-M). A measurement testbed has been set up and the proposed model has been tested and validated via extensive measurements under various traffi"
+        },
+        {
+          "title": "Energy-aware system design for batteryless LPWAN devices in IoT applications",
+          "year": 2021,
+          "doi": "https://doi.org/10.1016/j.adhoc.2021.102625",
+          "venue": "Ad Hoc Networks",
+          "cited_by": 43,
+          "abstract": ""
+        },
+        {
+          "title": "Graph-Based Gateway Placement for Better Performance in LoRaWAN Deployments",
+          "year": 2022,
+          "doi": "https://doi.org/10.1109/medcomnet55087.2022.9810404",
+          "venue": null,
+          "cited_by": 16,
+          "abstract": "Low Power Wide Area Networks with Long Range Wide Area Networks (LoRaWANs) as one of their most prominent representatives are very promising solutions for future Internet of Things deployments. The technology is characterized by low energy requirements leading to long battery lifetimes. However, the drawback is very limited throughput rates. However, the unreliable nature of the LoRa technology is hindering the adoption. Especially its random channel access approach leads to significant message collisions and thus, data loss in larger deployments. From a network planning point of view, one possibility to deal with collisions is the reduction of potentially colliding messages at the frequency bands in combination with limiting the transmission duration of messages. For that reason, we present a novel graph-based gateway placement approach. The main focus is collision probability reduction"
+        },
+        {
+          "title": "Q-Learning Aided Resource Allocation and Environment Recognition in LoRaWAN With CSMA/CA",
+          "year": 2019,
+          "doi": "https://doi.org/10.1109/access.2019.2948111",
+          "venue": "IEEE Access",
+          "cited_by": 49,
+          "abstract": "The mutual interference among wireless nodes is a critical factor in the Internet-of-Things (IoT) era due to its dense deployment. Due to its large coverage area, wireless nodes may not be able to detect the on-going communication of other nodes in a long range wide area network (LoRaWAN), which is one of the low power wide area (LPWA) standards. This results in packet collision. The packet collision among LoRaWAN nodes significantly deteriorates network performance functions such as packet delivery rate (PDR). Furthermore, if packet collision happens, LoRaWAN nodes must retransmit packets, draining their limited battery power. Thus, mutual interference management among LoRaWAN nodes is important from the perspectives of both network performance and network lifetime. However, due to its large network size, it is difficult to explicitly comprehend the wireless channel environment around e"
+        },
+        {
+          "title": "Optimizing energy efficiency of LoRaWAN-based wireless underground sensor networks: A multi-agent reinforcement learning approach",
+          "year": 2023,
+          "doi": "https://doi.org/10.1016/j.iot.2023.100776",
+          "venue": "Internet of Things",
+          "cited_by": 35,
+          "abstract": ""
+        },
+        {
+          "title": "Performance Assessment of Reinforcement Learning Policies for Battery Lifetime Extension in Mobile Multi-RAT LPWAN Scenarios",
+          "year": 2022,
+          "doi": "https://doi.org/10.1109/jiot.2022.3197834",
+          "venue": "IEEE Internet of Things Journal",
+          "cited_by": 4,
+          "abstract": "Considering the dynamically changing nature of the radio propagation environment, the envisioned battery lifetime of the end device (ED) for massive machine-type communication (mMTC) stands for a critical challenge. As the selected radio technology bounds the battery lifetime, the possibility of choosing among several low-power wide-area network (LPWAN) technologies integrated at a single ED may dramatically improve its lifetime. In this article, we propose a novel approach of battery lifetime extension utilizing reinforcement learning (RL) policies. Notably, the system assesses the radio environment conditions and assigns the appropriate rewards to minimize the overall power consumption and increase reliability. To this aim, we carry out extensive propagation and power measurements campaigns at the city-scale level and then utilize these results for composing real-life use cases for sta"
+        },
+        {
+          "title": "Energy-Saving Measurement in LoRaWAN-Based Wireless Sensor Networks by Using Compressed Sensing",
+          "year": 2020,
+          "doi": "https://doi.org/10.1109/access.2020.2974879",
+          "venue": "IEEE Access",
+          "cited_by": 24,
+          "abstract": "In modern monitoring systems, it is essential to deploy sensor nodes and deliver related data to the information center. Wireless sensor networks (WSNs) usually work in harsh environments with vibration, temperature variations, noise, humidity, and so on. The batteries of sensor nodes are always not replaceable because of difficult access. Most of existing literature tries to prolong network lifetime by improving sleep scheduling strategies and deployment methods, independently or jointly. However, the congenital defects of mesh network can't be avoided completely. To overcome the technology challenges, this paper develops a LoRaWAN-based WSN and investigates its energy efficient scheduling method. Firstly, the basics and the limits of LoRaWAN are introduced and the feasibility and the considerations of LoRaWAN-based star wireless sensor network are discussed. Secondly, an improved compr"
+        },
+        {
+          "title": "Performance Analysis Comparison between LoRa and Frequency Hopping-based LPWAN",
+          "year": 2019,
+          "doi": "https://doi.org/10.1109/gciot47977.2019.9058411",
+          "venue": null,
+          "cited_by": 11,
+          "abstract": "The number of Internet of Things (IoT) devices are increasing exponentially as the demand for data is driving to days market. Consequently, the need for testing and implementing new technologies is inevitable to be able to adapt to the growing number of devices and applications' needs. IoT mainly relies on Low Power Wide Area Networks (LPWANs). Different LPWAN technologies have distinctive performance metrics in terms of latency, throughput, covered distances, etc. Therefore, the choice of the IoT connectivity option is crucial to satisfy the precise needs of heterogeneous applications and network deployments. Among various LPWANs, LoRa-LPWAN stands out due to upright synthesis of optimized battery lifetime, long communication range and cost. LoRa Physical layer chiefly relies on chirp spread spectrum modulation with six spreading factors, while LoRaWAN MAC protocol imposes exploiting ra"
+        },
+        {
+          "title": "Battery Depletion Attacks on NB-IoT Devices Using Interference",
+          "year": 2022,
+          "doi": "https://doi.org/10.1007/978-3-030-95484-0_17",
+          "venue": "Lecture notes in computer science",
+          "cited_by": 6,
+          "abstract": ""
+        },
+        {
+          "title": "NB-IoT for Smart Agriculture: Experiments from the Field",
+          "year": 2020,
+          "doi": "https://doi.org/10.1109/codit49905.2020.9263860",
+          "venue": null,
+          "cited_by": 42,
+          "abstract": "Internet of Things (IoT) is shaping the agricultural industry to enhance process control, boost business efficiency, and improve product quality. Digital agriculture has the potential to fulfill the climate change adaptation with optimized natural resources use and achieve economic benefits through increased agricultural productivity. Field monitoring and agricultural processes automation can lead to alternative options for managing natural resources and environment. In addition, social and cultural benefits can be fostered by means of enhanced communication infrastructure. The agriculture domain usually requires long-range communications, extended battery lifetime, and high reliability of sensors devices. Narrowband IoT (NB-IoT) is growing as a key Low-Power Wide-Area Network (LPWAN) technology for IoT applications. Smart Agriculture proves a natural use of NB-IoT, as a typical industri"
+        },
+        {
+          "title": "A Brief Review on LPWAN Technologies for Large Scale Smart Agriculture",
+          "year": 2024,
+          "doi": "https://doi.org/10.1007/978-3-031-64064-3_8",
+          "venue": "Communications in computer and information science",
+          "cited_by": 7,
+          "abstract": ""
+        },
+        {
+          "title": "Lightweight Architecture for Intrusion Detection of Energy Depletion Attacks in LoRaWAN End devices",
+          "year": 2025,
+          "doi": "https://doi.org/10.1007/s42979-025-04211-x",
+          "venue": "SN Computer Science",
+          "cited_by": 3,
+          "abstract": ""
+        },
+        {
+          "title": "Joint throughput-energy optimization in multi-gateway LoRaWAN networks",
+          "year": 2023,
+          "doi": "https://doi.org/10.1007/s11235-023-01048-8",
+          "venue": "Telecommunication Systems",
+          "cited_by": 7,
+          "abstract": ""
+        },
+        {
+          "title": "Technology Independent Method for defining Battery Powered LPWAN End-Point Lifetime Estimation",
+          "year": 2019,
+          "doi": "https://doi.org/10.48550/arxiv.1902.04254",
+          "venue": "arXiv (Cornell University)",
+          "cited_by": 1,
+          "abstract": "Low Power Wide Area Networks (LPWAN) are expected to play an important role in the deployment of the Internet of Things (IoT). One of the major advantages of LPWAN is the low power consumption characteristics which allow devices to be deployed without the restriction of power supply when battery is contained, in consequence the Lifetime estimation metric is of high relevance. This article provides a method for evaluating the Lifetime Estimation of battery powered LPWAN End Points, a depiction of the LPWAN architecture together with a breakdown of second order effects of the model are analyzed."
+        },
+        {
+          "title": "An Orthogonal Air Pollution Monitoring Method (OAPM) Based on LoRaWAN",
+          "year": 2020,
+          "doi": "https://doi.org/10.3390/jsan9030042",
+          "venue": "Journal of Sensor and Actuator Networks",
+          "cited_by": 6,
+          "abstract": "High accuracy air pollution monitoring in a smart city requires the deployment of a huge number of sensors in this city. One of the most appropriate wireless technologies expected to support high density deployment is LoRaWAN which belongs to the Low Power Wide Area Network (LPWAN) family and offers long communication range, multi-year battery lifetime and low cost end devices. It has been designed for End Devices (EDs) and applications that need to send small amounts of data a few times per hour. However, a high number of end devices breaks the orthogonality of LoRaWAN transmissions, which was one of the main advantages of LoRaWAN. Hence, network performances are strongly impacted. To solve this problem, we propose a solution called OAPM (Orthogonal Air Pollution Monitoring) which ensures the orthogonality of LoRaWAN transmissions and provides accurate air pollution monitoring. In this "
+        },
+        {
+          "title": "Multi-Attribute Physical-Layer Authentication Against Jamming and Battery-Depletion Attacks in LoRaWAN",
+          "year": 2026,
+          "doi": "https://doi.org/10.3390/fi18010038",
+          "venue": "Future Internet",
+          "cited_by": 1,
+          "abstract": "LoRaWAN is widely used for IoT environmental monitoring, but its lightweight security mechanisms leave the physical layer vulnerable to availability attacks such as jamming and battery-depletion. These risks are particularly critical in mission-critical environmental monitoring systems. This paper proposes a multi-attribute physical-layer authentication (PLA) framework that supports uplink legitimacy assessment by jointly exploiting radio, energy, and temporal attributes, specifically RSSI, altitude, battery_level, battery_drop_speed, event_step, and time_rank. Using publicly available Brno LoRaWAN traces, we construct a device-aware semi-synthetic dataset comprising 230,296 records from 1921 devices over 13.68 days, augmented with energy, spatial, and temporal attributes and injected with controlled jamming and battery-depletion anomalies. Five classifiers (Random Forest, Multi-Layer Pe"
+        },
+        {
+          "title": "Performance Evaluation of LoRaWAN in North America Urban Scenario",
+          "year": 2018,
+          "doi": "https://doi.org/10.1109/vtcfall.2018.8690853",
+          "venue": null,
+          "cited_by": 5,
+          "abstract": "This paper evaluates the single channel throughput, packet delivery ratio, average packet delay, and the end device battery lifetime performance of the LoRaWAN technology for deployment in North America urban scenario. In order to account for the operational details of the technology, the simulation approach is used for performance evaluation. The simulation results reveal that, by using four data rates on a single 125 kHz channel, the throughput is 1.8 times of the one data rate scenario. Second, for the simulated elderly sensor devices network with 1000 EDs, at least 6 GWs are needed to guarantee the packet delivery ratio to be higher than 0.8, the average packet delay to be less than 3 s, and the end device battery lifetime to be higher than 1300 h."
+        },
+        {
+          "title": "CoLoRa: Enabling Multi-Packet Reception in LoRa",
+          "year": 2020,
+          "doi": "https://doi.org/10.1109/infocom41043.2020.9155509",
+          "venue": null,
+          "cited_by": 112,
+          "abstract": "LoRa, more generically Low-Power Wide Area Network (LPWAN), is a promising platform to connect Internet of Things. It enables low-cost low-power communication at a few kbps over upto tens of kilometers with a 10-year battery lifetime. However, practical LPWAN deployments suffer from collisions, given the dense deployment of devices and wide coverage area. We propose CoLoRa, a protocol to decompose large numbers of concurrent transmissions from one collision in LoRa networks. At the heart of CoLoRa, we utilize packet time offset to disentangle collided packets. CoLoRa incorporates several novel techniques to address practical challenges. (1) We translate time offset, which is difficult to measure, to frequency features that can be reliably measured. (2) We propose a method to cancel inter-packet interference and extract accurate feature from low SNR LoRa signal. (3) We address frequency s"
+        },
+        {
+          "title": "Artificial Intelligence for Jamming Mitigation in IoT Networks: LoRaWAN Field Measurements Using IoTligent",
+          "year": 2021,
+          "doi": "https://doi.org/10.23919/ursigass51995.2021.9560289",
+          "venue": null,
+          "cited_by": 3,
+          "abstract": "This paper gives the results of the implementation of decentralized artificial intelligence algorithms embedded in IoT devices in order to make them behave smartly against radio jamming conditions in the unlicensed bands. Whatever jamming source is (IoT devices, other interferers in the ISM band, propagation conditions, or malicious radio interferers aiming at denial of service), the proposed solution gives the ability to smart IoT devices, named IoTligent, to choose transmitting in channels which are not jammed and therefore obtain a better transmission success rate towards the gateway and the network. In case of retransmission mode, it directly improves battery lifetime of the devices. In the illustrated scenario, the percentage of successful transmission improves from 65% (obtained for a reference device) to 93% for IoTligent devices during the initial learning phase and rapidly (afte"
+        },
+        {
+          "title": "Power Measurement Framework for LPWAN IoT",
+          "year": 2020,
+          "doi": "https://doi.org/10.1007/978-3-030-51473-0_6",
+          "venue": null,
+          "cited_by": 2,
+          "abstract": ""
+        }
+      ]
+    },
+    "RQ5_a": {
+      "string": "(\"integrated sensing and communication\" OR \"ISAC\") AND \"energy efficiency\"",
+      "hits": 360,
+      "retrieved": 25,
+      "results": [
+        {
+          "title": "Integrated Sensing and Communication With Massive MIMO: A Unified Tensor Approach for Channel and Target Parameter Estimation",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/twc.2024.3351856",
+          "venue": "IEEE Transactions on Wireless Communications",
+          "cited_by": 303,
+          "abstract": "Benefitting from the vast spatial degrees of freedom, the amalgamation of integrated sensing and communication (ISAC) and massive multiple-input multiple-output (MIMO) is expected to simultaneously improve spectral and energy efficiencies as well as the sensing capability. However, a large number of antennas deployed in massive MIMO-ISAC raises critical challenges in acquiring both accurate channel state information and target parameter information. To overcome these two challenges with a unified framework, we first analyze their underlying system models and then propose a novel tensor-based approach that addresses both the channel estimation and target sensing problems. Specifically, by parameterizing the high-dimensional communication channel exploiting a small number of physical parameters, we associate the channel state information with the sensing parameters of targets in terms of a"
+        },
+        {
+          "title": "Sensing Fairness-Based Energy Efficiency Optimization for UAV Enabled Integrated Sensing and Communication",
+          "year": 2023,
+          "doi": "https://doi.org/10.1109/lwc.2023.3288529",
+          "venue": "IEEE Wireless Communications Letters",
+          "cited_by": 89,
+          "abstract": "Integrated sensing and communication (ISAC) is developing rapidly due to the advantages of bandwidth saving, hardware cost reduction and energy saving. This letter proposes a unmanned aerial vehicle (UAV) enabled ISAC (UAV-ISAC) system, where the UAV will sense ground users and forward sensed information to base station (BS). Radar mutual information (MI) is introduced to measure the UAV sensing performance. On the basis of sensing fairness for each user, a multi-objective resource optimization problem of maximizing both energy efficiency (EE) and minimum radar MI is studied by jointly optimizing user scheduling, transmit power and UAV trajectory. To solve the non-convex optimization problem, we decompose it into three sub-problems: user scheduling optimization, transmit power optimization, and UAV trajectory optimization. Each subproblem can be solved by successive convex approximation "
+        },
+        {
+          "title": "Energy Efficient Beamforming Optimization for Integrated Sensing and Communication",
+          "year": 2022,
+          "doi": "https://doi.org/10.1109/lwc.2022.3169517",
+          "venue": "IEEE Wireless Communications Letters",
+          "cited_by": 99,
+          "abstract": "This letter investigates the optimization of beamforming design in a system with integrated sensing and communication (ISAC), where the base station (BS) sends signals for simultaneous multiuser communication and radar sensing. We aim at maximizing the energy efficiency (EE) of the multiuser communication while guaranteeing the sensing requirement in terms of individual radar beampattern gains. The problem is a complicated nonconvex fractional program which is challenging to be solved. By appropriately reformulating the problem and then applying the techniques of successive convex approximation (SCA) and semidefinite relaxation (SDR), we propose an iterative algorithm to address this problem. In theory, we prove that the introduced relaxation of the SDR is rigorously tight. Numerical results validate the effectiveness of the proposed algorithm."
+        },
+        {
+          "title": "Energy-Efficiency Computation Offloading Strategy in UAV Aided V2X Network With Integrated Sensing and Communication",
+          "year": 2022,
+          "doi": "https://doi.org/10.1109/ojcoms.2022.3195703",
+          "venue": "IEEE Open Journal of the Communications Society",
+          "cited_by": 62,
+          "abstract": "Integrated Sensing and Communications (ISAC) technology can jointly design radio sensing and communication functionalities, which enable 6G Ere to have the ability to &#x201C;see&#x201D; the physical world rather than communication-only. Benefitting from ISAC, vehicular-to-everything (V2X) networks may efficiently complete high-precision traffic environment perception. Furthermore, with the assistance of flexibly deployed Unmanned Aerial Vehicles (UAVs), the V2X networks overcome the limited sensing range of sensors equipped on a vehicle and guarantee safe driving. This paper proposes an energy-efficient computation offloading strategy for multiple sensor data fusion in UAV Aided V2X Network supported by Integrated Sensing and Communication. Firstly, a vehicle-UAV cooperative perception architecture is proposed to perceive a wide range of traffic environments. Secondly, we introduce a co"
+        },
+        {
+          "title": "Integrated Sensing and Communication for Low Altitude Economy: Opportunities and Challenges",
+          "year": 2025,
+          "doi": "https://doi.org/10.1109/mcom.001.2400685",
+          "venue": "IEEE Communications Magazine",
+          "cited_by": 105,
+          "abstract": "Driven by the prosperous vision of a low-altitude economy (LAE), the low-altitude airspace is expected to be exploited for commercial and social flying activities. The network architectures for supporting LAE are first introduced in this article, including the localized statistical channel modeling and performance analysis based on stochastic geometry. Then, the technological prerequisites for ground-to-air sensing and communication are discussed, including cellular access, spectrum sharing, three-dimensional beamforming, and interference cancellation, as well as cooperative active sensing and non-cooperative passive sensing. The aircraft-assisted sensing and communication functionalities for LAE are further reviewed, including terrestrial and non-terrestrial target sensing, ubiquitous coverage, relaying, and traffic offloading. Finally, several future directions are identified, includin"
+        },
+        {
+          "title": "Deep Reinforcement Learning for Energy Efficiency Maximization in RSMA-IRS-Assisted ISAC System",
+          "year": 2025,
+          "doi": "https://doi.org/10.1109/tvt.2025.3580859",
+          "venue": "IEEE Transactions on Vehicular Technology",
+          "cited_by": 78,
+          "abstract": "The combination of rate splitting multiple access (RSMA) and integrated sensing and communication (ISAC) has recently played a constructive role in various emerging applications associated with sixth-generation networks. However, in complex urban environments, the network performance may be severely restricted by transmission blockages. With the help of intelligent reflecting surfaces (IRS), this paper leverages a virtual line-of-sight link to guarantee the qualityof-service (QoS). First, a three-dimensional (3D) geometry-based stochastic channel model (GBSM) is developed to characterize the IRS-empowered ISAC networks with RSMA. Based on the proposed channel model, we formulate an energy efficiency (EE) maximization problem, subject to transceiver beamforming constraints, IRS phase shift constraints, and QoS constraints. The impact of some important system parameters on the EE is numeri"
+        },
+        {
+          "title": "Deep-Learning Channel Estimation for IRS-Assisted Integrated Sensing and Communication System",
+          "year": 2022,
+          "doi": "https://doi.org/10.1109/tvt.2022.3231727",
+          "venue": "IEEE Transactions on Vehicular Technology",
+          "cited_by": 70,
+          "abstract": "Integrated sensing and communication (ISAC), and intelligent reflecting surface (IRS) are envisioned as revolutionary technologies to enhance spectral and energy efficiencies for next wireless system generations. For the first time, this paper focuses on the channel estimation problem in an IRS-assisted ISAC system. This problem is challenging due to the lack of signal processing capacity in passive IRS, as well as the presence of mutual interference between sensing and communication (SAC) signals in ISAC systems. A three-stage approach is proposed to decouple the estimation problem into sub-ones, including the estimation of the direct SAC channels in the first stage, reflected communication channel in the second stage, and reflected sensing channel in the third stage. The proposed three-stage approach is based on a deep-learning framework, which involves two different convolutional neur"
+        },
+        {
+          "title": "Energy Efficiency Optimization in Active Reconfigurable Intelligent Surface-Aided Integrated Sensing and Communication Systems",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/tvt.2024.3465897",
+          "venue": "IEEE Transactions on Vehicular Technology",
+          "cited_by": 32,
+          "abstract": "Energy efficiency (EE) is a challenging task in integrated sensing and communication (ISAC) systems, where high spectral efficiency and low energy consumption appear as conflicting requirements. Although passive reconfigurable intelligent surface (RIS) has emerged as a promising technology for enhancing the EE of the ISAC system, the multiplicative fading feature hinders its effectiveness. This paper proposes the use of active RIS with its amplification gains to assist the ISAC system for EE improvement. Specifically, we formulate an EE optimization problem in an active RIS-aided ISAC system under system power budgets, considering constraints on user communication quality of service and sensing signal-to-noise ratio (SNR). A novel alternating optimization algorithm is developed to address the highly non-convex problem by employing the generalized Rayleigh quotient optimization, semidefin"
+        },
+        {
+          "title": "Integrated sensing and communication based outdoor multi-target detection, tracking, and localization in practical 5G Networks",
+          "year": 2023,
+          "doi": "https://doi.org/10.23919/icn.2023.0021",
+          "venue": "Intelligent and Converged Networks",
+          "cited_by": 61,
+          "abstract": "The 6th generation (6G) wireless networks will likely to support a variety of capabilities beyond communication, such as sensing and localization, through the use of communication networks empowered by advanced technologies. Integrated sensing and communication (ISAC) has been recognized as a critical technology as well as a usage scenario for 6G, as widely agreed by leading global standardization bodies. ISAC utilizes communication infrastructure and devices to provide the capability of sensing the environment with high resolution, as well as tracking and localizing moving objects nearby. Meeting both the requirements for communication and sensing simultaneously, ISAC-based approaches celebrate the advantages of higher spectral and energy efficiency compared to two separate systems to serve two purposes, and potentially lower costs and easy deployment. A key step towards the standardiza"
+        },
+        {
+          "title": "Energy-Efficient Integrated Sensing and Communication: A Multi-Access Edge Computing Design",
+          "year": 2023,
+          "doi": "https://doi.org/10.1109/lwc.2023.3306433",
+          "venue": "IEEE Wireless Communications Letters",
+          "cited_by": 40,
+          "abstract": "Integrated sensing and communication (ISAC) is regarded as an important paradigm in future networks. In this letter, we consider that the ISAC device can offload its collected sensing data to multiple edge-servers for remote processing via multi-access mobile edge computing (MEC). To this end, we formulate a joint optimization problem of the beamforming for radar sensing and the beamforming for offloading transmission, with the objective of maximizing the energy efficiency of ISAC device, which is defined as the ratio between the total information collected from the radar echo signal and the energy consumption of the ISAC device. Despite the non-convexity of the formulated joint optimization problem, we propose an efficient algorithm to find the optimal solutions. Numerical results are provided to evaluate the effectiveness of our proposed algorithm and demonstrate the performance advant"
+        },
+        {
+          "title": "Energy-Efficient Interference Cancellation in Integrated Sensing and Communication Scenarios",
+          "year": 2023,
+          "doi": "https://doi.org/10.1109/tgcn.2023.3234404",
+          "venue": "IEEE Transactions on Green Communications and Networking",
+          "cited_by": 30,
+          "abstract": "Recently, integrated sensing and communication (ISAC) has been a hot topic to alleviate the issue of low spectrum efficiency, pursuit the hardware gain and integration gain as far as possible. However, the coexistence of sensing and communication functions triggers the mutual interference therein, seriously affecting their respective performance. To solve this problem, the communication model and sensing model are built respectively in this paper, considering the interference between communication signals and between sensing signals and communication signals. Then, the ratio of the total transmitting data rate and the total power consumption is regarded as the optimization objection of this paper for energy-efficient interference cancellation. After that, the approximate solution of the optimization objection is obtained by Dinkelbach based scheme and semi-definite relaxation (SDR). Fina"
+        },
+        {
+          "title": "Energy efficiency maximization for active RIS-aided integrated sensing and communication",
+          "year": 2024,
+          "doi": "https://doi.org/10.1186/s13638-024-02346-8",
+          "venue": "EURASIP Journal on Wireless Communications and Networking",
+          "cited_by": 12,
+          "abstract": "Abstract This paper investigates energy-efficient communication within an integrated sensing and communication system. The system employs a dual-function radar-communication base station. This base station concurrently serves multiple mobile users for communication purposes while also performing target sensing within a designated range cell. An active reconfigurable intelligent surface (RIS) is utilized to enhance communication efficiency. The focus of this work is to optimize the communication energy efficiency by jointly allocating the transmit power and configuring the RIS elements. This optimization is achieved while satisfying constraints on both the probing power required for target sensing and the quality-of-service demands of the communication users. Two novel optimization methods are proposed, combining techniques from alternating optimization, sequential programming, and fracti"
+        },
+        {
+          "title": "Channel Sharing Aided Integrated Sensing and Communication: An Energy-Efficient Sensing Scheduling Approach",
+          "year": 2023,
+          "doi": "https://doi.org/10.1109/twc.2023.3322680",
+          "venue": "IEEE Transactions on Wireless Communications",
+          "cited_by": 34,
+          "abstract": "Integrated sensing and communication (ISAC) is a promising paradigm for supporting emerging wireless services and applications that require both high-throughput data transmission and accurate environment sensing. In this paper, we investigate the energy-efficient channel sharing aided ISAC with sensing scheduling, in which the ISAC base station (BS) can simultaneously sense multiple targets by reusing the channel of conventional cellular users. To investigate this problem, we formulate a joint optimization of the multi-target sensing scheduling, the BS’s transmitting beamforming, and its receiving beamforming for each sensing target, with the objective of maximizing the energy efficiency for radar sensing while guaranteeing each cellular user’s throughput requirement. Despite that the formulated joint optimization problem is strictly non-convex, we exploit a framework of alternating opti"
+        },
+        {
+          "title": "Holographic MIMO With Integrated Sensing and Communication for Energy-Efficient Cell-Free 6G Networks",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/jiot.2024.3411695",
+          "venue": "IEEE Internet of Things Journal",
+          "cited_by": 36,
+          "abstract": "Sixth-generation wireless networks are required to satisfy the ever-increasing demands of diverse applications to guarantee power savings, energy efficiency (EE), and mass connectivity. To accomplish these goals, in this article, an artificial intelligence (AI)-based holographic MIMO (HMIMO)-empowered cell-free (CF) network is proposed while leveraging integrated sensing and communication (ISAC). The proposed AI-based framework allocates the desired power for beamforming by activating the required number of grids from the serving HMIMO base stations (BSs) in the CF network to serve the users. An optimization problem is formulated that maximizes the sensing utility function, which in turn maximizes the signal-to-interference-plus-noise ratio (SINR) of the received signal, the sensing SINR of the reflected echo signal, and EE, ensuring efficient power allocation. To solve the optimization "
+        },
+        {
+          "title": "Multi-Point Integrated Sensing and Communication: Fusion Model and Functionality Selection",
+          "year": 2022,
+          "doi": "https://doi.org/10.1109/lwc.2022.3213883",
+          "venue": "IEEE Wireless Communications Letters",
+          "cited_by": 26,
+          "abstract": "Integrated sensing and communication (ISAC) represents a paradigm shift, where previously competing wireless transmissions are jointly designed to operate in harmony via the shared use of the hardware platform for improving the spectral and energy efficiencies. However, due to adversarial factors such as fading and interference, ISAC may suffer from high sensing uncertainties. This letter presents a multi-point ISAC (MPISAC) system that fuses the outputs from multiple ISAC devices for achieving higher sensing performance by exploiting multi-view data redundancy. Furthermore, we propose to effectively explore the performance trade-off between sensing and communication via a functionality selection module that adaptively determines the working state (i.e., sensing or communication) of an ISAC device. The crux of our approach is to derive a fusion model that predicts the fusion accuracy via"
+        },
+        {
+          "title": "Secure Transmission for IRS-Aided UAV-ISAC Networks",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/twc.2024.3390169",
+          "venue": "IEEE Transactions on Wireless Communications",
+          "cited_by": 73,
+          "abstract": "Integrated sensing and communication (ISAC), which can make full use of the wireless platform and the spectrum for concurrent sensing and communication purposes, is emerging as a promising technology for future mobile networks. This paper studies the secure transmission for intelligent reflecting surface (IRS) aided unmanned aerial vehicle (UAV)-ISAC networks. Particularly, the UAV, as a dual-functional ISAC base station, servesKcommunication users and sensesJtargets with the help of an IRS. Furthermore, a potential eavesdropper, whose channel state information is not available, aims at eavesdropping the private information from the UAV toKusers. A secure transmission scheme is proposed to maximize the average achievable rate via jointly designing the transmit power allocation, the scheduling of users and targets, the phase shifts at IRS, as well as the trajectory and velocity of the UAV"
+        },
+        {
+          "title": "A Survey on Machine Learning Enhanced Integrated Sensing and Communication Systems: Architectures, Algorithms, and Applications",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/access.2024.3501363",
+          "venue": "IEEE Access",
+          "cited_by": 29,
+          "abstract": "Integrated sensing and communications (ISAC) technology is being developed in wireless communications systems in the sixth generation (6G). ISAC has the advantages of lower cost, better spectral efficiency, and better energy efficiency than systems that use separate transceivers and receivers. This technology utilizes the same communication resources for communicating and sensing within the same framework, enabling more efficient use of resources. Currently, machine learning (ML) has been developed in the field of communications, including sensing and wireless communications, due to its ability to tackle complex optimization problems, estimate complex issues, and extract and exploit spatial/temporal patterns that can improve ISAC performance. This paper provides a comprehensive survey of ISAC systems enhanced by ML. We begin by presenting various system configurations based on the type o"
+        },
+        {
+          "title": "A State-of-the-Art Survey on IRS-NOMA for Integrated Sensing and Communication",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/access.2024.3512998",
+          "venue": "IEEE Access",
+          "cited_by": 19,
+          "abstract": "In recent years, the rapid advancements in wireless communication technologies have necessitated more efficient and integrated systems. An emerging paradigm addressing this need is the integration of Intelligent Reflecting Surfaces (IRS) with Non-Orthogonal Multiple Access (NOMA) for Integrated Sensing and Communication (ISAC). This paper offers a comprehensive survey of the state-of-the-art IRS-NOMA technologies, emphasizing their potential to enhance ISAC systems. We examine the fundamental principles of IRS and NOMA, investigating how their combined integration can markedly improve spectral and energy efficiencies, system capacity, and overall performance. The survey methodically categorizes and reviews recent research contributions, highlighting key innovations, design methodologies, advancements in the sophisticated algorithms, and performance metrics. Furthermore, we address the pr"
+        },
+        {
+          "title": "Energy Efficiency Optimization in Secure Full-Duplex ISAC Systems",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/lcomm.2024.3511549",
+          "venue": "IEEE Communications Letters",
+          "cited_by": 14,
+          "abstract": "In this letter, we consider the energy efficiency (EE) of the secure full-duplex integrated sensing and communication system. The base station simultaneously performs full-duplex wireless communications and targets sensing, where one of the targets is an eavesdropper. To achieve EE maximization under the secure rate and sensing constraints, we jointly optimize the transmit and receive beamforming as well as designing artificial noise. Since this problem is non-convex, we propose an algorithm based on semi-definite relaxation, successive convex approximation and fractional programming. The results indicate that the EE is optimized while the tradeoff among sensing performance, transmit power and EE is also achieved."
+        },
+        {
+          "title": "Deep-Learning-Based Techniques for Integrated Sensing and Communication Systems: State-of-the-Art, Challenges, and Opportunities",
+          "year": 2025,
+          "doi": "https://doi.org/10.1109/ojcoms.2025.3586560",
+          "venue": "IEEE Open Journal of the Communications Society",
+          "cited_by": 25,
+          "abstract": "This article comprehensively reviews recent developments and research on deep learning-based (DL-based) techniques for integrated sensing and communication (ISAC) systems. ISAC, which combines sensing and communication functionalities, is regarded as a key enabler for 6G and beyond networks, as many emerging applications, such as vehicular networks and industrial robotics, necessitate both sensing and communication capabilities for effective operation. A unified platform that provides both functions can reduce hardware complexity, alleviate frequency spectrum congestion, and improve energy efficiency. However, integrating these functionalities on the same hardware requires highly optimized signal processing and system design, introducing significant computational complexity when relying on conventional iterative or optimization-based techniques. As an alternative to conventional techniqu"
+        },
+        {
+          "title": "UAV-Assisted Communications in SAGIN-ISAC: Mobile User Tracking and Robust Beamforming",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/jsac.2024.3460065",
+          "venue": "IEEE Journal on Selected Areas in Communications",
+          "cited_by": 66,
+          "abstract": "Both the space-air-ground integrated networks (SAGIN) and the integrated sensing and communication (ISAC) are promising technologies in future communication systems. This paper investigates the mobile user (MU) tracking and robust beamforming design by the unmanned aerial vehicle (UAV) in an SAGIN-ISAC system. Two schemes for acquiring the location information of MUs at the UAV are proposed, namely the space-assisted and ISAC-assisted schemes. The former requires the precise location information from the satellite by the space-air transmission, while the latter estimates the location information of MUs via a proposed extended Kalman filter based algorithm. The obtained location information is then utilized to predict the channel distribution of MUs, which can be used to formulate an outage-constrained energy efficiency (EE) maximization problem. The considered problem is first reformulat"
+        },
+        {
+          "title": "Optical Integrated Sensing and Communication With Light-Emitting Diode",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/jiot.2024.3523045",
+          "venue": "IEEE Internet of Things Journal",
+          "cited_by": 13,
+          "abstract": "This article presents a new optical integrated sensing and communication (O-ISAC) framework tailored for cost-effective light-emitting diode (LED) for enhanced Internet of Things (IoT) applications. Unlike prior research on ISAC, which predominantly focused on radio frequency (RF) band, O-ISAC capitalizes on the inherent advantages of the optical spectrum, including the ultrawide license-free bandwidth, immunity to RF interference, and energy efficiency—attributes crucial for IoT communications. The communication and sensing in our O-ISAC system unfold in two phases: 1) directionless O-ISAC and 2) directional O-ISAC. In the first phase, distributed optical access points emit nondirectional light for communication and leverage small-aperture imaging principles for sensing. In the second phase, we put forth the concept of optical beamforming, using collimating lenses to concentrate light, "
+        },
+        {
+          "title": "Optical Integrated Sensing and Communication with Light-Emitting Diode",
+          "year": 2024,
+          "doi": "https://doi.org/10.1109/iccworkshops59551.2024.10615407",
+          "venue": null,
+          "cited_by": 10,
+          "abstract": "This paper presents a new optical integrated sensing and communication (O-ISAC) framework tailored for cost-effective Light-Emitting Diode (LED). Unlike prior research on ISAC, which predominantly focused on radio frequency (RF) band, O-ISAC capitalizes on the inherent advantages of the optical spectrum, including the ultra-wide license-free bandwidth, immunity to RF interference, and energy efficiency. Moreover, the performance of communication and sensing in O-ISAC is positively correlated, circumventing the tradeoff that has plagued RF-ISAC systems. Our O-ISAC framework unfolds in two phases: directionless O-ISAC and directional O-ISAC. In the first phase, distributed optical access points emit non-directional light for communication and leverage small-aperture imaging principles for sensing. In the second phase, we put forth the concept of optical beamforming, using collimating lense"
+        },
+        {
+          "title": "Energy efficiency optimization for UAV-mounted RIS-aided integrated sensing and communication systems",
+          "year": 2025,
+          "doi": "https://doi.org/10.1016/j.cja.2025.103920",
+          "venue": "Chinese Journal of Aeronautics",
+          "cited_by": 5,
+          "abstract": "Energy Efficiency (EE) optimization has emerged as a crucial and challenging task in Integrated Sensing and Communication (ISAC) systems. Although Reconfigurable Intelligent Surface (RIS) has been proven as an effective technology for enhancing ISAC system performance, the traditional fixed-deployed RIS suffers from location constraints, making it difficult to apply in dynamic wireless environments.Motivated by the above, we propose a novel ISAC system architecture based on Unmanned Aerial Vehicle (UAV) mounted passive RIS, which leverages the mobility of UAV to optimize the three-dimensional deployment position of RIS. In addition, limited by the system power budget, we formulate a joint optimization problem aimed at maximizing the EE while ensuring user communication quality of service and target sensing signal-to-noise ratio requirements. Specifically, by integrating generalized Rayle"
+        },
+        {
+          "title": "Integrated Sensing and Communication for 6G: Motivation, Enablers and Standardization",
+          "year": 2023,
+          "doi": "https://doi.org/10.1109/icccworkshops57813.2023.10233791",
+          "venue": null,
+          "cited_by": 9,
+          "abstract": "Integrated sensing and communication (ISAC) has become a very popular technology as well as a usage scenario since recently. The potential advantages of doubling the spectral and energy efficiency as well as minimizing the hardware cost, at least theoretically, make ISAC a promising candidate for the 6th generation (6G) wireless networks. In this paper, we describe and analyze the motivation of adopting ISAC into future networks from a practical perspective. Key technology challenges and enablers are also introduced, followed by a standardization forecast based on the latest progress and trends in international standardization bodies."
+        }
+      ]
+    },
+    "RQ5_b": {
+      "string": "(\"integrated sensing and communication\" OR \"ISAC\") AND \"energy efficiency\" AND (\"sleep\" OR \"idle\" OR \"quiescent\" OR \"duty cycle\")",
+      "hits": 1,
+      "retrieved": 1,
+      "results": [
+        {
+          "title": "Decentralized MARL for Sleep-Aware Edge Offloading",
+          "year": 2026,
+          "doi": null,
+          "venue": "Uppsala University Publications (Uppsala University)",
+          "cited_by": 0,
+          "abstract": "Compute-intensive and latency-sensitive applications increasingly rely on Mobile Edge Computing (MEC) to overcome the limited processing capability and battery capacity of user equipment (UEs). However, offloading computation from UEs to edge servers shifts part of the energy consumption to the radio access network, where base stations are major contributors to overall network power usage. This creates a system-level trade-off between reducing UE energy consumption, satisfying task latency constraints, and minimizing network-side energy consumption. This thesis investigates energy-aware computation offloading in a radio access network where edge servers are co-located with Next Generation Node Bs (gNBs) operating under multi-level 3rd Generation Partnership Project-defined sleep states. A decentralized multi-agent reinforcement learning (MARL) approach is developed, where each UE indepen"
+        }
+      ]
+    },
+    "RQ5_c": {
+      "string": "(\"integrated sensing and communication\" OR \"ISAC\") AND (\"battery life\" OR \"battery lifetime\")",
+      "hits": 4,
+      "retrieved": 4,
+      "results": [
+        {
+          "title": "BLE-Driven Power-Efficient Integrated Sensing and Communication Framework for Livestock Monitoring",
+          "year": 2025,
+          "doi": "https://doi.org/10.1109/jrfid.2025.3554569",
+          "venue": "IEEE Journal of Radio Frequency Identification",
+          "cited_by": 2,
+          "abstract": "The existing BLE-based cattle health and activity monitoring solutions rely primarily on parametric power optimization. However, a cattle health and activity monitoring system may require non-optimized parameters. Further, existing solutions transmit raw data, which is usually generated frequently, consequently increasing total transmission and causing high power consumption. Besides, BLE-based solutions are prone to data loss as the number of devices in the network increases, necessitating multiple transmissions to overcome data loss. However, the lack of an analytical framework to determine the optimal number of retransmissions results in redundant transmissions. This highlights the need for analytical expressions to precisely calculate the required number of retransmissions to overcome data loss. Owing to this issue and the emergence of BLE-related solutions, we have first examined th"
+        },
+        {
+          "title": "Revolutionizing IoT-Based WSN Sensor Charging The ISAC-Probabilistic Paradigm",
+          "year": 2025,
+          "doi": "https://doi.org/10.1007/978-981-96-6079-7_6",
+          "venue": null,
+          "cited_by": 0,
+          "abstract": ""
+        },
+        {
+          "title": "IEEE 802.11ad-Aided 5-D Sensing With a UAV Swarm in Urban Environment",
+          "year": 2025,
+          "doi": "https://doi.org/10.1109/icassp49660.2025.10889552",
+          "venue": null,
+          "cited_by": 1,
+          "abstract": "Aerial base stations mounted on unmanned aerial vehicles (UAVs) support next-generation wireless networks in challenging environments such as urban areas, disaster zones, and remote locations. Further, UAV swarms overcome the challenges of limited battery life and other operational constraints of a single UAV. However, tracking mobile users on the ground by each UAV and the corresponding synchronization between the UAVs is a significant issue to be resolved before field deployment. Incorporating additional sensing capabilities to fulfill this requirement introduces significant overhead in terms of hardware, cost, and power to each UAV. To this end, we develop a swarm UAV integrated sensing and communications (ISAC) system using the millimeter-wave IEEE 802.11ad protocol. Our proposed system is capable of five-dimensional (5-D) (range, Doppler velocity, azimuth, elevation, and polarizatio"
+        },
+        {
+          "title": "Cutting-Edge Sensing Allocations and Enhanced Wireless Communication Coverage Solutions for Sustainable Smart Agriculture",
+          "year": 2026,
+          "doi": "https://doi.org/10.20944/preprints202602.0666.v1",
+          "venue": "Preprints.org",
+          "cited_by": 0,
+          "abstract": "The smart agriculture system requires high efficiency to automatically maximize crop yields and minimize losses. Wireless sensor networks (WSNs) are essential for maintaining system sustainability through sensing and connectivity. However, they encounter challenges related to cost, interoperability, and reliability. Efforts have been made to expand sensing capabilities while managing costs and addressing variability in sensor communication and power consumption. Despite these efforts, a comprehensive solution—especially for orchard fields—remains undeveloped. This study introduces a coordinated WSN design to optimize sensing and connectivity in agricultural fields. We employ an integrated sensing and connectivity (ISAC) strategy to create a complete solution. Our hybrid approach combines graphical computation with distance-vector algorithms for reliable, cost-effective deployment. Additi"
+        }
+      ]
+    }
+  }
+}

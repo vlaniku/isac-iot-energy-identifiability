@@ -1,0 +1,265 @@
+{
+  "retrieved": 25,
+  "distinct": 22,
+  "duplicates": [
+    {
+      "dup": "P05",
+      "of": "P01"
+    },
+    {
+      "dup": "P17",
+      "of": "P16"
+    },
+    {
+      "dup": "P25",
+      "of": "P24"
+    }
+  ],
+  "excluded": [
+    {
+      "slug": "P08",
+      "title": "Paradigm Shift Toward Distributed Learning in IoT Intelligence: ",
+      "reason": "survey"
+    },
+    {
+      "slug": "P11",
+      "title": "Distributed Reconfigurable Intelligent Surfaces for Energy-Effic",
+      "reason": "review"
+    },
+    {
+      "slug": "P18",
+      "title": "A Survey on Green Wireless Sensing: Energy-Efficient Sensing via",
+      "reason": "survey"
+    },
+    {
+      "slug": "P20",
+      "title": "Toward Standardization of 6G and NextG: Key Technologies to Enab",
+      "reason": "standardi[sz]ation"
+    },
+    {
+      "slug": "P23",
+      "title": "6G cross-domain integrated IoT for communication, sensing, intel",
+      "reason": "review"
+    },
+    {
+      "slug": "P24",
+      "title": "Огляд схем NOMA для бездротових мереж 6G: сучасний стан, основні",
+      "reason": "огляд"
+    }
+  ],
+  "included": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P06",
+    "P07",
+    "P09",
+    "P10",
+    "P12",
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P19",
+    "P21",
+    "P22"
+  ],
+  "n_included": 16,
+  "fulltext_screened": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P06",
+    "P07",
+    "P09",
+    "P10",
+    "P12",
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P22"
+  ],
+  "fulltext_missing": [
+    "P19",
+    "P21"
+  ],
+  "results": {
+    "P01": {
+      "title": "Optical Integrated Sensing and Communication With Light-Emitting Diode",
+      "doi": "10.1109/jiot.2024.3523045",
+      "chars": 83842,
+      "n_terms_hit": 0,
+      "hits": {},
+      "carries_standing_charge": false
+    },
+    "P02": {
+      "title": "Digital Twin and Integrated Sensing and Communication Applications in Internet of Things: Enabling Communication Technologies, Taxonomy, Implications, and Open Issues",
+      "doi": "10.3390/app16010073",
+      "chars": 94141,
+      "n_terms_hit": 0,
+      "hits": {},
+      "carries_standing_charge": false
+    },
+    "P03": {
+      "title": "Energy-Efficiency Maximization for Integrated Sensing and Communication in IoT C-RAN",
+      "doi": "10.1109/jiot.2026.3660286",
+      "chars": 107112,
+      "n_terms_hit": 1,
+      "hits": {
+        "circuit\\s+power": [
+          "remote radio units (rrus). pmax n maximum transmit power of ues. pcir circuit power consumption of ues. psens sensing power consumption of rrus. [ ˆxn, ˆ",
+          " nth ue is expressed as [50] pcon,ue n = pcir + pn, where pcir is the circuit power con- sumption at each ue for ampliﬁcation and cooling purposes. and t",
+          " n as un. this node includes the maximum power threshold pmax n , the circuit power consumption pcir, the localiza- tion accuracy threshold κ, and the co"
+        ]
+      },
+      "carries_standing_charge": true
+    },
+    "P04": {
+      "title": "6G Internet-of-Things assisted smart homes and buildings: Enabling technologies, opportunities and challenges",
+      "doi": "10.1016/j.iot.2025.101658",
+      "chars": 186991,
+      "n_terms_hit": 1,
+      "hits": {
+        "\\bsleep\\b": [
+          "ang, y. chen, j. yang, x. chen, j. cheng, tracking vital signs during sleep leveraging off-the-shelf wifi, in: proc. of the 16th acm int. symp. ",
+          ". chen, j. cheng, j. yang, monitoring vital signs and postures during sleep using wifi signals, ieee iot j. 5 (3) (2018) 2071–2084. [55] z. yang",
+          " ren, wifi-based real-time breathing and heart rate monitoring during sleep, in: 2019 ieee global commun. conf., globecom, ieee, 2019, pp. 1–6. "
+        ]
+      },
+      "carries_standing_charge": true
+    },
+    "P06": {
+      "title": "Joint User Pairing and CRB Optimization for NOMA-aided Integrated Sensing and Communication",
+      "doi": "10.1109/gcwkshps58843.2023.10464922",
+      "chars": 27211,
+      "n_terms_hit": 0,
+      "hits": {},
+      "carries_standing_charge": false
+    },
+    "P07": {
+      "title": "Toward Secure and Energy-Efficient ISAC in Low-Altitude IoT: A Game-Theoretic DRL Framework With Adaptive Sensing",
+      "doi": "10.1109/jiot.2025.3617537",
+      "chars": 69820,
+      "n_terms_hit": 1,
+      "hits": {
+        "battery\\s+life": [
+          "v moves in 3-d space [8]. the platform is also constrained by limited battery life and computational capacity, making it more di ﬃcult to maintain relia"
+        ]
+      },
+      "carries_standing_charge": true
+    },
+    "P09": {
+      "title": "IMSBA: A Novel Integrated Sensing and Communication Beam Allocation Based on Multi-Agent Reinforcement Learning for mmWave Internet of Vehicles",
+      "doi": "10.3390/app15116069",
+      "chars": 70521,
+      "n_terms_hit": 0,
+      "hits": {},
+      "carries_standing_charge": false
+    },
+    "P10": {
+      "title": "IoT-Enhanced Multi-Base Station Networks for Real-Time UAV Surveillance and Tracking",
+      "doi": "10.3390/drones9080558",
+      "chars": 85414,
+      "n_terms_hit": 0,
+      "hits": {},
+      "carries_standing_charge": false
+    },
+    "P12": {
+      "title": "Energy-Efficient MIMO Integrated Sensing and Communications With On–Off Nontransmission Power",
+      "doi": "10.1109/jiot.2023.3336339",
+      "chars": 80415,
+      "n_terms_hit": 4,
+      "hits": {
+        "circuit\\s+power": [
+          "l policies for energy harvesting wireless transmitters with non-ideal circuit power,” ieee j. sel. areas commun., vol. 32, no. 2, pp. 322–332, feb. 2014."
+        ],
+        "static\\s+power": [
+          "ts, namely, the transmission power, on–off nontransmission power, and static power, respectively. 1) transmission power: the transmission power generall",
+          "sion power as pnon-trans = { pc, if tr(q) > 0 0, if tr(q) = 0. (9) 3) static power: the static power pstatic is a constant term that is consumed by, e.g",
+          "-trans = { pc, if tr(q) > 0 0, if tr(q) = 0. (9) 3) static power: the static power pstatic is a constant term that is consumed by, e.g., cooling systems"
+        ],
+        "constant\\s+power": [
+          "hese components can be turned off for saving power. 1 let pc denote a constant power consumed during the “on” status. we have the on–off nontransmission p"
+        ],
+        "\\bsleep\\b": [
+          " 2009. [33] f. e. salem, a. gati, z. altman, and t. chahed, “advanced sleep modes and their impact on ﬂow-level performance of 5g networks,” in p"
+        ]
+      },
+      "carries_standing_charge": true
+    },
+    "P13": {
+      "title": "Generalized High-Precision and Wide-Angle DOA Estimation Method Based on Space-Time-Coding Digital Metasurfaces",
+      "doi": "10.1109/jiot.2024.3445451",
+      "chars": 54322,
+      "n_terms_hit": 0,
+      "hits": {},
+      "carries_standing_charge": false
+    },
+    "P14": {
+      "title": "Phase-Based Distance Estimation Integrated With IEEE 802.15.4 TSCH Communication",
+      "doi": "10.1109/jiot.2023.3330933",
+      "chars": 60650,
+      "n_terms_hit": 0,
+      "hits": {},
+      "carries_standing_charge": false
+    },
+    "P15": {
+      "title": "Adaptive Hybrid Energy Harvesting with Integrated Sensing and Communication for Consumer IoT Networks",
+      "doi": "10.1109/tce.2026.3665569",
+      "chars": 62127,
+      "n_terms_hit": 2,
+      "hits": {
+        "\\bidle\\b": [
+          " intelligent management, we aims to overcome energy shortages, reduce idle times, and ensure continuous sensing and data transmission. table. iv"
+        ],
+        "duty[- ]cycle": [
+          "pting to dynamic energy availability. 17 ml prediction-based adaptive duty cycle mac (padc-mac) solar energy harvesting wsns dynamically adjusts duty ",
+          "cycle mac (padc-mac) solar energy harvesting wsns dynamically adjusts duty cycle using predicted energy; improves packet delivery, throughput, and ene",
+          "bps link, resulting in a mac occupancy below 1% even under worst-case duty-cycle assumptions. table v: simulation parameters parameter value/ range nu"
+        ]
+      },
+      "carries_standing_charge": true
+    },
+    "P16": {
+      "title": "Energy Minimization Oriented Resource Allocation for Integrated Sensing and Communication in Marine IoT Networks",
+      "doi": "10.48550/arxiv.2607.13462",
+      "chars": 72075,
+      "n_terms_hit": 2,
+      "hits": {
+        "hardware\\s+power": [
+          ") cap the total tran s- mission power radiated by the ua v within its hardware power limit pua v,max. constraint (31g) provides an upper bound for usv’s t"
+        ],
+        "duty[- ]cycle": [
+          "log(1 + 2τb ua vuh ass0(as)h u uh λu ) (13) in which δ stands for the duty cycle, while τ refers to single pulse time length. the vector u denotes the",
+          "s as bua v=bbs = 10 mhz for communication bandwidth, δ = 0.01 for the duty cycle factor,τ = 2 × 10−6 s for pulse time length, cua v= 1 × 103 cycles/bi"
+        ]
+      },
+      "carries_standing_charge": true
+    },
+    "P22": {
+      "title": "Maximize Sensing Energy Efficiency of RIS-Assisted ISCPT Systems With Imperfect Channels and Charging",
+      "doi": "10.1109/lcomm.2026.3662807",
+      "chars": 27785,
+      "n_terms_hit": 1,
+      "hits": {
+        "circuit\\s+power": [
+          " ∥w∥2 f≤ pmax, (9e) |em|2 = 1, 1≤ m≤ m, (9f) where pc is the combined circuit power consumption of the bs and the ris, and η ∈ (0, 1] is the amplifier ef"
+        ]
+      },
+      "carries_standing_charge": true
+    }
+  },
+  "n_with_standing_charge": 7,
+  "with_standing_charge": [
+    "P03",
+    "P04",
+    "P07",
+    "P12",
+    "P15",
+    "P16",
+    "P22"
+  ]
+}

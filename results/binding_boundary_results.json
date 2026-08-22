@@ -1,0 +1,100 @@
+{
+  "n_devices": 5,
+  "n_steps": 300,
+  "n_seeds": 4,
+  "n_batt": 400,
+  "death_penalty_J": 3.0,
+  "invariant_violations": 80,
+  "rows": {
+    "0.30": {
+      "myopic": 1.917368821570308,
+      "ration": 1.7895116618302147,
+      "clairvoyant": 3.0,
+      "gap_pct": -56.46441969067938,
+      "ration_capture_pct": NaN,
+      "deaths_myopic": 20,
+      "deaths_ration": 20,
+      "n": 20
+    },
+    "0.40": {
+      "myopic": 1.5688656096026397,
+      "ration": 1.3959558221430048,
+      "clairvoyant": 3.0,
+      "gap_pct": -91.22096766209543,
+      "ration_capture_pct": NaN,
+      "deaths_myopic": 20,
+      "deaths_ration": 20,
+      "n": 20
+    },
+    "0.50": {
+      "myopic": 1.226467020805796,
+      "ration": 1.017028362009486,
+      "clairvoyant": 3.0,
+      "gap_pct": -144.60502802831036,
+      "ration_capture_pct": NaN,
+      "deaths_myopic": 20,
+      "deaths_ration": 20,
+      "n": 20
+    },
+    "0.60": {
+      "myopic": 0.8882037320258098,
+      "ration": 0.6365628021735332,
+      "clairvoyant": 3.0,
+      "gap_pct": -237.76034617166243,
+      "ration_capture_pct": NaN,
+      "deaths_myopic": 20,
+      "deaths_ration": 20,
+      "n": 20
+    },
+    "0.70": {
+      "myopic": 0.5564257711308208,
+      "ration": 0.3577034903020514,
+      "clairvoyant": 0.3472796261039987,
+      "gap_pct": 37.58742960481065,
+      "ration_capture_pct": 95.01599027956462,
+      "deaths_myopic": 20,
+      "deaths_ration": 0,
+      "n": 20
+    },
+    "0.80": {
+      "myopic": 0.3668306088989381,
+      "ration": 0.32015818093753234,
+      "clairvoyant": 0.31905583195285836,
+      "gap_pct": 13.023661544896243,
+      "ration_capture_pct": 97.6926130164498,
+      "deaths_myopic": 6,
+      "deaths_ration": 0,
+      "n": 20
+    },
+    "0.90": {
+      "myopic": 0.3255829540528029,
+      "ration": 0.31689634618850154,
+      "clairvoyant": 0.3160008734412857,
+      "gap_pct": 2.943053526679164,
+      "ration_capture_pct": 90.65471494636002,
+      "deaths_myopic": 1,
+      "deaths_ration": 0,
+      "n": 20
+    },
+    "1.00": {
+      "myopic": 0.31566558539055095,
+      "ration": 0.31566558539055095,
+      "clairvoyant": 0.31566558539055095,
+      "gap_pct": 0.0,
+      "ration_capture_pct": NaN,
+      "deaths_myopic": 0,
+      "deaths_ration": 0,
+      "n": 20
+    },
+    "1.20": {
+      "myopic": 0.31566558539055095,
+      "ration": 0.31566558539055095,
+      "clairvoyant": 0.31566558539055095,
+      "gap_pct": 0.0,
+      "ration_capture_pct": NaN,
+      "deaths_myopic": 0,
+      "deaths_ration": 0,
+      "n": 20
+    }
+  }
+}

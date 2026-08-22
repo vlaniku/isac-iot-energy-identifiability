@@ -1,0 +1,95 @@
+{
+  "per_device": [
+    {
+      "device": "_SENZOR_01",
+      "n_batt": 91,
+      "window_days": 63.26085203703704,
+      "slope_mV_day": -1.0386606104911287,
+      "export_rate": 1.5965640162555508,
+      "server_rate": 2.0079864607243887,
+      "capture": 0.7951069628624808
+    },
+    {
+      "device": "_SENZOR_02",
+      "n_batt": 99,
+      "window_days": 39.08860009259259,
+      "slope_mV_day": -1.1338107206106491,
+      "export_rate": 3.0699487757490798,
+      "server_rate": 3.4758633952599247,
+      "capture": 0.8832190528360823
+    },
+    {
+      "device": "_SENZOR_03",
+      "n_batt": 98,
+      "window_days": 78.99281204861111,
+      "slope_mV_day": -1.1460201746477667,
+      "export_rate": 2.126775786847733,
+      "server_rate": 4.843742192375525,
+      "capture": 0.4390769992249927
+    },
+    {
+      "device": "_SENZOR_04",
+      "n_batt": 114,
+      "window_days": 59.89295252314815,
+      "slope_mV_day": -1.1042091533955969,
+      "export_rate": 3.005361940212105,
+      "server_rate": 4.357401424063623,
+      "capture": 0.6897142695219863
+    },
+    {
+      "device": "_SENZOR_05",
+      "n_batt": 84,
+      "window_days": 61.90027704861111,
+      "slope_mV_day": -1.119397013833211,
+      "export_rate": 1.6478116878200406,
+      "server_rate": 2.660443079546486,
+      "capture": 0.6193749080701759
+    }
+  ],
+  "capture_min": 0.4390769992249927,
+  "capture_max": 0.8832190528360823,
+  "kendall_tau_export_vs_server": 0.39999999999999997,
+  "kendall_p": 0.48333333333333334,
+  "spread_export": 1.922847279841045,
+  "spread_server": 2.412238472279403,
+  "regression": {
+    "all5_export": {
+      "slope": -0.02548002818467597,
+      "p": 0.46640465091718253,
+      "r": -0.4330264820853842,
+      "spearman_rho": -0.49999999999999994,
+      "spearman_p": 0.3910022189557703
+    },
+    "all5_server": {
+      "slope": -0.02581922241189994,
+      "p": 0.17163904705365646,
+      "r": -0.7183612354394031,
+      "spearman_rho": -0.7,
+      "spearman_p": 0.1881204043741873
+    }
+  },
+  "leave_one_out": {
+    "_SENZOR_01": {
+      "export_slope": 0.005851386987022247,
+      "server_slope": -0.004916616214685226
+    },
+    "_SENZOR_02": {
+      "export_slope": -0.02128105284325188,
+      "server_slope": -0.025780158004679025
+    },
+    "_SENZOR_03": {
+      "export_slope": -0.029705164444751287,
+      "server_slope": -0.024652750047873772
+    },
+    "_SENZOR_04": {
+      "export_slope": -0.039847211662040374,
+      "server_slope": -0.03254574494897468
+    },
+    "_SENZOR_05": {
+      "export_slope": -0.0398407128110204,
+      "server_slope": -0.03274376603481825
+    }
+  },
+  "n_sign_flips_export": 1,
+  "n_sign_flips_server": 0
+}

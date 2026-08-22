@@ -1,0 +1,109 @@
+{
+  "budget_J": 46656.0,
+  "horizon_days": 1825,
+  "n_seeds": 8,
+  "analytic_ratio_sqrt_over_const": 0.796546824925157,
+  "analytic_max_gain_pct": 20.345317507484296,
+  "rows": {
+    "81uA_1.00mJ": {
+      "feasible": true,
+      "controllable_frac": 0.014353307356080088,
+      "s_const_min": 4.292660318506988,
+      "latency_const_best": 2.146330159253494,
+      "latency_sqrt_clairvoyant": 1.7134389163435517,
+      "latency_sqrt_causal": 2.146330159253502,
+      "clairvoyant_gain_pct": 20.168902768458707,
+      "causal_gain_pct": -3.7243132156710455e-13
+    },
+    "81uA_0.20mJ": {
+      "feasible": true,
+      "controllable_frac": 0.014353307356080088,
+      "s_const_min": 0.8585320637013976,
+      "latency_const_best": 0.42926603185069884,
+      "latency_sqrt_clairvoyant": 0.34268778326871036,
+      "latency_sqrt_causal": 0.4292660318506947,
+      "clairvoyant_gain_pct": 20.168902768458718,
+      "causal_gain_pct": 9.69873233247668e-13
+    },
+    "40uA_1.00mJ": {
+      "feasible": true,
+      "controllable_frac": 0.5132612754856029,
+      "s_const_min": 0.11002347116989433,
+      "latency_const_best": 0.055011735584947166,
+      "latency_sqrt_clairvoyant": 0.04391236854811963,
+      "latency_sqrt_causal": 0.05501173558494736,
+      "clairvoyant_gain_pct": 20.17636222309017,
+      "causal_gain_pct": -3.5317742158741417e-13
+    },
+    "40uA_0.20mJ": {
+      "feasible": true,
+      "controllable_frac": 0.5132612754856027,
+      "s_const_min": 0.02200469423397887,
+      "latency_const_best": 0.011002347116989435,
+      "latency_sqrt_clairvoyant": 0.008782473709623926,
+      "latency_sqrt_causal": 0.011002347116989455,
+      "clairvoyant_gain_pct": 20.176362223090184,
+      "causal_gain_pct": -1.8920219013611472e-13
+    },
+    "20uA_1.00mJ": {
+      "feasible": true,
+      "controllable_frac": 0.7566306393594301,
+      "s_const_min": 0.07457694444092759,
+      "latency_const_best": 0.037288472220463796,
+      "latency_sqrt_clairvoyant": 0.029764991495904173,
+      "latency_sqrt_causal": 0.0372884722204638,
+      "clairvoyant_gain_pct": 20.176425250350594,
+      "causal_gain_pct": -1.860868383902086e-14
+    },
+    "20uA_0.20mJ": {
+      "feasible": true,
+      "controllable_frac": 0.7566306393594301,
+      "s_const_min": 0.014915388888185518,
+      "latency_const_best": 0.00745769444409276,
+      "latency_sqrt_clairvoyant": 0.005952998299180834,
+      "latency_sqrt_causal": 0.008333333333333335,
+      "clairvoyant_gain_pct": 20.17642525035061,
+      "causal_gain_pct": -11.741415471026285
+    },
+    "5uA_1.00mJ": {
+      "feasible": true,
+      "controllable_frac": 0.9391576600053275,
+      "s_const_min": 0.0600637760605084,
+      "latency_const_best": 0.0300318880302542,
+      "latency_sqrt_clairvoyant": 0.023972518840870663,
+      "latency_sqrt_causal": 0.030031888030254274,
+      "clairvoyant_gain_pct": 20.17645105522275,
+      "causal_gain_pct": -2.4260341513536603e-13
+    },
+    "5uA_0.20mJ": {
+      "feasible": true,
+      "controllable_frac": 0.9391576600053276,
+      "s_const_min": 0.01201275521210168,
+      "latency_const_best": 0.006006377606050841,
+      "latency_sqrt_clairvoyant": 0.004794503768174133,
+      "latency_sqrt_causal": 0.008333333333333335,
+      "clairvoyant_gain_pct": 20.17645105522275,
+      "causal_gain_pct": -38.74141587332626
+    },
+    "2uA_1.00mJ": {
+      "feasible": true,
+      "controllable_frac": 0.9756630640123929,
+      "s_const_min": 0.05781359423478103,
+      "latency_const_best": 0.028906797117390512,
+      "latency_sqrt_clairvoyant": 0.023074430188850883,
+      "latency_sqrt_causal": 0.028906797117390734,
+      "clairvoyant_gain_pct": 20.17645505606998,
+      "causal_gain_pct": -7.681397701146484e-13
+    },
+    "2uA_0.20mJ": {
+      "feasible": true,
+      "controllable_frac": 0.9756630640123929,
+      "s_const_min": 0.011562718846956206,
+      "latency_const_best": 0.005781359423478103,
+      "latency_sqrt_clairvoyant": 0.004614886037770178,
+      "latency_sqrt_causal": 0.008333333333333335,
+      "clairvoyant_gain_pct": 20.176455056069965,
+      "causal_gain_pct": -44.14141593569956
+    }
+  }
+}

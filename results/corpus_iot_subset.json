@@ -1,0 +1,91 @@
+{
+  "_method": {
+    "source": "OpenAlex title_and_abstract.search",
+    "from_year": 2018,
+    "run_date": "2026-08-20",
+    "purpose": "partition the corpus and re-run the transmit-side vs standing-charge ratio inside the IoT-facing subset the paper actually makes a claim about"
+  },
+  "populations": {
+    "A_full": {
+      "query": "(\"integrated sensing and communication\" OR \"ISAC\") AND \"energy efficiency\"",
+      "n": 360,
+      "tx_any": 214,
+      "sc_any": 6,
+      "tx_share": 0.5944444444444444,
+      "sc_share": 0.016666666666666666,
+      "ratio": 35.666666666666664,
+      "per_tx": {
+        "\"beamforming\"": 154,
+        "\"transmit power\"": 49,
+        "\"power allocation\"": 46,
+        "\"transmit beamforming\"": 22,
+        "\"power control\"": 14,
+        "\"waveform design\"": 14
+      },
+      "per_sc": {
+        "\"circuit power\"": 5,
+        "\"sleep\"": 1,
+        "\"idle\"": 0,
+        "\"quiescent\"": 0,
+        "\"duty cycle\"": 0,
+        "\"static power\"": 0,
+        "\"standby\"": 0,
+        "(\"battery life\" OR \"battery lifetime\")": 0
+      }
+    },
+    "B_iot": {
+      "query": "(\"integrated sensing and communication\" OR \"ISAC\") AND \"energy efficiency\" AND (\"IoT\" OR \"Internet of Things\" OR \"sensor network\" OR \"LPWAN\" OR \"NB-IoT\" OR \"LoRa\")",
+      "n": 25,
+      "tx_any": 12,
+      "sc_any": 0,
+      "tx_share": 0.48,
+      "sc_share": 0.0,
+      "ratio": null,
+      "per_tx": {
+        "\"beamforming\"": 7,
+        "\"transmit power\"": 2,
+        "\"power allocation\"": 5,
+        "\"transmit beamforming\"": 2,
+        "\"power control\"": 0,
+        "\"waveform design\"": 0
+      },
+      "per_sc": {
+        "\"circuit power\"": 0,
+        "\"sleep\"": 0,
+        "\"idle\"": 0,
+        "\"quiescent\"": 0,
+        "\"duty cycle\"": 0,
+        "\"static power\"": 0,
+        "\"standby\"": 0,
+        "(\"battery life\" OR \"battery lifetime\")": 0
+      }
+    },
+    "C_batt": {
+      "query": "(\"integrated sensing and communication\" OR \"ISAC\") AND \"energy efficiency\" AND (\"IoT\" OR \"Internet of Things\" OR \"sensor network\" OR \"LPWAN\" OR \"NB-IoT\" OR \"LoRa\") AND (\"battery\" OR \"battery-powered\" OR \"energy-constrained\" OR \"battery life\" OR \"lifetime\")",
+      "n": 4,
+      "tx_any": 2,
+      "sc_any": 0,
+      "tx_share": 0.5,
+      "sc_share": 0.0,
+      "ratio": null,
+      "per_tx": {
+        "\"beamforming\"": 2,
+        "\"transmit power\"": 2,
+        "\"power allocation\"": 0,
+        "\"transmit beamforming\"": 2,
+        "\"power control\"": 0,
+        "\"waveform design\"": 0
+      },
+      "per_sc": {
+        "\"circuit power\"": 0,
+        "\"sleep\"": 0,
+        "\"idle\"": 0,
+        "\"quiescent\"": 0,
+        "\"duty cycle\"": 0,
+        "\"static power\"": 0,
+        "\"standby\"": 0,
+        "(\"battery life\" OR \"battery lifetime\")": 0
+      }
+    }
+  }
+}
