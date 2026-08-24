@@ -59,6 +59,26 @@ CODE = [
     'deploy_workload_control.py', 'channel_coherence.py',
     'uo_survival.py', 'uo_survival_v2.py', 'hazard_scan_schedule.py',
     'fetch_uo_archive.py', 'make_figures.py', 'build_release.py',
+    'two_year_workload.py',
+    'pareto_shell_size.py',
+    'identifiability.py',
+    'channel_coherence_control.py',
+    'sf_energy_ratio.py',
+    'rq4b_deep_screen.py',
+    'noise_autocorrelation.py',
+    'verify_manuscript.py',
+    'identifiability_injection.py',
+    'venue_genre_sweep.py',
+    'venue_genre_sample.py',
+    # Imported by the regime-map, bracket and ceiling scripts above. The
+    # first build listed only the scripts a reader would run and none of
+    # what they import, so four of them raised ModuleNotFoundError -- two
+    # being the two the README tells the reader to run first.
+    'integrated_models.py', 'isac_physical_models.py',
+    'energy_aware_isac_framework.py', 'closed_loop_simulator.py',
+    'experiment_lifetime_budget.py', 'experiment_nonstationary.py',
+    'experiment_temporal_ceiling.py', 'audit_binding_boundary.py',
+    'adaptive_hybrid.py',
 ]
 RESULTS_GLOB = re.compile(r'\.json$')
 # Internal working files that happen to live in results/. The references
@@ -96,6 +116,119 @@ def scan(path):
     return hard, soft
 
 
+# --------------------------------------------------- structural checks -----
+# The leak scan asks whether the release says something it should not. These
+# ask whether it IS something a reader can use. The first build passed the leak
+# scan and still shipped four scripts that could not import and thirty result
+# files no shipped script regenerates -- including the two scripts the README
+# tells the reader to run first. A net that only looks for secrets will clear a
+# release that does not work.
+
+# Result files no script here produces, each with the reason. A reader is owed
+# the reason rather than a silent gap, so the README carries the same table.
+# Anything not listed must have a producer among the shipped scripts.
+RESULTS_NO_PRODUCER = {
+    'literature_f_placement.json':
+        'read by hand from the cited papers -- controllable-energy shares, '
+        'each entry naming its source and the table it came from. There is '
+        'nothing here to automate; the check is to open the papers.',
+    'rq4b_lorawan_battery_screen.json':
+        'the archived pull, kept as the record of what was actually screened '
+        'when the paper was written. The script that made it was not kept; '
+        'rq4b_deep_screen.py restores the retrieval and reproduces it at 94% '
+        'DOI overlap, the difference being index drift. Note the archived file '
+        'is cp1252, not UTF-8.',
+}
+
+
+def local_modules():
+    return {f[:-3] for f in os.listdir(os.path.join(ROOT, 'code'))
+            if f.endswith('.py')}
+
+
+def imports_of(path):
+    import ast
+    try:
+        tree = ast.parse(open(path, encoding='utf-8', errors='replace').read())
+    except SyntaxError:
+        return set()
+    names = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            for a in node.names:
+                names.add(a.name.split('.')[0])
+        elif isinstance(node, ast.ImportFrom):
+            if node.module and node.level == 0:
+                names.add(node.module.split('.')[0])
+    return names
+
+
+def check_imports(shipped_code):
+    """Every module a shipped script imports from this project must ship too."""
+    local = local_modules()
+    shipped = {f[:-3] for f in shipped_code}
+    bad = []
+    for f in sorted(shipped_code):
+        missing = sorted((imports_of(os.path.join(DEST, 'code', f)) & local)
+                         - shipped)
+        if missing:
+            bad.append((f, missing))
+    return bad
+
+
+def check_result_producers(shipped_code, shipped_results):
+    """Every shipped result must be named by a shipped script, or declared."""
+    text = [open(os.path.join(DEST, 'code', f), encoding='utf-8',
+                 errors='replace').read() for f in shipped_code]
+    return [r for r in sorted(shipped_results)
+            if r not in RESULTS_NO_PRODUCER
+            and not any(r in t for t in text)]
+
+
+def check_data_dependencies(shipped_code):
+    """Which shipped scripts need data/, which does not ship.
+
+    Not a failure. It is a fact a reader will hit on the first run, so it
+    belongs in the build output and in the README rather than in a traceback.
+    """
+    ddir = os.path.join(ROOT, 'data')
+    names = set()
+    for root, _dirs, files in os.walk(ddir):
+        for f in files:
+            names.add(f)
+    need = {}
+    for f in sorted(shipped_code):
+        if f == 'build_release.py':
+            continue
+        txt = open(os.path.join(DEST, 'code', f), encoding='utf-8',
+                   errors='replace').read()
+        hits = sorted(n for n in names if n in txt)
+        if hits:
+            need[f] = hits
+    return need
+
+
+def self_test():
+    """Check the checkers: each must fire on a case built to make it fire.
+
+    Both nets here replace ones that reported clean over a broken release, so
+    neither is trusted until it has been watched to fail."""
+    ok = True
+    probe = os.path.join(DEST, 'code', '_selftest_probe.py')
+    with open(probe, 'w', encoding='utf-8') as fh:
+        fh.write('import integrated_models\n')
+    fired = check_imports(['_selftest_probe.py'])
+    if not (fired and fired[0][1] == ['integrated_models']):
+        print('  SELF-TEST FAILED: the import check did not fire')
+        ok = False
+    os.remove(probe)
+    orphan = check_result_producers([], ['_selftest_probe.json'])
+    if orphan != ['_selftest_probe.json']:
+        print('  SELF-TEST FAILED: the producer check did not fire')
+        ok = False
+    return ok
+
+
 def main():
     # Clear only the content directories. DEST is a git working tree, and
     # rmtree'ing it would take .git with it.
@@ -121,9 +254,22 @@ def main():
         shutil.copy2(src, os.path.join(DEST, 'code', f))
         picked.append('code/' + f)
 
+    # A result file earns its place by being reproducible from what ships with
+    # it. The first build took every .json in results/, which shipped 23 files
+    # from the superseded simulation study whose scripts are not here and whose
+    # numbers this paper does not report.
+    shipped_src = [open(os.path.join(DEST, 'code', f), encoding='utf-8',
+                        errors='replace').read()
+                   for f in os.listdir(os.path.join(DEST, 'code'))
+                   if f.endswith('.py')]
+    dropped = []
+
     rdir = os.path.join(ROOT, 'results')
     for f in sorted(os.listdir(rdir)):
         if not RESULTS_GLOB.search(f) or f in RESULTS_EXCLUDE:
+            continue
+        if f not in RESULTS_NO_PRODUCER and not any(f in t for t in shipped_src):
+            dropped.append(f)
             continue
         src = os.path.join(rdir, f)
         if os.path.getsize(src) > 12_000_000:
@@ -166,7 +312,52 @@ def main():
     print()
     print("  NOT included by design: docs/lit_corpus (copyrighted PDFs), data/ (raw")
     print("  telemetry, pending a scope decision), and every internal document.")
+    if dropped:
+        print("  not shipped, no script here regenerates them (%d):" % len(dropped))
+        for f in dropped:
+            print("      %s" % f)
+        print()
+
+    code_files = [q[5:] for q in picked if q.startswith('code/')]
+    res_files = [q[8:] for q in picked if q.startswith('results/')]
+    failed = False
+    if not self_test():
+        failed = True
+    else:
+        print("  check self-test: both structural checks fire when they should")
+    bad = check_imports(code_files)
+    if bad:
+        failed = True
+        print("  *** IMPORT CHECK FAILED -- shipped scripts that cannot run ***")
+        for f, missing in bad:
+            print("      %-42s needs %s" % (f, ", ".join(missing)))
+    else:
+        print("  import check: every shipped script imports what it needs")
+    orphans = check_result_producers(code_files, res_files)
+    if orphans:
+        failed = True
+        print("  *** PRODUCER CHECK FAILED -- results no shipped script makes ***")
+        for r in orphans:
+            print("      %s" % r)
+    else:
+        print("  producer check: every shipped result traces to a shipped script")
+    for r, why in sorted(RESULTS_NO_PRODUCER.items()):
+        if r in res_files:
+            print("  declared, no producer: %s" % r)
+            print("      %s" % why)
+
+    need = check_data_dependencies(code_files)
+    if need:
+        print()
+        print("  needs data/, which is withheld pending the scope decision (%d):"
+              % len(need))
+        for f, hits in sorted(need.items()):
+            print("      %-38s %s" % (f, ", ".join(hits)))
+
     print("\n  Wrote %s" % DEST)
+    if failed:
+        print("\n  BUILD IS NOT RELEASABLE -- fix the failures above.")
+        sys.exit(1)
 
 
 if __name__ == '__main__':

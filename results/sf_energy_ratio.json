@@ -1,0 +1,112 @@
+{
+  "_method": {
+    "airtime": "Semtech AN1200.13, EU868, BW=125 kHz, PL=12 B, CR=4/5, explicit header, 8-symbol preamble",
+    "radio_model": {
+      "V": 3.3,
+      "I_tx_A": 0.0439,
+      "I_rx_A": 0.011,
+      "E_fixed_J": 0.00366,
+      "rx_symbols": 5.0
+    },
+    "note": "k is a modelled energy ratio, not a measurement."
+  },
+  "per_sf": {
+    "7": {
+      "t_sym_ms": 1.024,
+      "airtime_ms": 41.216,
+      "E_tx_only_mJ": 9.63096192,
+      "E_with_rx_mJ": 15.76420992,
+      "k_tx_only": 1.0,
+      "k_with_rx": 1.0
+    },
+    "8": {
+      "t_sym_ms": 2.048,
+      "airtime_ms": 82.432,
+      "E_tx_only_mJ": 15.60192384,
+      "E_with_rx_mJ": 21.92102784,
+      "k_tx_only": 1.6199756545190451,
+      "k_with_rx": 1.390556707329104
+    },
+    "9": {
+      "t_sym_ms": 4.096,
+      "airtime_ms": 144.38400000000001,
+      "E_tx_only_mJ": 24.57691008,
+      "E_with_rx_mJ": 31.267726080000003,
+      "k_tx_only": 2.5518645265290387,
+      "k_with_rx": 1.983462935261395
+    },
+    "10": {
+      "t_sym_ms": 8.192,
+      "airtime_ms": 288.76800000000003,
+      "E_tx_only_mJ": 45.493820160000006,
+      "E_with_rx_mJ": 52.92806016000001,
+      "k_tx_only": 4.723704707577123,
+      "k_with_rx": 3.357482577851894
+    },
+    "11": {
+      "t_sym_ms": 16.384,
+      "airtime_ms": 577.5360000000001,
+      "E_tx_only_mJ": 87.32764032,
+      "E_with_rx_mJ": 96.24872831999998,
+      "k_tx_only": 9.06738506967329,
+      "k_with_rx": 6.105521863032891
+    },
+    "12": {
+      "t_sym_ms": 32.768,
+      "airtime_ms": 1155.0720000000001,
+      "E_tx_only_mJ": 170.99528064,
+      "E_with_rx_mJ": 182.89006464,
+      "k_tx_only": 17.754745793865624,
+      "k_with_rx": 11.601600433394887
+    }
+  },
+  "control": {
+    "worst_rel": 0.019250313645621134,
+    "agrees": true
+  },
+  "confounds": {
+    "airtime_ratio": 28.024844720496894,
+    "tx_energy_mJ": [
+      5.97096192,
+      167.33528064
+    ],
+    "rx_energy_mJ": [
+      6.133248,
+      11.894783999999998
+    ],
+    "k_tx_only": 17.754745793865624,
+    "k_with_rx": 11.601600433394887,
+    "k_change_pct": -34.65634164470374,
+    "mde_share_penalty": 1.580397780422701,
+    "f_comm_scale_if_rx_included": 1.2416900348402986,
+    "per_uplink_mJ_tx_only": 28.160228966400002,
+    "per_uplink_mJ_with_rx": 34.9662756864,
+    "duty_cycle_used": [
+      1.7554962962962964e-06,
+      4.919751111111112e-05
+    ],
+    "duty_cycle_limit": 0.01,
+    "uplinks_per_hour_allowed": [
+      873.447204968944,
+      31.166888297872337
+    ],
+    "binds": false
+  },
+  "controllable_split": {
+    "mJ_per_uplink": {
+      "fixed": 3.66,
+      "tx": 24.5002289664,
+      "rx1": 0.8586547199999999,
+      "rx2_not_controllable": 5.947391999999999
+    },
+    "e_transmit_only_mJ": 28.160228966400002,
+    "e_controllable_mJ": 29.018883686400002,
+    "e_all_comm_mJ": 34.966275686399996,
+    "ctrl_over_txonly": 1.030491752074336,
+    "f_comm_ctrl_pct": [
+      0.2473180204978406,
+      0.6182950512446015
+    ],
+    "rx2_share_of_comm": 0.1899744338667423
+  }
+}

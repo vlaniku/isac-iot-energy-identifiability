@@ -1,0 +1,337 @@
+{
+  "_method": {
+    "d0_byte_per_day": 0.176,
+    "sigma_bracket": [
+      0.3014,
+      0.7138
+    ],
+    "sigma_bracket_original_units_only": [
+      0.3014,
+      0.4364
+    ],
+    "alpha": 0.05,
+    "power": 0.8,
+    "campaign_days": 480,
+    "block_days": 120,
+    "quantisation": "daily reading, integer steps of 1 byte-unit",
+    "note": "eps is the fractional change in the total energy consumption rate, which is what an efficiency claim asserts and what an OBSERVATIONAL design must resolve. An AMPLIFIED design manipulates a term by a known ratio k and resolves a share s = eps/(k-1) instead, which is why the two thresholds in this paper differ and are not comparable directly."
+  },
+  "control": [
+    {
+      "contrast": "SF7 vs SF12  60 d",
+      "k": 17.42,
+      "block_days": 60,
+      "published": [
+        0.00217,
+        0.004
+      ],
+      "recomputed": [
+        0.0021692617580298993,
+        0.004002108110562907
+      ],
+      "worst_rel": 0.0005270276407266794,
+      "agrees": true
+    },
+    {
+      "contrast": "SF7 vs SF12  90 d",
+      "k": 17.42,
+      "block_days": 90,
+      "published": [
+        0.001181,
+        0.002178
+      ],
+      "recomputed": [
+        0.0011807054134358652,
+        0.0021783036066558813
+      ],
+      "worst_rel": 0.0002494382422817914,
+      "agrees": true
+    },
+    {
+      "contrast": "SF9 vs SF12  90 d",
+      "k": 6.9,
+      "block_days": 90,
+      "published": [
+        0.00328,
+        0.00605
+      ],
+      "recomputed": [
+        0.0032859632014604926,
+        0.006062329698523656
+      ],
+      "worst_rel": 0.00203796669812506,
+      "agrees": true
+    },
+    {
+      "contrast": "SF7 vs SF10  90 d",
+      "k": 4.65,
+      "block_days": 90,
+      "published": [
+        0.00531,
+        0.0098
+      ],
+      "recomputed": [
+        0.005311556955785454,
+        0.009799382252408102
+      ],
+      "worst_rel": 0.00029321201232656007,
+      "agrees": true
+    }
+  ],
+  "inverse_map": [
+    {
+      "claim": 0.3,
+      "block_days_pair": [
+        21,
+        31
+      ],
+      "block_days_device": [
+        28,
+        42
+      ],
+      "campaign_days_device": [
+        112,
+        168
+      ],
+      "within_service_life": true
+    },
+    {
+      "claim": 0.1,
+      "block_days_pair": [
+        43,
+        65
+      ],
+      "block_days_device": [
+        57,
+        86
+      ],
+      "campaign_days_device": [
+        228,
+        344
+      ],
+      "within_service_life": true
+    },
+    {
+      "claim": 0.03,
+      "block_days_pair": [
+        96,
+        144
+      ],
+      "block_days_device": [
+        127,
+        191
+      ],
+      "campaign_days_device": [
+        508,
+        764
+      ],
+      "within_service_life": false
+    },
+    {
+      "claim": 0.01,
+      "block_days_pair": [
+        198,
+        298
+      ],
+      "block_days_device": [
+        264,
+        397
+      ],
+      "campaign_days_device": [
+        1056,
+        1588
+      ],
+      "within_service_life": false
+    },
+    {
+      "claim": 0.003,
+      "block_days_pair": [
+        442,
+        664
+      ],
+      "block_days_device": [
+        588,
+        884
+      ],
+      "campaign_days_device": [
+        2352,
+        3536
+      ],
+      "within_service_life": false
+    },
+    {
+      "claim": 0.001,
+      "block_days_pair": [
+        918,
+        1381
+      ],
+      "block_days_device": [
+        1223,
+        1839
+      ],
+      "campaign_days_device": [
+        4892,
+        7356
+      ],
+      "within_service_life": false
+    }
+  ],
+  "observational_by_fleet": {
+    "this deployment (5)": {
+      "n_devices": 5,
+      "n_pairs": 10,
+      "block_days": 120,
+      "eps_min_pair": [
+        0.014768515254390687,
+        0.02724668632624939
+      ],
+      "eps_min_device": [
+        0.01745336402931437,
+        0.03220000974053182
+      ]
+    },
+    "20 devices": {
+      "n_devices": 20,
+      "n_pairs": 40,
+      "block_days": 120,
+      "eps_min_pair": [
+        0.006745885428119273,
+        0.012445599377238527
+      ],
+      "eps_min_device": [
+        0.0069345052755980996,
+        0.012793587359147046
+      ]
+    },
+    "100 devices": {
+      "n_devices": 100,
+      "n_pairs": 200,
+      "block_days": 120,
+      "eps_min_pair": [
+        0.002955710804163868,
+        0.0054530414036181914
+      ],
+      "eps_min_device": [
+        0.0029705096207863478,
+        0.005480343993456565
+      ]
+    }
+  },
+  "verdict_observational": {
+    "this deployment (5)": false,
+    "20 devices": false,
+    "100 devices": false
+  },
+  "amplified_by_design": {
+    "2x60": {
+      "pairs_per_device": 2,
+      "block_days": 60,
+      "campaign_days": 240,
+      "share_pair": [
+        0.00364435975349023,
+        0.0067235416257456805
+      ],
+      "share_device": [
+        0.0056003261300369995,
+        0.010332137439777575
+      ],
+      "clears_f_comm_lo": false
+    },
+    "2x90": {
+      "pairs_per_device": 2,
+      "block_days": 90,
+      "campaign_days": 360,
+      "share_pair": [
+        0.0019835850945722536,
+        0.0036595500591818804
+      ],
+      "share_device": [
+        0.0030481961682421715,
+        0.005623669233254711
+      ],
+      "clears_f_comm_lo": false
+    },
+    "2x120": {
+      "pairs_per_device": 2,
+      "block_days": 120,
+      "campaign_days": 480,
+      "share_pair": [
+        0.001288341514851106,
+        0.002376883290674525
+      ],
+      "share_device": [
+        0.001979808015145078,
+        0.003652581660760719
+      ],
+      "clears_f_comm_lo": false
+    },
+    "3x90": {
+      "pairs_per_device": 3,
+      "block_days": 90,
+      "campaign_days": 540,
+      "share_pair": [
+        0.0014825882536210343,
+        0.00273525242054272
+      ],
+      "share_device": [
+        0.002488841749366729,
+        0.004591706701220919
+      ],
+      "clears_f_comm_lo": false
+    }
+  },
+  "replacement_unit_sensitivity": {
+    "all three live units": {
+      "sigma_hi": 0.7138,
+      "share_pair": [
+        0.0019835850945722536,
+        0.0036595500591818804
+      ],
+      "share_device": [
+        0.0030481961682421715,
+        0.005623669233254711
+      ]
+    },
+    "two original units only": {
+      "sigma_hi": 0.4364,
+      "share_pair": [
+        0.0019835850945722536,
+        0.0024868928104854675
+      ],
+      "share_device": [
+        0.0030481961682421715,
+        0.003821634451929322
+      ]
+    }
+  },
+  "quantisation": [
+    {
+      "label": "1-byte daily (as deployed)",
+      "q": 1.0,
+      "block_days_noisy": 298,
+      "block_days_quiet": 198
+    },
+    {
+      "label": "4x finer (2 extra bits)",
+      "q": 0.25,
+      "block_days_noisy": 284,
+      "block_days_quiet": 163
+    },
+    {
+      "label": "16x finer (4 extra bits)",
+      "q": 0.0625,
+      "block_days_noisy": 283,
+      "block_days_quiet": 160
+    },
+    {
+      "label": "continuous (no quantisation)",
+      "q": 1e-06,
+      "block_days_noisy": 283,
+      "block_days_quiet": 160
+    }
+  ],
+  "quantisation_verdict": {
+    "noisy_saving_pct": 5.033557046979865,
+    "quiet_saving_pct": 19.19191919191919
+  }
+}

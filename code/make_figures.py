@@ -217,21 +217,41 @@ def fig4_channel():
                 ha='center', fontsize=6.2)
     ax.set_title('(a) within spreading factor', loc='left')
 
+    # Two series. The published construction pairs every uplink with its next
+    # eleven, so its intervals assume far more independent pairs than exist;
+    # the corrected one uses disjoint pairs on RSSI centred within device and
+    # spreading factor. Plotting both is the point of the panel: the two
+    # long-gap "significances" in the first series do not survive.
+    ctl = jload('channel_coherence_control.json')
+    cen = ctl['within_device_sf_control']
+
     xs = np.arange(len(order))
     r = [bins[b]['r'] for b in order]
     lo = [bins[b]['ci'][0] for b in order]
     hi = [bins[b]['ci'][1] for b in order]
-    ax2.errorbar(xs, r, yerr=[np.array(r) - np.array(lo), np.array(hi) - np.array(r)],
-                 fmt='o', ms=3.4, color=C_ACC, ecolor=C_GREY, elinewidth=1.1, capsize=2)
+    ax2.errorbar(xs - 0.13, r,
+                 yerr=[np.array(r) - np.array(lo), np.array(hi) - np.array(r)],
+                 fmt='o', ms=3.0, color=C_GREY, ecolor=C_GREY, elinewidth=0.9,
+                 capsize=2, alpha=0.75, label='overlapping pairs (as published)')
+
+    rc = [cen[b]['r'] if b in cen else np.nan for b in order]
+    lc = [cen[b]['ci'][0] if b in cen else np.nan for b in order]
+    hc = [cen[b]['ci'][1] if b in cen else np.nan for b in order]
+    ax2.errorbar(xs + 0.13, rc,
+                 yerr=[np.array(rc) - np.array(lc), np.array(hc) - np.array(rc)],
+                 fmt='o', ms=3.4, color=C_ACC, ecolor=C_ACC, elinewidth=1.1,
+                 capsize=2, label='disjoint, centred within device and SF')
     ax2.axhline(0, color='k', lw=0.7)
     ax2.axvline(4, color=C_DEAD, lw=0.9, ls=':')
-    ax2.text(4.05, 0.235, "device's own median\ndecision interval\n(197.5 min)",
-             fontsize=6.2, color=C_DEAD)
+    ax2.text(3.88, 0.555, "device's own median\ndecision interval\n(187.6 min)",
+             fontsize=6.2, color=C_DEAD, ha='right', va='top')
+    ax2.legend(frameon=False, loc='lower center', fontsize=5.6, ncol=2,
+               handletextpad=0.4, columnspacing=1.2, borderpad=0.2)
     ax2.set_xticks(xs); ax2.set_xticklabels(order, rotation=45, ha='right', fontsize=6)
     ax2.set_ylabel('correlation with previous observation')
-    ax2.set_ylim(-0.22, 0.42)
     ax2.set_xlabel('elapsed time between observations')
     ax2.set_title('(b) resolved against elapsed time, 95% CI', loc='left')
+    ax2.set_ylim(-0.42, 0.56)
     fig.suptitle('3–8% of residual variance is forecastable within a spreading factor; '
                  'at the decision interval it is indistinguishable from zero',
                  fontsize=8, x=0.02, ha='left')
@@ -613,6 +633,73 @@ def make_all():
     fig1_timeline(); fig2_june_control(); fig3_depletion_regressor(); fig4_channel()
     fig5_regime_map(); fig6_bracket(); fig7_coincidence(); fig8_negatives()
     fig9_corpus_terms(); fig10_regime_invariance(); fig11_energy_budget()
+
+
+# =====================================================================  FIG 12
+def fig12_claim_resolution():
+    """What it costs to check a claim, passively and by amplification.
+
+    The paper's argument in one axis pair. A claim of a given size sits
+    somewhere on the x-axis; the curves say how long a campaign would have to
+    run to resolve it. The passive curve crosses the feasibility line far to
+    the right of the share actually available on this hardware; the amplified
+    one crosses it far to the left. That gap is the reason the experiment in
+    Sec. IX exists.
+    """
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from identifiability import (block_days_required, SIGMA_LO, SIGMA_HI,
+                                 MAX_CAMPAIGN_DAYS)
+
+    K_TX, K_RX = 17.42, 11.60          # transmit-only and RX-inclusive
+    F_LO, F_HI = 0.0024, 0.0060
+    claims = np.logspace(np.log10(0.0006), np.log10(0.30), 40)
+
+    def campaign(eps_series, sigma):
+        out = []
+        for e in eps_series:
+            b = block_days_required(e, 6, sigma, n_devices=3)
+            out.append(4.0 * b if np.isfinite(b) else np.nan)
+        return np.array(out)
+
+    # passive: the claim IS the observable fractional change
+    pas_lo = campaign(claims, SIGMA_LO)
+    pas_hi = campaign(claims, SIGMA_HI)
+    # amplified: a share s shows up as eps = s*(k-1)
+    amp_lo = campaign(claims * (K_TX - 1), SIGMA_LO)
+    amp_hi = campaign(claims * (K_TX - 1), SIGMA_HI)
+    amp_rx = campaign(claims * (K_RX - 1), SIGMA_HI)
+
+    fig, ax = plt.subplots(figsize=(COL1, 2.65))
+    x = 100 * claims
+
+    ax.axvspan(100 * F_LO, 100 * F_HI, color=C_ACC, alpha=0.13, lw=0)
+    ax.axhline(MAX_CAMPAIGN_DAYS, color=C_DEAD, lw=1.0, ls='--')
+    ax.text(26, MAX_CAMPAIGN_DAYS * 1.18, 'longest observed service, 760 d',
+            fontsize=5.6, color=C_DEAD, ha='right')
+
+    ax.fill_between(x, pas_lo, pas_hi, color=C_GREY, alpha=0.30, lw=0)
+    ax.plot(x, pas_hi, color=C_GREY, lw=1.4, label='passive telemetry')
+    ax.fill_between(x, amp_lo, amp_hi, color=C_ACC, alpha=0.30, lw=0)
+    ax.plot(x, amp_hi, color=C_ACC, lw=1.4,
+            label=r'amplified, $k=17.4$ (transmit only)')
+    ax.plot(x, amp_rx, color=C_ACC, lw=1.0, ls=':',
+            label=r'amplified, $k=11.6$ (with RX windows)')
+
+    ax.set_xscale('log')
+    ax.set_yscale('log')
+    ax.set_xlim(0.06, 30)
+    ax.set_ylim(40, 4e4)
+    ax.set_xlabel('claimed energy improvement (% of the device budget)')
+    ax.set_ylabel('campaign required (days)')
+    ax.text(np.sqrt(100 * F_LO * 100 * F_HI), 2.6e4,
+            r'$f_{\mathrm{comm}}$' + '\n0.24-0.60%', fontsize=6.2,
+            color=C_ACC, ha='center', va='top')
+    ax.legend(frameon=False, fontsize=5.6, loc='lower left')
+    ax.set_title('Amplification, not fleet size, brings the measurement\n'
+                 'inside a service life', loc='left', fontsize=7.4)
+    fig.tight_layout()
+    save(fig, 'fig12_claim_resolution')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,64 @@
+{
+  "_method": {
+    "block_days": 25,
+    "n_pairs": 2,
+    "n_sim": 1200,
+    "seed": 20260823,
+    "devices": [
+      "01",
+      "03",
+      "05"
+    ],
+    "note": "Residual windows are contiguous, so the real serial correlation, quantisation and any non-normality are carried into the test rather than modelled."
+  },
+  "sigma_rms_byte": 0.5133202379282027,
+  "eps_predicted": 0.4827879249205087,
+  "eps_empirical_80pct": 0.4608907216494846,
+  "relative_discrepancy": -0.04535573932307754,
+  "power_curve": [
+    {
+      "eps": 0.0966,
+      "power": 0.08916666666666667
+    },
+    {
+      "eps": 0.2146,
+      "power": 0.23583333333333334
+    },
+    {
+      "eps": 0.3326,
+      "power": 0.4533333333333333
+    },
+    {
+      "eps": 0.4506,
+      "power": 0.7741666666666667
+    },
+    {
+      "eps": 0.4828,
+      "power": 0.855
+    },
+    {
+      "eps": 0.5686,
+      "power": 0.9575
+    },
+    {
+      "eps": 0.6866,
+      "power": 0.9908333333333333
+    },
+    {
+      "eps": 0.8046,
+      "power": 0.9933333333333333
+    },
+    {
+      "eps": 0.9227,
+      "power": 1.0
+    },
+    {
+      "eps": 1.0407,
+      "power": 1.0
+    },
+    {
+      "eps": 1.1587,
+      "power": 1.0
+    }
+  ]
+}

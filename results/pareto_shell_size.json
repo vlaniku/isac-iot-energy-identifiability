@@ -1,0 +1,48 @@
+{
+  "_method": {
+    "n_states": 400,
+    "seed": 20260822,
+    "n_devices": 6,
+    "state_ranges": {
+      "distance_m": [
+        50.0,
+        400.0
+      ],
+      "target_range_m": [
+        5.0,
+        50.0
+      ],
+      "queue_length": [
+        0.0,
+        12.0
+      ]
+    },
+    "objectives": [
+      "energy",
+      "1 - sensing accuracy",
+      "1 - communication reliability",
+      "latency"
+    ],
+    "note": "The prior submission claimed the shell reduces the action set to 5-12, median 6. This measures it."
+  },
+  "tdma": {
+    "grid_size": 75,
+    "mean": 65.55,
+    "median": 66.0,
+    "min": 50,
+    "max": 75,
+    "std": 6.803544704885715,
+    "pct_surviving": 87.4,
+    "pct_removed": 12.6
+  },
+  "ofdma": {
+    "grid_size": 75,
+    "mean": 62.0375,
+    "median": 61.0,
+    "min": 52,
+    "max": 75,
+    "std": 6.577556870599061,
+    "pct_surviving": 82.71666666666667,
+    "pct_removed": 17.283333333333328
+  }
+}

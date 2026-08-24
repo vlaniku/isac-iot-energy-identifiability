@@ -1,6 +1,19 @@
 """
 What does the 3 h 53 min separation between the two cessations actually bound?
 
+THE RESULT BELOW IS WITHDRAWN. The text that follows argues this is the
+tightest field bound in the dataset and reports s <= 0.087%. It is not,
+and the number should not be quoted. coincidence_estimator_validation.py
+is the Monte-Carlo that killed it: at realistic batch spread the estimator
+lands below the true value about half the time, and the observed fleet
+spread makes a 3 h 53 min separation a 1-in-430 event for ANY value of s,
+so the separation is evidence about the cells rather than about workload.
+What survives is a design requirement -- roughly 20 co-commissioned
+cessations would be needed to make this construction work.
+
+The script is published unchanged, with its own argument intact, because
+the validation is only legible next to what it refuted.
+
 SENZOR_02 and SENZOR_04 stopped 3 h 53 min apart after 760 days of service, from a
 commissioning date of 2024-05-24 supplied by the deployment team. The
 draft treats this as a striking observation and nothing more. It is in fact the

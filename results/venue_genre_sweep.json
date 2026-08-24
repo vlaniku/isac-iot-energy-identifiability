@@ -1,0 +1,62 @@
+{
+  "_method": {
+    "source_id": "S2480266640",
+    "source_name": "IEEE Internet of Things Journal",
+    "issn": "2327-4662",
+    "from_year": 2018,
+    "run_date": "2026-08-23",
+    "denominator": 18370,
+    "caveat": "Measures what the venue PUBLISHES. Rejections are not indexed, so this bounds acceptance from below and cannot separate \"not accepted\" from \"not submitted\"."
+  },
+  "controls": {
+    "deep learning (control)": 1238,
+    "energy efficiency (control)": 834,
+    "resource allocation (control)": 1177
+  },
+  "genre": {
+    "measurement study": {
+      "iotj": 4,
+      "share": 0.00021774632553075667
+    },
+    "empirical study": {
+      "iotj": 23,
+      "share": 0.0012520413718018508
+    },
+    "negative / null result": {
+      "iotj": 1,
+      "share": 5.443658138268917e-05
+    },
+    "reproducibility": {
+      "iotj": 50,
+      "share": 0.0027218290691344584
+    },
+    "lessons learned": {
+      "iotj": 16,
+      "share": 0.0008709853021230267
+    },
+    "reality check / revisiting": {
+      "iotj": 12,
+      "share": 0.00065323897659227
+    },
+    "pitfalls / misconceptions": {
+      "iotj": 5,
+      "share": 0.00027218290691344586
+    },
+    "benchmark / evaluation methodology": {
+      "iotj": 7,
+      "share": 0.0003810560696788242
+    },
+    "statistical power / detectability": {
+      "iotj": 3,
+      "share": 0.0001633097441480675
+    },
+    "deployment experience": {
+      "iotj": 59,
+      "share": 0.003211758301578661
+    },
+    "limits / cannot": {
+      "iotj": 1401,
+      "share": 0.07626565051714752
+    }
+  }
+}

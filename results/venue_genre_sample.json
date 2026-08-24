@@ -1,0 +1,85 @@
+{
+  "_method": {
+    "source": "S2480266640",
+    "sample": 2000,
+    "seed": 42,
+    "from_year": 2018,
+    "with_abstract": 1806,
+    "run_date": "2026-08-23",
+    "note": "Random sample, local term matching. Shares are estimates with sampling error; the titles are the point."
+  },
+  "genre": {
+    "measurement / empirical study": {
+      "hits": 2,
+      "share": 0.0011074197120708748,
+      "examples": [
+        "Modern Authentication Schemes in Smartphones and IoT Devices: An Empirical Survey",
+        "Catching Hackers by Watching Watts: A Measurement Study of Power-Only Attack Detection on Consumer IoT Devices"
+      ]
+    },
+    "negative or null result": {
+      "hits": 5,
+      "share": 0.0027685492801771874,
+      "examples": [
+        "Optimizing Dynamic Cache Allocation in Vehicular Edge Networks: A Method Combining Multisource Data Prediction and Deep Reinforcement Learning",
+        "Toward Lane-Level Navigation With Adaptive Cycle Slip Detection Thresholds in Smartphone RTK",
+        "User-Tailored Video Adaptation in Dynamic Environments",
+        "Reliable Routing for V2X Networks: A Joint Perspective of Trust Prediction and Attack Resistance",
+        "A Dynamic and Efficient Self-Certified Authenticated Group Key Agreement Protocol for VANET"
+      ]
+    },
+    "reproducibility": {
+      "hits": 12,
+      "share": 0.006644518272425249,
+      "examples": [
+        "TEASLe: A Lightweight Blockchain Data Index For Smart Cards And Constrained IoT Devices",
+        "From Sensing to Intelligence: How AI Improves mmWave Radar Capabilities for Contactless Health Monitoring",
+        "RF-PUF: Enhancing IoT Security Through Authentication of Wireless Nodes Using In-Situ Machine Learning",
+        "A Data Replication Placement Strategy for the Distributed Storage System in Cloud–Edge–Terminal Orchestrated Computing Environments",
+        "TB-ICT: A Trustworthy Blockchain-Enabled System for Indoor Contact Tracing in Epidemic Control",
+        "Dynamics in Coded Edge Computing for IoT: A Fractional Evolutionary Game Approach"
+      ]
+    },
+    "lessons / experience": {
+      "hits": 2,
+      "share": 0.0011074197120708748,
+      "examples": [
+        "A Context-Aware Fog Enabled Scheme for Real-Time Cross-Vertical IoT Applications",
+        "Dealing With Challenges Developing a Gateway to the “End of the World”—The Brazilian Antarctic Station Case Study"
+      ]
+    },
+    "critical re-examination": {
+      "hits": 5,
+      "share": 0.0027685492801771874,
+      "examples": [
+        "Rethinking Targeted Data Poisoning in Voice Authentication: A Critique and Defense Mechanism",
+        "Safety-Certified Optimal Formation Control for Nonlinear Multiagents via High-Order Control Barrier Function",
+        "Toward Context-Aware Federated Learning Assessment: A Reality Check",
+        "A Redesigned Identity-Based Anonymous Authentication Scheme for Mobile-Edge Computing",
+        "GCVA: A Multiview Fusion Mechanism for Heterogeneous Data Representations"
+      ]
+    },
+    "evaluation methodology": {
+      "hits": 0,
+      "share": 0.0,
+      "examples": []
+    },
+    "statistical power / detectability": {
+      "hits": 0,
+      "share": 0.0,
+      "examples": []
+    },
+    "limits of what can be measured": {
+      "hits": 15,
+      "share": 0.008305647840531562,
+      "examples": [
+        "A UHF RFID-Based System for Children Tracking",
+        "Joint Computational Resource Allocation and Layer Partitioning for Federated Learning",
+        "Fast Containment of Infectious Diseases With E-Healthcare Mobile Social Internet of Things",
+        "Joint ADS-B in B5G for Hierarchical AAV Networks: Performance Analysis and MEC-Based Optimization",
+        "Optimal Scheduling Policy for Minimizing Age of Information With a Relay",
+        "Toward Secure and Lightweight Data Transmission for Cloud–Edge–Terminal Collaboration in Artificial Intelligence of Things"
+      ]
+    }
+  }
+}

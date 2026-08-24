@@ -1,0 +1,106 @@
+{
+  "_method": {
+    "seed": 20260822,
+    "n_sim": 3000,
+    "blocks": [
+      60,
+      90,
+      120,
+      150,
+      190
+    ],
+    "note": "rho measured on the export, which captures 44-88% of frames unevenly; irregular gaps bias a lag-1 estimate, so the daily figure is the one used."
+  },
+  "per_device": {
+    "01": {
+      "n": 91,
+      "rho_uplink": 0.7504854899893567,
+      "rho_quadratic": 0.7464761782802395,
+      "rho_daily": 0.606451465655479,
+      "n_daily": 46,
+      "quant_sim_mean": -0.026089729907945492,
+      "quant_sim_ci": [
+        -0.2461806472277354,
+        0.18091477478921966
+      ],
+      "explained_by_quantisation": false
+    },
+    "02": {
+      "n": 99,
+      "rho_uplink": 0.8374705283254107,
+      "rho_quadratic": 0.8422284174941143,
+      "rho_daily": 0.4639418634709272,
+      "n_daily": 29,
+      "quant_sim_mean": -0.022210517469211474,
+      "quant_sim_ci": [
+        -0.2262440234412846,
+        0.1695907319546995
+      ],
+      "explained_by_quantisation": false
+    },
+    "03": {
+      "n": 98,
+      "rho_uplink": 0.6528792262038579,
+      "rho_quadratic": 0.6536454897821113,
+      "rho_daily": 0.26860331131203363,
+      "n_daily": 33,
+      "quant_sim_mean": -0.012158057342352974,
+      "quant_sim_ci": [
+        -0.21847810844339038,
+        0.18427328575157545
+      ],
+      "explained_by_quantisation": false
+    },
+    "04": {
+      "n": 114,
+      "rho_uplink": 0.7843637247054674,
+      "rho_quadratic": 0.701858756009013,
+      "rho_daily": 0.30047329307606496,
+      "n_daily": 33,
+      "quant_sim_mean": -0.00601040575691179,
+      "quant_sim_ci": [
+        -0.2057579453661325,
+        0.22827526058493106
+      ],
+      "explained_by_quantisation": false
+    },
+    "05": {
+      "n": 84,
+      "rho_uplink": 0.7444908131498607,
+      "rho_quadratic": 0.7446590852227185,
+      "rho_daily": 0.5103007937897875,
+      "n_daily": 43,
+      "quant_sim_mean": 0.06805232354287391,
+      "quant_sim_ci": [
+        -0.18090292510341577,
+        0.335132302887421
+      ],
+      "explained_by_quantisation": false
+    }
+  },
+  "rho_uplink_median": 0.7504854899893567,
+  "rho_daily_median": 0.4639418634709272,
+  "devices_with_excess": 5,
+  "se_inflation_by_block": {
+    "60": 1.6532412166368928,
+    "90": 1.659577996329573,
+    "120": 1.675365308322474,
+    "150": 1.6196619432438235,
+    "190": 1.7422042449707482
+  },
+  "se_inflation_at_120d": 1.675365308322474,
+  "design_validation": {
+    "3dev_480d": {
+      "simulated_pct": 0.291,
+      "closed_form_pct": 0.279
+    },
+    "3dev_600d": {
+      "simulated_pct": 0.206,
+      "closed_form_pct": 0.2
+    },
+    "5dev_480d": {
+      "simulated_pct": 0.152,
+      "closed_form_pct": 0.153
+    }
+  }
+}

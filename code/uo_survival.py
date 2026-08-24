@@ -1,6 +1,15 @@
 """
 Does reporting workload predict service life in a deployed IoT sensor fleet?
 
+SUPERSEDED BY uo_survival_v2.py, and kept as the record. The question and
+the design below stand, and the Cox implementation is validated against
+synthetic data with a known hazard ratio. What is wrong is the covariate:
+this version measures workload as the BATTERY-reporting rate, which is a
+device configuration setting rather than a measure of work done, and is
+the same for devices doing very different amounts of it. v2 rebuilds the
+covariate from the payload streams. Do not quote any number this script
+prints; quote v2, which is null with a stated MDE of hazard ratio 3.23.
+
 THE CLAIM UNDER TEST. The IoT/WSN energy literature models lifetime as set by
 sensing and transmission workload -- "the more they sense and transmit, the more
 the energy is depleted" -- and the entire adaptive-allocation literature
