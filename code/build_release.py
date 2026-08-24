@@ -169,6 +169,33 @@ RESULTS_NO_PRODUCER = {
 }
 
 
+def check_readme_title(tex=None, readme=None):
+    """Does the README still name the paper the manuscript is?
+
+    verify_manuscript.py watches the manuscript against its result files. It
+    does not watch the release, and the release is a second surface that
+    drifts: this repository shipped under the pre-revision title for two
+    revisions after the paper was renamed, so a reviewer following the link
+    would have landed on what reads as a different paper. Reading did not catch
+    it either time. Returns a reason string, or None when clean.
+    """
+    tex = tex or os.path.join(ROOT, 'paper_v4', 'main.tex')
+    readme = readme or os.path.join(DEST, 'README.md')
+    if not (os.path.exists(tex) and os.path.exists(readme)):
+        return None
+    s = open(tex, encoding='utf-8', errors='replace').read()
+    m = re.search(r'\\title\{(.+?)\}\s*\n\s*\n', s, re.S)
+    if not m:
+        return 'could not read \\title{} from the manuscript'
+    # Unwrap the LaTeX line breaks and normalise whitespace.
+    title = re.sub(r'\s+', ' ', m.group(1).replace('\\\\', ' ')).strip()
+    body = re.sub(r'\s+', ' ', open(readme, encoding='utf-8',
+                                    errors='replace').read())
+    if title not in body:
+        return 'README does not carry the manuscript title: %r' % title
+    return None
+
+
 def local_modules():
     return {f[:-3] for f in os.listdir(os.path.join(ROOT, 'code'))
             if f.endswith('.py')}
@@ -259,6 +286,19 @@ def self_test():
     if orphan != ['_selftest_probe.json']:
         print('  SELF-TEST FAILED: the producer check did not fire')
         ok = False
+
+    # The title check, against a README carrying the title this paper had
+    # before it was renamed -- the exact drift that shipped twice.
+    stale = os.path.join(DEST, '_selftest_readme.md')
+    with open(stale, 'w', encoding='utf-8') as fh:
+        fh.write('# When Communication Energy Is Sub-Percent\n')
+    if not check_readme_title(readme=stale):
+        print('  SELF-TEST FAILED: the README title check did not fire')
+        ok = False
+    if check_readme_title(readme=os.path.join(DEST, 'README.md')):
+        print('  SELF-TEST FAILED: the README title check fired on a good README')
+        ok = False
+    os.remove(stale)
     return ok
 
 
@@ -379,7 +419,7 @@ def main():
     if not self_test():
         failed = True
     else:
-        print("  check self-test: both structural checks fire when they should")
+        print("  check self-test: all three structural checks fire when they should")
     bad = check_imports(code_files)
     if bad:
         failed = True
@@ -388,6 +428,12 @@ def main():
             print("      %-42s needs %s" % (f, ", ".join(missing)))
     else:
         print("  import check: every shipped script imports what it needs")
+    stale_title = check_readme_title()
+    if stale_title:
+        failed = True
+        print("  *** README CHECK FAILED -- %s" % stale_title)
+    else:
+        print("  README check: the release names the paper the manuscript is")
     orphans = check_result_producers(code_files, res_files)
     if orphans:
         failed = True

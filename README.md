@@ -60,12 +60,20 @@ roughly 850 MB here, and `fetch_uo_archive.py` re-pulls it.
 `build_release.py` is the script that assembles this repository from the
 working tree. It selects by allow-list rather than by exclusion, scans
 everything it selects for host addresses, tokens and local paths, and then
-checks three structural properties: that every shipped script can import what
-it needs, that every shipped result is written by a shipped script, and which
-scripts depend on withheld data. It refuses to finish if the first two fail.
-Those checks exist because the first build of this repository passed the leak
-scan and still shipped four scripts that raised `ModuleNotFoundError`, two of
-them the two the README told the reader to run first.
+checks four structural properties: that every shipped script can import what it
+needs, that every shipped result is written by a shipped script, that this
+README still names the paper the manuscript is, and which scripts depend on
+data that is not published here. It refuses to finish if the first three fail,
+and each of them has a self-test that must be seen firing before the check is
+trusted.
+
+Those checks exist because they keep catching things. The first build of this
+repository passed the leak scan and still shipped four scripts that raised
+`ModuleNotFoundError`, two of them the two this README told the reader to run
+first. The second shipped the code for the paper's central validation while
+withholding the data it reads. And this README carried the paper's previous
+title for two revisions after it was renamed, which is what the third check now
+watches.
 
 ## The corpus measurement
 
