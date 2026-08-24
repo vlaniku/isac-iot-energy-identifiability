@@ -1,7 +1,8 @@
-# When Communication Energy Is Sub-Percent
+# When the Optimised Term Is Smaller Than the Instrument
 
-Code, result files and figures for *When Communication Energy Is Sub-Percent:
-Evaluating Energy-Allocation Claims in Battery-Powered ISAC-IoT*.
+Code, data, result files and figures for *When the Optimised Term Is Smaller
+Than the Instrument: An Identifiability Criterion for Energy Claims in
+Battery-Powered ISAC-IoT*.
 
 Laniku, Krasniqi and Akyildiz. Submitted to IEEE Internet of Things Journal.
 
@@ -14,8 +15,8 @@ script that made it. Every figure in `figures/` is generated from a file in
 `results/`; none is drawn by hand.
 
 Two things qualify that, and both are listed explicitly below rather than left
-to be discovered: two result files were not produced by any script, and twelve
-scripts read device telemetry that is not published here.
+to be discovered: two result files were not produced by any script, and three
+scripts read a third-party archive that is not mirrored here.
 
 That includes the numbers we withdrew. The corrections log in the paper is not
 a narrative device -- the scripts that produced the withdrawn results are here,
@@ -25,9 +26,36 @@ alongside the validation that killed them.
 
 ```
 code/       analysis scripts, and the simulator modules they import
+data/       the deployment telemetry the analyses read
 results/    the numbers, as JSON
 figures/    the figures, PDF (vector) and PNG
 ```
+
+## The data
+
+`data/FIEK_parking_export_83day.xlsx` is the export the deployment analyses
+read: 701 events from five LoRaWAN parking sensors, one sheet per device plus a
+fleet summary and a combined `All Events` sheet. The columns that matter here
+are `battery_v`, `f_cnt`, `spreading_factor`, `rssi`, `snr` and the timestamps.
+Note `temperature_c`, which is present and empty in all 701 records -- that
+absence is the reason Table XI of the paper gained a ninth row, because
+conditioning on temperature is what would have recovered the independent noise
+column the criterion originally assumed.
+
+`data/chirpstack_12mo_metrics.json` is the twelve-month link-metric view read
+from the network server; ChirpStack retains aggregates only, so monthly is the
+finest granularity available over that span, and it carries no battery field.
+`data/kadriu2024_public_events.xlsx` is the 2024 window released with Kadriu et
+al., used only by `two_year_workload.py`.
+
+There is no personal data here. The records are occupancy state, radio
+statistics and battery readings for five parking bays; the device EUIs appear
+in Fig. 1 of the paper.
+
+`data/uo_archive/` holds only the two survival cohort definitions and a device
+profile -- who entered the analysis, which is the part worth auditing. The
+Newcastle Urban Observatory archive itself is not mirrored: it is public,
+roughly 850 MB here, and `fetch_uo_archive.py` re-pulls it.
 
 `build_release.py` is the script that assembles this repository from the
 working tree. It selects by allow-list rather than by exclusion, scans
@@ -128,19 +156,20 @@ to print anything else if a row disagrees by more than 2%.
 | `literature_f_placement.json` | read by hand from the cited papers. Each entry names the paper and the table the value came from. There is nothing to automate; the check is to open the papers. |
 | `rq4b_lorawan_battery_screen.json` | the archived pull, kept as the record of what was actually screened. The script that made it was not kept; `rq4b_deep_screen.py` restores the retrieval and reproduces it at 94% DOI overlap, the difference being index drift. The archived file is cp1252, not UTF-8. |
 
-**Twelve scripts read data that is not published here.** Raw device telemetry
-is held back pending a decision on release scope. The scripts that need it are
-`channel_coherence.py`, `coincidence_bound.py`, `comm_action_bracket.py`,
-`deploy_depletion_analysis.py`, `deploy_workload_control.py`,
-`hazard_scan_schedule.py`, `make_figures.py`, `regime_map_v2.py`,
-`two_year_workload.py`, `uo_survival.py`, `uo_survival_v2.py` and
-`fetch_uo_archive.py`. Their outputs are in `results/`, so the numbers can be
-read; they cannot be regenerated without the telemetry.
+**Three scripts read the Newcastle archive, which is not mirrored here.**
+`uo_survival.py` and `uo_survival_v2.py` read a 762 MB pickle cache built from
+it, and `fetch_uo_archive.py` is what builds that cache. The archive is public
+and the fetch script re-pulls it; mirroring 850 MB of someone else's open data
+would add weight without adding access. Their outputs are in `results/`, so the
+numbers can be read either way.
 
-Two of those inputs are already public and can be obtained independently: the
-Newcastle Urban Observatory archive, which `fetch_uo_archive.py` re-pulls, and
-the 2024 parking dataset released with Kadriu et al., which
-`two_year_workload.py` reads as `data/kadriu2024_public_events.xlsx`.
+Everything else runs against the data in this repository. That was checked
+rather than assumed: the ten result files those scripts write were regenerated
+from a clean copy of this release and came back byte-identical to the ones
+shipped here. The earlier version of this repository shipped the code for the
+residual-dependence measurement and the injection validation while withholding
+the telemetry they read, which made the paper's reproducibility claim false for
+exactly the two analyses carrying its contribution.
 
 ## Known defects in the code released here
 
@@ -176,7 +205,15 @@ Python 3.10+, with numpy, scipy, matplotlib, pandas and pypdf. Scripts run from
     python regime_map_invariance.py        # about 45 min
     python regime_map_invariance_readout.py
 
-`make_figures.py` needs the withheld telemetry and will not run without it.
+`make_figures.py` reads `data/` and now runs as shipped. The two analyses the
+paper's criterion rests on are the quickest way to check that this release
+works end to end:
+
+    python noise_autocorrelation.py        # the residual dependence, and the 1.68x
+    python identifiability_injection.py    # the criterion against real noise
+
+`uo_survival.py` and `uo_survival_v2.py` need the Newcastle cache first; run
+`fetch_uo_archive.py` to build it.
 
 The network-facing scripts (`corpus_*`, `systematic_search.py`,
 `resolve_references.py`) query OpenAlex, Crossref and Semantic Scholar. They
@@ -186,4 +223,6 @@ records its own retrieval date.
 
 ## Licence
 
-Code under MIT. Result files and figures under CC BY 4.0.
+Code under MIT. Result files, figures and the deployment data under CC BY 4.0.
+The Newcastle Urban Observatory archive is not redistributed here and carries
+its own terms.

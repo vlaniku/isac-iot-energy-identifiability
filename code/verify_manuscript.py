@@ -55,7 +55,7 @@ def build_claims():
         A = d['populations']['A_full']
         B = d['populations']['B_iot']
         C.append(('corpus denominator', ['%d ISAC energy-efficiency papers' % A['n']]))
-        C.append(('IoT-facing subset', ['only %d name' % B['n']]))
+        C.append(('IoT-facing subset', ['%d name IoT' % B['n']]))
         C.append(('transmit-side count', ['%d (%.1f\\%%)' % (A['tx_any'], 100 * A['tx_share'])]))
         C.append(('standing-charge count', ['%d (%.1f\\%%)' % (A['sc_any'], 100 * A['sc_share'])]))
 
@@ -77,6 +77,13 @@ def build_claims():
 
     d = jload('sf_energy_ratio.json')
     if d:
+        # The ceiling on any allocator. This was wrong in the conclusion for a
+        # full revision because nothing was watching it.
+        cs = d.get('controllable_split')
+        if cs:
+            lo, hi = cs['f_comm_ctrl_pct']
+            C.append(('controllable communication ceiling',
+                      ['%.2f--%.2f\\%%' % (lo, hi)]))
         cf = d['confounds']
         C.append(('airtime ratio', ['$%.1f\\times$' % cf['airtime_ratio']]))
         C.append(('k with RX', ['$%.1f\\times$' % cf['k_with_rx']]))

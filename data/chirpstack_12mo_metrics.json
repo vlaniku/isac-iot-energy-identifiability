@@ -1,0 +1,49 @@
+{
+  "_source": "ChirpStack v4.8.1 device link-metrics, 1y view (monthly aggregation), read from the rendered chart data via the authenticated web session on 2026-08-19",
+  "_note": "ChirpStack retains aggregated metrics only, not raw frames. Monthly is the finest granularity available over 12 months. No battery: the device list Battery column is empty (payload codec = None), so battery telemetry exists only in the downstream export.",
+  "_caution": "2026-08 is a partial month (data to 2026-08-19).",
+  "months": ["2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08"],
+  "devices": {
+    "fcd6bd000019cd04": {
+      "name": "FIEK_UP_PARKING_SENZOR_01",
+      "status": "alive",
+      "last_seen": "2026-08-18 20:22:55",
+      "note": "replacement unit; replaced fcd6bd000019cd02 which was present in the 2024 dataset",
+      "rx_count": [0, 90, 97, 95, 73, 42, 48, 46, 54, 84, 34, 80, 35],
+      "rssi": [null, -93.64, -95.61, -96.84, -99.12, -101.17, -99.79, -97.65, -100.52, -100.23, -96.38, -97.04, -95.83],
+      "snr": [null, 7.39, 6.26, 6.35, 4.78, 4.39, 4.85, 5.42, 5.38, 5.35, 7.17, 6.91, 7.52]
+    },
+    "fcd6bd000019cd03": {
+      "name": "FIEK_UP_PARKING_SENZOR_02",
+      "status": "dead",
+      "last_seen": "2026-06-23 21:42:54",
+      "rx_count": [85, 134, 146, 97, 149, 91, 88, 106, 129, 103, 86, 0, 0],
+      "rssi": [-105.4, -103.4, -102.0, -103.3, -102.3, -101.8, -101.2, -103.1, -102.8, -102.4, -105.6, null, null],
+      "snr": [4.74, 5.64, 5.42, 4.88, 4.87, 4.78, 4.82, 4.41, 5.34, 5.16, 3.39, null, null]
+    },
+    "fcd6bd000019cd11": {
+      "name": "FIEK_UP_PARKING_SENZOR_03",
+      "status": "alive",
+      "last_seen": "2026-08-18 23:25:27",
+      "rx_count": [117, 143, 220, 95, 209, 136, 85, 149, 156, 124, 173, 140, 63],
+      "rssi": [-103.4, -103.6, -102.4, -102.3, -101.8, -101.9, -102.7, -104.4, -103.6, -103.4, -105.7, -104.6, -105.0],
+      "snr": [4.88, 5.47, 5.51, 5.44, 5.79, 5.13, 4.25, 4.05, 4.87, 5.20, 4.00, 4.53, 4.75]
+    },
+    "fcd6bd000019ccfb": {
+      "name": "FIEK_UP_PARKING_SENZOR_04",
+      "status": "dead",
+      "last_seen": "2026-06-24 01:35:44",
+      "rx_count": [65, 130, 188, 157, 235, 147, 155, 131, 136, 148, 113, 0, 0],
+      "rssi": [-108.9, -105.1, -102.6, -103.0, -101.8, -102.0, -102.5, -104.1, -102.5, -103.3, -104.4, null, null],
+      "snr": [3.26, 4.25, 4.89, 4.70, 4.77, 5.20, 4.40, 3.81, 4.49, 4.06, 4.16, null, null]
+    },
+    "fcd6bd000019cd0c": {
+      "name": "FIEK_UP_PARKING_SENZOR_05",
+      "status": "alive",
+      "last_seen": "2026-08-18 20:14:48",
+      "rx_count": [69, 76, 144, 83, 142, 68, 72, 89, 82, 90, 69, 96, 34],
+      "rssi": [-100.8, -101.1, -98.4, -94.6, -96.7, -95.2, -98.5, -96.7, -101.5, -100.5, -102.3, -103.3, -107.7],
+      "snr": [6.41, 5.87, 5.39, 6.33, 4.83, 5.32, 4.78, 5.49, 4.74, 5.28, 4.34, 4.80, 4.10]
+    }
+  }
+}

@@ -17,9 +17,24 @@ WHAT DOES NOT, and why:
   docs/lit_corpus/*.pdf   copyrighted, obtained by subscription. Redistributing
                           them would be an infringement, and the manifest with
                           DOIs serves the same purpose lawfully.
-  data/                   raw device telemetry. Held back pending an explicit
-                          decision on scope; the fetch scripts are included so
-                          the public archive can be re-pulled.
+  data/uo_archive/*       the Newcastle Urban Observatory mirror: ~85 MB of
+                          zips and a 762 MB pickle cache, none of it ours and
+                          all of it publicly downloadable. fetch_uo_archive.py
+                          re-pulls it, so mirroring it here would add weight
+                          without adding access. The two small cohort
+                          definitions DO ship, because they record which
+                          devices entered the survival analysis and that is a
+                          choice a reader should be able to audit.
+  data/2025-9-Battery.csv the same archive, one month of it.
+
+WHAT NOW DOES SHIP, and why the scope decision went that way: the deployment
+telemetry. Fifteen shipped scripts read data/, and the two carrying the
+paper's contribution -- noise_autocorrelation.py, which finds the residual
+dependence, and identifiability_injection.py, which validates the corrected
+criterion against it -- were among them. The Reproducibility section states
+that both are in the release. Shipping the code without the data it reads
+would have made that sentence false. The files are our own deployment's, hold
+no personal data, and the device EUIs in them are already printed in Fig. 1.
   STATE.md, HANDOFF_*     contain the ChirpStack host address and the internal
                           record.
   MOCK_REVIEW_v4.md,      internal assessments and private correspondence.
@@ -87,6 +102,19 @@ RESULTS_GLOB = re.compile(r'\.json$')
 # from, so it is not shipped.
 RESULTS_EXCLUDE = {'local_papers.json'}
 FIGURES_GLOB = re.compile(r'^fig\d+.*\.(pdf|png)$')
+
+# Telemetry, by allow-list for the same reason the code is. Paths are relative
+# to data/. Everything not named here stays behind, and check_data_dependencies
+# reports which scripts that still costs.
+DATA = [
+    'FIEK_parking_export_83day.xlsx',
+    'chirpstack_12mo_metrics.json',
+    'chirpstack_daily_final_days.json',
+    'kadriu2024_public_events.xlsx',
+    'uo_archive/_survival_cohort.csv',
+    'uo_archive/_survival_cohort_v2.csv',
+    'uo_archive/_device_profile.csv',
+]
 
 # ------------------------------------------------------------- leak scan ----
 LEAKS = [
@@ -186,23 +214,28 @@ def check_result_producers(shipped_code, shipped_results):
 
 
 def check_data_dependencies(shipped_code):
-    """Which shipped scripts need data/, which does not ship.
+    """Which shipped scripts still need a data file that does NOT ship.
 
-    Not a failure. It is a fact a reader will hit on the first run, so it
-    belongs in the build output and in the README rather than in a traceback.
+    Not a failure -- the withheld remainder is the Newcastle mirror, which is
+    public and re-pullable. But it is a fact a reader hits on the first run, so
+    it belongs in the build output and in the README rather than in a traceback.
+    Only unsatisfied dependencies are reported: naming files that now ship would
+    make the release look less reproducible than it is, which is the error in
+    the opposite direction and just as misleading.
     """
     ddir = os.path.join(ROOT, 'data')
     names = set()
     for root, _dirs, files in os.walk(ddir):
         for f in files:
             names.add(f)
+    shipped_data = {os.path.basename(p) for p in DATA}
     need = {}
     for f in sorted(shipped_code):
         if f == 'build_release.py':
             continue
         txt = open(os.path.join(DEST, 'code', f), encoding='utf-8',
                    errors='replace').read()
-        hits = sorted(n for n in names if n in txt)
+        hits = sorted(n for n in names if n in txt and n not in shipped_data)
         if hits:
             need[f] = hits
     return need
@@ -232,7 +265,7 @@ def self_test():
 def main():
     # Clear only the content directories. DEST is a git working tree, and
     # rmtree'ing it would take .git with it.
-    for sub in ('code', 'results', 'figures'):
+    for sub in ('code', 'results', 'figures', 'data'):
         d = os.path.join(DEST, sub)
         if os.path.exists(d):
             shutil.rmtree(d)
@@ -290,6 +323,26 @@ def main():
             shutil.copy2(os.path.join(fdir, f), os.path.join(DEST, 'figures', f))
             picked.append('figures/' + f)
 
+    # Telemetry. The leak scan runs over these too. It is a text scan and two of
+    # them are xlsx, so it reads the container rather than the cells -- which is
+    # why the columns were also read by hand before this list was written; the
+    # scan is not what clears them.
+    for rel in DATA:
+        src = os.path.join(ROOT, 'data', rel.replace('/', os.sep))
+        if not os.path.exists(src):
+            print("  MISSING from data allow-list: %s" % rel)
+            continue
+        h, s_ = scan(src)
+        if h:
+            hard_hits.append((rel, h))
+            continue
+        if s_:
+            soft_hits.append((rel, s_))
+        dst = os.path.join(DEST, 'data', rel.replace('/', os.sep))
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        shutil.copy2(src, dst)
+        picked.append('data/' + rel)
+
     print("=" * 92)
     print("  RELEASE BUILD")
     print("=" * 92)
@@ -297,6 +350,7 @@ def main():
     print("    code    %d" % sum(1 for p in picked if p.startswith('code/')))
     print("    results %d" % sum(1 for p in picked if p.startswith('results/')))
     print("    figures %d" % sum(1 for p in picked if p.startswith('figures/')))
+    print("    data    %d" % sum(1 for p in picked if p.startswith('data/')))
     print()
     if hard_hits:
         print("  *** BLOCKED, not copied (hard leak) ***")
@@ -310,8 +364,9 @@ def main():
         for f, why in soft_hits:
             print("      %-42s %s" % (f, ", ".join(why)))
     print()
-    print("  NOT included by design: docs/lit_corpus (copyrighted PDFs), data/ (raw")
-    print("  telemetry, pending a scope decision), and every internal document.")
+    print("  NOT included by design: docs/lit_corpus (copyrighted PDFs), the")
+    print("  Newcastle mirror under data/uo_archive (public, re-pullable, 850 MB),")
+    print("  and every internal document.")
     if dropped:
         print("  not shipped, no script here regenerates them (%d):" % len(dropped))
         for f in dropped:
@@ -349,8 +404,8 @@ def main():
     need = check_data_dependencies(code_files)
     if need:
         print()
-        print("  needs data/, which is withheld pending the scope decision (%d):"
-              % len(need))
+        print("  still needs withheld data -- the Newcastle mirror, which "
+              "fetch_uo_archive.py re-pulls (%d):" % len(need))
         for f, hits in sorted(need.items()):
             print("      %-38s %s" % (f, ", ".join(hits)))
 
