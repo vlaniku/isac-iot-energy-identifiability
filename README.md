@@ -26,6 +26,7 @@ alongside the validation that killed them.
 
 ```
 code/       analysis scripts, and the simulator modules they import
+docs/       the bench protocol: capture procedure and CSV schemas
 data/       the deployment telemetry the analyses read
 results/    the numbers, as JSON
 figures/    the figures, PDF (vector) and PNG
@@ -152,6 +153,27 @@ asking what share a given design detects, it asks what campaign a claim of a
 given size would need, and reports the smallest claim this fleet could check
 at all. It recomputes every row of the published MDE table first and refuses
 to print anything else if a row disagrees by more than 2%.
+
+`bench_analysis.py` — the analysis for a bench session that has **not been run yet**,
+published before its data exists on purpose. Two constants in this paper are
+modelled and labelled as such: `k`, the SF12/SF7 amplification factor, which is
+17.4× transmit-only and 11.6× with the class-A receive windows — a 1.58× swing in
+the detectable share, since `s = ε/(k−1)`; and the proportionality between the
+reported battery byte and energy drawn, which the identifiability criterion rests
+on and which Sec. VII-G says cannot presently be verified. A current probe and a
+discharge rig settle both. `docs/BENCH_PROTOCOL.md` defines the capture procedure
+and the two CSV schemas; writing the analysis first is what fixes what the capture
+has to contain.
+
+Run `python bench_analysis.py --selftest` to see it validated against synthetic
+captures whose answers are known. The self-test earned its place immediately: it
+caught a baseline estimator that recovered `k` as 12.0 against a true 16.5. Sleep
+is about 20% of an SF7 capture but only 3% of an SF12 one, so a percentile-based
+baseline picks up receive current at SF12 and subtracts it from every phase — a
+27% error in the one number the session exists to measure. It also builds a case
+the curvature test must *reject*, and reports how small a departure from
+linearity it can resolve, because a test that only catches a gross departure is
+not evidence of linearity.
 
 ---
 

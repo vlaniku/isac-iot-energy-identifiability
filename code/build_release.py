@@ -85,6 +85,10 @@ CODE = [
     'identifiability_injection.py',
     'venue_genre_sweep.py',
     'venue_genre_sample.py',
+    # Ships before its measurements exist, deliberately. The analysis for the
+    # bench session is written and self-tested first, which fixes what the
+    # capture has to contain; publishing it now is the pre-registration.
+    'bench_analysis.py',
     # Imported by the regime-map, bracket and ceiling scripts above. The
     # first build listed only the scripts a reader would run and none of
     # what they import, so four of them raised ModuleNotFoundError -- two
@@ -114,6 +118,13 @@ DATA = [
     'uo_archive/_survival_cohort.csv',
     'uo_archive/_survival_cohort_v2.csv',
     'uo_archive/_device_profile.csv',
+]
+
+# Documents that are part of the artifact rather than internal. Paths relative
+# to docs/. The bench protocol defines the capture schemas bench_analysis.py
+# reads, so shipping one without the other would be useless.
+DOCS = [
+    'BENCH_PROTOCOL.md',
 ]
 
 # ------------------------------------------------------------- leak scan ----
@@ -305,7 +316,7 @@ def self_test():
 def main():
     # Clear only the content directories. DEST is a git working tree, and
     # rmtree'ing it would take .git with it.
-    for sub in ('code', 'results', 'figures', 'data'):
+    for sub in ('code', 'results', 'figures', 'data', 'docs'):
         d = os.path.join(DEST, sub)
         if os.path.exists(d):
             shutil.rmtree(d)
@@ -363,6 +374,20 @@ def main():
             shutil.copy2(os.path.join(fdir, f), os.path.join(DEST, 'figures', f))
             picked.append('figures/' + f)
 
+    for rel in DOCS:
+        src = os.path.join(ROOT, 'docs', rel)
+        if not os.path.exists(src):
+            print("  MISSING from docs allow-list: %s" % rel)
+            continue
+        h, s_ = scan(src)
+        if h:
+            hard_hits.append((rel, h))
+            continue
+        if s_:
+            soft_hits.append((rel, s_))
+        shutil.copy2(src, os.path.join(DEST, 'docs', rel))
+        picked.append('docs/' + rel)
+
     # Telemetry. The leak scan runs over these too. It is a text scan and two of
     # them are xlsx, so it reads the container rather than the cells -- which is
     # why the columns were also read by hand before this list was written; the
@@ -391,6 +416,7 @@ def main():
     print("    results %d" % sum(1 for p in picked if p.startswith('results/')))
     print("    figures %d" % sum(1 for p in picked if p.startswith('figures/')))
     print("    data    %d" % sum(1 for p in picked if p.startswith('data/')))
+    print("    docs    %d" % sum(1 for p in picked if p.startswith('docs/')))
     print()
     if hard_hits:
         print("  *** BLOCKED, not copied (hard leak) ***")
